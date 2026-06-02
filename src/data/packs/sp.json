@@ -1,0 +1,114 @@
+{
+  "pack": "sp",
+  "packName": {
+    "zh": "🎁 特別活動卡",
+    "en": "🎁 Special Event"
+  },
+  "packDate": "官方活動限定",
+  "current": false,
+  "officialTotal": 50,
+  "tags": [
+    {
+      "num": "EV-LUC",
+      "pack": "sp",
+      "nameZh": "路卡利歐",
+      "nameEn": "Lucario",
+      "emoji": "🥋",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "grade": 5,
+      "energy": 94,
+      "gradeTier": "special",
+      "price": [
+        200,
+        500
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Lucario"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "先行體驗會限量發放（2025/3 高雄駁二+台北東森）｜⚠️ ATK 待校對",
+      "unconfirmed": true
+    },
+    {
+      "num": "EV-DRG",
+      "pack": "sp",
+      "nameZh": "快龍",
+      "nameEn": "Dragonite",
+      "emoji": "🐉",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "grade": 5,
+      "energy": 118,
+      "gradeTier": "special",
+      "price": [
+        200,
+        500
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Dragonite"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "Pokemon Center TAIPEI 特別發卡活動｜⚠️ ATK 待校對",
+      "unconfirmed": true
+    },
+    {
+      "num": "EV-MMQ",
+      "pack": "sp",
+      "nameZh": "謎擬Q",
+      "nameEn": "Mimikyu",
+      "emoji": "👻",
+      "labelZh": "Special｜銀河彈上市紀念",
+      "types": [
+        "ghost",
+        "fairy"
+      ],
+      "grade": 5,
+      "energy": 120,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Mimikyu"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "銀河彈上市紀念贈卡活動｜⚠️ ATK 待校對",
+      "unconfirmed": true
+    }
+  ]
+}

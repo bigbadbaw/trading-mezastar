@@ -1,0 +1,269 @@
+{
+  "generatedFromTags": 374,
+  "byPack": {
+    "g1": {
+      "migrated": 73,
+      "officialTotal": 73
+    },
+    "s4": {
+      "migrated": 76,
+      "officialTotal": 76
+    },
+    "s3": {
+      "migrated": 76,
+      "officialTotal": 76
+    },
+    "s2": {
+      "migrated": 73,
+      "officialTotal": 73
+    },
+    "s1": {
+      "migrated": 73,
+      "officialTotal": 73
+    },
+    "sp": {
+      "migrated": 3,
+      "officialTotal": 50
+    }
+  },
+  "dualTagsSplit": [
+    {
+      "pack": "s2",
+      "num": "1-2-065",
+      "enName": "Lunatone/Solrock",
+      "species": [
+        "Lunatone",
+        "Solrock"
+      ]
+    }
+  ],
+  "speciesNeedingReview": [
+    {
+      "pack": "s2",
+      "num": "1-2-065",
+      "enName": "Lunatone/Solrock",
+      "species": [
+        "Lunatone",
+        "Solrock"
+      ],
+      "reason": "dual-tag -> 2 species"
+    }
+  ],
+  "unconfirmedTags": [
+    {
+      "pack": "g1",
+      "num": "2-1-005",
+      "enName": "Raikou"
+    },
+    {
+      "pack": "g1",
+      "num": "2-1-006",
+      "enName": "Entei"
+    },
+    {
+      "pack": "g1",
+      "num": "2-1-007",
+      "enName": "Suicune"
+    },
+    {
+      "pack": "g1",
+      "num": "2-1-010",
+      "enName": "Hisuian Zoroark"
+    },
+    {
+      "pack": "s3",
+      "num": "1-3-026",
+      "enName": "Buzzwole"
+    },
+    {
+      "pack": "s3",
+      "num": "1-3-049",
+      "enName": "Charjabug"
+    },
+    {
+      "pack": "s3",
+      "num": "1-3-050",
+      "enName": "Orbeetle"
+    },
+    {
+      "pack": "s3",
+      "num": "1-3-051",
+      "enName": "Yungoos"
+    },
+    {
+      "pack": "s2",
+      "num": "1-2-006",
+      "enName": "Drakloak"
+    },
+    {
+      "pack": "s2",
+      "num": "1-2-065",
+      "enName": "Lunatone/Solrock"
+    },
+    {
+      "pack": "s1",
+      "num": "1-1-008",
+      "enName": "Mega Venusaur"
+    },
+    {
+      "pack": "s1",
+      "num": "1-1-010",
+      "enName": "Mega Blastoise"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-LUC",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-DRG",
+      "enName": "Dragonite"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-MMQ",
+      "enName": "Mimikyu"
+    }
+  ],
+  "irregularNums": [
+    {
+      "pack": "g1",
+      "num": "R-2-1",
+      "enName": "Pikachu"
+    },
+    {
+      "pack": "g1",
+      "num": "R-2-2",
+      "enName": "Charizard"
+    },
+    {
+      "pack": "g1",
+      "num": "R-2-3",
+      "enName": "Gengar"
+    },
+    {
+      "pack": "s4",
+      "num": "K-4-1",
+      "enName": "Mew"
+    },
+    {
+      "pack": "s4",
+      "num": "K-4-2",
+      "enName": "Zacian"
+    },
+    {
+      "pack": "s4",
+      "num": "K-4-3",
+      "enName": "Zamazenta"
+    },
+    {
+      "pack": "s4",
+      "num": "R-1-1",
+      "enName": "Pikachu"
+    },
+    {
+      "pack": "s4",
+      "num": "R-1-2",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "s4",
+      "num": "R-1-3",
+      "enName": "Snorlax"
+    },
+    {
+      "pack": "s3",
+      "num": "K-3-1",
+      "enName": "Venusaur"
+    },
+    {
+      "pack": "s3",
+      "num": "K-3-2",
+      "enName": "Charizard"
+    },
+    {
+      "pack": "s3",
+      "num": "K-3-3",
+      "enName": "Blastoise"
+    },
+    {
+      "pack": "s3",
+      "num": "R-1-1",
+      "enName": "Pikachu"
+    },
+    {
+      "pack": "s3",
+      "num": "R-1-2",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "s3",
+      "num": "R-1-3",
+      "enName": "Snorlax"
+    },
+    {
+      "pack": "s2",
+      "num": "R-1-1",
+      "enName": "Pikachu"
+    },
+    {
+      "pack": "s2",
+      "num": "R-1-2",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "s2",
+      "num": "R-1-3",
+      "enName": "Snorlax"
+    },
+    {
+      "pack": "s1",
+      "num": "R-1-1",
+      "enName": "Pikachu"
+    },
+    {
+      "pack": "s1",
+      "num": "R-1-2",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "s1",
+      "num": "R-1-3",
+      "enName": "Snorlax"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-LUC",
+      "enName": "Lucario"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-DRG",
+      "enName": "Dragonite"
+    },
+    {
+      "pack": "sp",
+      "num": "EV-MMQ",
+      "enName": "Mimikyu"
+    }
+  ],
+  "spPackGap": {
+    "pack": "sp",
+    "migrated": 3,
+    "officialTotal": 50,
+    "missing": 47
+  },
+  "mechanicTallies": {
+    "gigantamax": 28,
+    "mega": 5,
+    "rareSlot": 2,
+    "zMove": 0,
+    "legendary": 38,
+    "classic": 6,
+    "highAtk": 22
+  },
+  "notes": [
+    "PRIMARY KEY: `num` is NOT globally unique — reprints (R-/K- prefixes) repeat across packs. The unique key is the (pack, num) pair. Resolve the catalog/DB key scheme before M5 (collection_items.tag_num)."
+  ]
+}

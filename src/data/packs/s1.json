@@ -1,0 +1,2454 @@
+{
+  "pack": "s1",
+  "packName": {
+    "zh": "✨ 星塵 1 彈",
+    "en": "✨ Stardust 1"
+  },
+  "packDate": "2025 / 04 / 02",
+  "current": false,
+  "officialTotal": 73,
+  "tags": [
+    {
+      "num": "1-1-001",
+      "pack": "s1",
+      "nameZh": "超夢",
+      "nameEn": "Mewtwo",
+      "emoji": "🧠",
+      "labelZh": "",
+      "types": [
+        "psychic"
+      ],
+      "grade": 6,
+      "energy": 158,
+      "gradeTier": "gold-star",
+      "price": [
+        1500,
+        3000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Mewtwo"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "基因寶可夢｜傳說寶可夢｜可極巨化｜招式「精神擊破」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-002",
+      "pack": "s1",
+      "nameZh": "夢幻",
+      "nameEn": "Mew",
+      "emoji": "💫",
+      "labelZh": "",
+      "types": [
+        "psychic"
+      ],
+      "grade": 6,
+      "energy": 142,
+      "gradeTier": "gold-star",
+      "price": [
+        1500,
+        3000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Mew"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "幻之寶可夢｜招式「精神強念」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-003",
+      "pack": "s1",
+      "nameZh": "蒼響",
+      "nameEn": "Zacian",
+      "emoji": "⚔️",
+      "labelZh": "",
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "grade": 6,
+      "energy": 162,
+      "gradeTier": "gold-star",
+      "price": [
+        1200,
+        2500
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Zacian"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾劍王｜傳說寶可夢｜鋼屬性招式「巨獸斬」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-004",
+      "pack": "s1",
+      "nameZh": "藏瑪然特",
+      "nameEn": "Zamazenta",
+      "emoji": "🛡️",
+      "labelZh": "",
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "grade": 6,
+      "energy": 162,
+      "gradeTier": "gold-star",
+      "price": [
+        1200,
+        2500
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Zamazenta"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾盾王｜傳說寶可夢｜鋼屬性招式「巨獸彈」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-005",
+      "pack": "s1",
+      "nameZh": "班基拉斯",
+      "nameEn": "Tyranitar",
+      "emoji": "🦖",
+      "labelZh": "",
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "grade": 6,
+      "energy": 144,
+      "gradeTier": "gold-star",
+      "price": [
+        1000,
+        2000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Tyranitar"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "鎧甲寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-006",
+      "pack": "s1",
+      "nameZh": "巨金怪",
+      "nameEn": "Metagross",
+      "emoji": "🤖",
+      "labelZh": "",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "grade": 6,
+      "energy": 144,
+      "gradeTier": "gold-star",
+      "price": [
+        1000,
+        2000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Metagross"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "鋼鎧合體寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-007",
+      "pack": "s1",
+      "nameZh": "密勒頓",
+      "nameEn": "Miraidon",
+      "emoji": "🤖",
+      "labelZh": "",
+      "types": [
+        "electric",
+        "dragon"
+      ],
+      "grade": 6,
+      "energy": 162,
+      "gradeTier": "gold-star",
+      "price": [
+        1500,
+        3000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Miraidon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "帕底亞紫光神獸（寶可夢 紫）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-008",
+      "pack": "s1",
+      "nameZh": "妙蛙花",
+      "nameEn": "Mega Venusaur",
+      "emoji": "🌺",
+      "labelZh": "",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "grade": 6,
+      "energy": 122,
+      "gradeTier": "gold-star",
+      "price": [
+        1200,
+        2500
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Venusaur"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": true,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "超級進化｜草屬性招式「飛葉風暴」",
+      "unconfirmed": true
+    },
+    {
+      "num": "1-1-009",
+      "pack": "s1",
+      "nameZh": "噴火龍",
+      "nameEn": "Mega Charizard X",
+      "emoji": "🔥",
+      "labelZh": "",
+      "types": [
+        "fire",
+        "dragon"
+      ],
+      "grade": 6,
+      "energy": 124,
+      "gradeTier": "gold-star",
+      "price": [
+        1300,
+        2600
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Charizard"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": true,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "超級進化 X｜火屬性招式「噴射火焰」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-010",
+      "pack": "s1",
+      "nameZh": "水箭龜",
+      "nameEn": "Mega Blastoise",
+      "emoji": "🐢",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 6,
+      "energy": 124,
+      "gradeTier": "gold-star",
+      "price": [
+        1200,
+        2500
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Blastoise"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": true,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "超級進化｜水屬性招式「水炮」",
+      "unconfirmed": true
+    },
+    {
+      "num": "1-1-011",
+      "pack": "s1",
+      "nameZh": "水伊布",
+      "nameEn": "Vaporeon",
+      "emoji": "💧",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 5,
+      "energy": 100,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Vaporeon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的水屬性進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-012",
+      "pack": "s1",
+      "nameZh": "火伊布",
+      "nameEn": "Flareon",
+      "emoji": "🔥",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 5,
+      "energy": 108,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Flareon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的火屬性進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-013",
+      "pack": "s1",
+      "nameZh": "月亮伊布",
+      "nameEn": "Umbreon",
+      "emoji": "🌙",
+      "labelZh": "",
+      "types": [
+        "dark"
+      ],
+      "grade": 5,
+      "energy": 112,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Umbreon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的惡屬性進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-014",
+      "pack": "s1",
+      "nameZh": "冰伊布",
+      "nameEn": "Glaceon",
+      "emoji": "❄️",
+      "labelZh": "",
+      "types": [
+        "ice"
+      ],
+      "grade": 5,
+      "energy": 114,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Glaceon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的冰屬性進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-015",
+      "pack": "s1",
+      "nameZh": "大比鳥",
+      "nameEn": "Pidgeot",
+      "emoji": "🦅",
+      "labelZh": "",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "grade": 5,
+      "energy": 100,
+      "gradeTier": "gold-star",
+      "price": [
+        350,
+        700
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Pidgeot"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "鳥寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-016",
+      "pack": "s1",
+      "nameZh": "耿鬼",
+      "nameEn": "Gengar",
+      "emoji": "👻",
+      "labelZh": "",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "grade": 5,
+      "energy": 108,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Gengar"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "影子寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-017",
+      "pack": "s1",
+      "nameZh": "風速狗",
+      "nameEn": "Arcanine",
+      "emoji": "🐕",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 5,
+      "energy": 114,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Arcanine"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "傳說中的寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-018",
+      "pack": "s1",
+      "nameZh": "超甲狂犀",
+      "nameEn": "Rhyperior",
+      "emoji": "🦏",
+      "labelZh": "",
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "grade": 5,
+      "energy": 110,
+      "gradeTier": "gold-star",
+      "price": [
+        350,
+        700
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Rhyperior"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "鑽地寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-019",
+      "pack": "s1",
+      "nameZh": "皮卡丘",
+      "nameEn": "Pikachu (Gigantamax)",
+      "emoji": "⚡",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 5,
+      "energy": 98,
+      "gradeTier": "gold-star",
+      "price": [
+        500,
+        1000
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Pikachu"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "可使用「極巨閃電」",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-020",
+      "pack": "s1",
+      "nameZh": "沙漠蜻蜓",
+      "nameEn": "Flygon",
+      "emoji": "🐉",
+      "labelZh": "",
+      "types": [
+        "ground",
+        "dragon"
+      ],
+      "grade": 5,
+      "energy": 114,
+      "gradeTier": "gold-star",
+      "price": [
+        350,
+        700
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Flygon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "沙漠精靈寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-021",
+      "pack": "s1",
+      "nameZh": "轟擂金剛猩",
+      "nameEn": "Rillaboom (G-Max)",
+      "emoji": "🦍",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 5,
+      "energy": 108,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Rillaboom"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾草御三家頂點｜可超極巨化",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-022",
+      "pack": "s1",
+      "nameZh": "閃焰王牌",
+      "nameEn": "Cinderace (G-Max)",
+      "emoji": "🐰",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 5,
+      "energy": 108,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Cinderace"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾火御三家頂點｜可超極巨化",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-023",
+      "pack": "s1",
+      "nameZh": "千面避役",
+      "nameEn": "Inteleon (G-Max)",
+      "emoji": "💧",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 5,
+      "energy": 108,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Inteleon"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾水御三家頂點｜可超極巨化",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-024",
+      "pack": "s1",
+      "nameZh": "堵攔熊",
+      "nameEn": "Obstagoon",
+      "emoji": "🦡",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "grade": 5,
+      "energy": 112,
+      "gradeTier": "gold-star",
+      "price": [
+        350,
+        700
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Obstagoon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾直衝熊的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-025",
+      "pack": "s1",
+      "nameZh": "凱路迪歐",
+      "nameEn": "Keldeo",
+      "emoji": "🦄",
+      "labelZh": "",
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "grade": 5,
+      "energy": 112,
+      "gradeTier": "gold-star",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Keldeo"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "神奇寶貝劍奇傳｜幻之寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-026",
+      "pack": "s1",
+      "nameZh": "新葉喵",
+      "nameEn": "Sprigatito",
+      "emoji": "🌿",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Sprigatito"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "帕底亞草御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-027",
+      "pack": "s1",
+      "nameZh": "蒂蕾喵",
+      "nameEn": "Floragato",
+      "emoji": "🌿",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Floragato"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "新葉喵的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-028",
+      "pack": "s1",
+      "nameZh": "呆火鱷",
+      "nameEn": "Fuecoco",
+      "emoji": "🔥",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Fuecoco"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "帕底亞火御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-029",
+      "pack": "s1",
+      "nameZh": "炙燙鱷",
+      "nameEn": "Crocalor",
+      "emoji": "🔥",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Crocalor"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "呆火鱷的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-030",
+      "pack": "s1",
+      "nameZh": "潤水鴨",
+      "nameEn": "Quaxly",
+      "emoji": "🦆",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Quaxly"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "帕底亞水御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-031",
+      "pack": "s1",
+      "nameZh": "湧躍鴨",
+      "nameEn": "Quaxwell",
+      "emoji": "🦆",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Quaxwell"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "潤水鴨的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-032",
+      "pack": "s1",
+      "nameZh": "敲音猴",
+      "nameEn": "Grookey",
+      "emoji": "🐒",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Grookey"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾草御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-033",
+      "pack": "s1",
+      "nameZh": "啪咚猴",
+      "nameEn": "Thwackey",
+      "emoji": "🥁",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Thwackey"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "敲音猴的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-034",
+      "pack": "s1",
+      "nameZh": "轟擂金剛猩",
+      "nameEn": "Rillaboom",
+      "emoji": "🦍",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 4,
+      "energy": 118,
+      "gradeTier": "normal-4",
+      "price": [
+        80,
+        180
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Rillaboom"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾草御三家頂點（★4 一般版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-035",
+      "pack": "s1",
+      "nameZh": "炎兔兒",
+      "nameEn": "Scorbunny",
+      "emoji": "🐰",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Scorbunny"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾火御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-036",
+      "pack": "s1",
+      "nameZh": "騰蹴小將",
+      "nameEn": "Raboot",
+      "emoji": "🐰",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Raboot"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "炎兔兒的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-037",
+      "pack": "s1",
+      "nameZh": "閃焰王牌",
+      "nameEn": "Cinderace",
+      "emoji": "🐰",
+      "labelZh": "",
+      "types": [
+        "fire"
+      ],
+      "grade": 4,
+      "energy": 118,
+      "gradeTier": "normal-4",
+      "price": [
+        80,
+        180
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Cinderace"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾火御三家頂點（★4 一般版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-038",
+      "pack": "s1",
+      "nameZh": "淚眼蜥",
+      "nameEn": "Sobble",
+      "emoji": "💧",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 4,
+      "energy": 80,
+      "gradeTier": "normal-4",
+      "price": [
+        60,
+        150
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Sobble"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾水御三家初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-039",
+      "pack": "s1",
+      "nameZh": "變澀蜥",
+      "nameEn": "Drizzile",
+      "emoji": "💧",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 4,
+      "energy": 105,
+      "gradeTier": "normal-4",
+      "price": [
+        70,
+        160
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Drizzile"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "淚眼蜥的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-040",
+      "pack": "s1",
+      "nameZh": "千面避役",
+      "nameEn": "Inteleon",
+      "emoji": "🦎",
+      "labelZh": "",
+      "types": [
+        "water"
+      ],
+      "grade": 4,
+      "energy": 118,
+      "gradeTier": "normal-4",
+      "price": [
+        80,
+        180
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Inteleon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾水御三家頂點（★4 一般版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-041",
+      "pack": "s1",
+      "nameZh": "咚咚鼠",
+      "nameEn": "Pawmi",
+      "emoji": "🐭",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 3,
+      "energy": 60,
+      "gradeTier": "normal-3",
+      "price": [
+        25,
+        70
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Pawmi"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "帕底亞地區寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-042",
+      "pack": "s1",
+      "nameZh": "皮卡丘",
+      "nameEn": "Pikachu",
+      "emoji": "⚡",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 3,
+      "energy": 80,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Pikachu"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "吉祥物（★3 一般版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-043",
+      "pack": "s1",
+      "nameZh": "雷丘",
+      "nameEn": "Raichu",
+      "emoji": "⚡",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 3,
+      "energy": 90,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Raichu"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "皮卡丘的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-044",
+      "pack": "s1",
+      "nameZh": "伊布",
+      "nameEn": "Eevee",
+      "emoji": "🦊",
+      "labelZh": "",
+      "types": [
+        "normal"
+      ],
+      "grade": 3,
+      "energy": 70,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Eevee"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "進化寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-045",
+      "pack": "s1",
+      "nameZh": "雷伊布",
+      "nameEn": "Jolteon",
+      "emoji": "⚡",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 3,
+      "energy": 85,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Jolteon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的電屬性進化型（★3 版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-046",
+      "pack": "s1",
+      "nameZh": "太陽伊布",
+      "nameEn": "Espeon",
+      "emoji": "☀️",
+      "labelZh": "",
+      "types": [
+        "psychic"
+      ],
+      "grade": 3,
+      "energy": 88,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Espeon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的超能屬性進化型（★3 版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-047",
+      "pack": "s1",
+      "nameZh": "葉伊布",
+      "nameEn": "Leafeon",
+      "emoji": "🍃",
+      "labelZh": "",
+      "types": [
+        "grass"
+      ],
+      "grade": 3,
+      "energy": 88,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Leafeon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的草屬性進化型（★3 版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-048",
+      "pack": "s1",
+      "nameZh": "仙子伊布",
+      "nameEn": "Sylveon",
+      "emoji": "🎀",
+      "labelZh": "",
+      "types": [
+        "fairy"
+      ],
+      "grade": 3,
+      "energy": 88,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Sylveon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伊布的妖精屬性進化型（★3 版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-049",
+      "pack": "s1",
+      "nameZh": "狃拉",
+      "nameEn": "Sneasel",
+      "emoji": "🐱",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "grade": 3,
+      "energy": 75,
+      "gradeTier": "normal-3",
+      "price": [
+        30,
+        80
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Sneasel"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "瑪狃拉的初級",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-050",
+      "pack": "s1",
+      "nameZh": "瑪狃拉",
+      "nameEn": "Weavile",
+      "emoji": "🐱",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "grade": 3,
+      "energy": 95,
+      "gradeTier": "normal-3",
+      "price": [
+        40,
+        100
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Weavile"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "狃拉的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-051",
+      "pack": "s1",
+      "nameZh": "泥偶小人",
+      "nameEn": "Baltoy",
+      "emoji": "🪆",
+      "labelZh": "",
+      "types": [
+        "ground",
+        "psychic"
+      ],
+      "grade": 2,
+      "energy": 40,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Baltoy"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "土偶寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-052",
+      "pack": "s1",
+      "nameZh": "泥偶巨人",
+      "nameEn": "Claydol",
+      "emoji": "🪆",
+      "labelZh": "",
+      "types": [
+        "ground",
+        "psychic"
+      ],
+      "grade": 2,
+      "energy": 60,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Claydol"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "泥偶小人的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-053",
+      "pack": "s1",
+      "nameZh": "呆呆獸",
+      "nameEn": "Slowpoke",
+      "emoji": "🦥",
+      "labelZh": "",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "grade": 2,
+      "energy": 45,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Slowpoke"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "遲鈍寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-054",
+      "pack": "s1",
+      "nameZh": "呆殼獸",
+      "nameEn": "Slowbro",
+      "emoji": "🦥",
+      "labelZh": "",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "grade": 2,
+      "energy": 65,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Slowbro"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "呆呆獸的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-055",
+      "pack": "s1",
+      "nameZh": "泥驢仔",
+      "nameEn": "Mudbray",
+      "emoji": "🐴",
+      "labelZh": "",
+      "types": [
+        "ground"
+      ],
+      "grade": 2,
+      "energy": 40,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Mudbray"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "驢寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-056",
+      "pack": "s1",
+      "nameZh": "重泥挽馬",
+      "nameEn": "Mudsdale",
+      "emoji": "🐴",
+      "labelZh": "",
+      "types": [
+        "ground"
+      ],
+      "grade": 2,
+      "energy": 60,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Mudsdale"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "泥驢仔的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-057",
+      "pack": "s1",
+      "nameZh": "伽勒爾蛇紋熊",
+      "nameEn": "Galarian Zigzagoon",
+      "emoji": "🦡",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "grade": 2,
+      "energy": 35,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Zigzagoon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾地區型態",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-058",
+      "pack": "s1",
+      "nameZh": "伽勒爾直衝熊",
+      "nameEn": "Galarian Linoone",
+      "emoji": "🦡",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "grade": 2,
+      "energy": 55,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Linoone"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾蛇紋熊的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-059",
+      "pack": "s1",
+      "nameZh": "堵攔熊",
+      "nameEn": "Obstagoon",
+      "emoji": "🦡",
+      "labelZh": "",
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "grade": 2,
+      "energy": 70,
+      "gradeTier": "normal-2",
+      "price": [
+        25,
+        70
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Obstagoon"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾直衝熊的進化型（★2 版）",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-060",
+      "pack": "s1",
+      "nameZh": "強顎雞母蟲",
+      "nameEn": "Grubbin",
+      "emoji": "🪲",
+      "labelZh": "",
+      "types": [
+        "bug"
+      ],
+      "grade": 2,
+      "energy": 35,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Grubbin"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "幼蟲寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-061",
+      "pack": "s1",
+      "nameZh": "蟲電寶",
+      "nameEn": "Charjabug",
+      "emoji": "🪲",
+      "labelZh": "",
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "grade": 2,
+      "energy": 50,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Charjabug"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "強顎雞母蟲的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-062",
+      "pack": "s1",
+      "nameZh": "鍬農炮蟲",
+      "nameEn": "Vikavolt",
+      "emoji": "🪲",
+      "labelZh": "",
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "grade": 2,
+      "energy": 65,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Vikavolt"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "蟲電寶的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-063",
+      "pack": "s1",
+      "nameZh": "嘟嘟",
+      "nameEn": "Doduo",
+      "emoji": "🐦",
+      "labelZh": "",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "grade": 2,
+      "energy": 40,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Doduo"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "雙鳥寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-064",
+      "pack": "s1",
+      "nameZh": "嘟嘟利",
+      "nameEn": "Dodrio",
+      "emoji": "🐦",
+      "labelZh": "",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "grade": 2,
+      "energy": 60,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Dodrio"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "嘟嘟的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-065",
+      "pack": "s1",
+      "nameZh": "幼棉棉",
+      "nameEn": "Cottonee",
+      "emoji": "🌸",
+      "labelZh": "",
+      "types": [
+        "grass",
+        "fairy"
+      ],
+      "grade": 2,
+      "energy": 40,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Cottonee"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "棉籽寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-066",
+      "pack": "s1",
+      "nameZh": "白蓬蓬",
+      "nameEn": "Whimsicott",
+      "emoji": "🌸",
+      "labelZh": "",
+      "types": [
+        "grass",
+        "fairy"
+      ],
+      "grade": 2,
+      "energy": 60,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Whimsicott"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "幼棉棉的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-067",
+      "pack": "s1",
+      "nameZh": "爆焰龜獸",
+      "nameEn": "Turtonator",
+      "emoji": "🐢",
+      "labelZh": "",
+      "types": [
+        "fire",
+        "dragon"
+      ],
+      "grade": 2,
+      "energy": 65,
+      "gradeTier": "normal-2",
+      "price": [
+        25,
+        70
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Turtonator"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "爆裂寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-068",
+      "pack": "s1",
+      "nameZh": "古月鳥",
+      "nameEn": "Sigilyph",
+      "emoji": "🦅",
+      "labelZh": "",
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "grade": 2,
+      "energy": 60,
+      "gradeTier": "normal-2",
+      "price": [
+        20,
+        60
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Sigilyph"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "阻擋寶可夢",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-069",
+      "pack": "s1",
+      "nameZh": "雪吞蟲",
+      "nameEn": "Snom",
+      "emoji": "🪱",
+      "labelZh": "",
+      "types": [
+        "ice",
+        "bug"
+      ],
+      "grade": 2,
+      "energy": 40,
+      "gradeTier": "normal-2",
+      "price": [
+        15,
+        50
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Snom"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "伽勒爾雪蟲",
+      "unconfirmed": false
+    },
+    {
+      "num": "1-1-070",
+      "pack": "s1",
+      "nameZh": "雪絨蛾",
+      "nameEn": "Frosmoth",
+      "emoji": "🪲",
+      "labelZh": "",
+      "types": [
+        "ice",
+        "bug"
+      ],
+      "grade": 2,
+      "energy": 65,
+      "gradeTier": "normal-2",
+      "price": [
+        25,
+        70
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Frosmoth"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "雪吞蟲的進化型",
+      "unconfirmed": false
+    },
+    {
+      "num": "R-1-1",
+      "pack": "s1",
+      "nameZh": "超級皮卡丘",
+      "nameEn": "Pikachu",
+      "emoji": "⚡",
+      "labelZh": "",
+      "types": [
+        "electric"
+      ],
+      "grade": 1,
+      "energy": 96,
+      "gradeTier": "featured",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Pikachu"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "精選 MEZASTAR 卡匣｜可極巨化",
+      "unconfirmed": false
+    },
+    {
+      "num": "R-1-2",
+      "pack": "s1",
+      "nameZh": "超級路卡利歐",
+      "nameEn": "Lucario",
+      "emoji": "🥋",
+      "labelZh": "",
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "grade": 1,
+      "energy": 102,
+      "gradeTier": "featured",
+      "price": [
+        400,
+        800
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Lucario"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "精選 MEZASTAR 卡匣｜可極巨化",
+      "unconfirmed": false
+    },
+    {
+      "num": "R-1-3",
+      "pack": "s1",
+      "nameZh": "超級卡比獸",
+      "nameEn": "Snorlax",
+      "emoji": "🐻",
+      "labelZh": "",
+      "types": [
+        "normal"
+      ],
+      "grade": 1,
+      "energy": 104,
+      "gradeTier": "featured",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 1,
+      "species": [
+        "Snorlax"
+      ],
+      "mechanics": {
+        "gigantamax": true,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "精選 MEZASTAR 卡匣｜可極巨化",
+      "unconfirmed": false
+    }
+  ]
+}

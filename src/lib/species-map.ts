@@ -64,8 +64,9 @@ export const DUAL_TAG_SPLITS: Readonly<Record<string, readonly string[]>> = {
  */
 export function deriveSpecies(enName: string): string[] {
   const trimmed = enName.trim();
-  if (trimmed in DUAL_TAG_SPLITS) {
-    return [...DUAL_TAG_SPLITS[trimmed]];
+  const dual = DUAL_TAG_SPLITS[trimmed];
+  if (dual) {
+    return [...dual];
   }
   // Strip parenthetical forme descriptors, e.g. "Toxtricity (Amped)".
   let n = trimmed.replace(/\s*\(.*?\)\s*/g, "").trim();
@@ -86,12 +87,13 @@ export function deriveSpecies(enName: string): string[] {
  */
 export function deriveSingleSpecies(enName: string): string {
   const out = deriveSpecies(enName);
-  if (out.length !== 1) {
+  const [first] = out;
+  if (out.length !== 1 || first === undefined) {
     throw new Error(
       `deriveSingleSpecies: "${enName}" maps to ${out.length} species (${out.join(", ")}); use deriveSpecies().`,
     );
   }
-  return out[0];
+  return first;
 }
 
 /**
