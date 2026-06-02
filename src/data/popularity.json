@@ -1,0 +1,1815 @@
+{
+  "Abomasnow": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 460,
+    "gen": 4
+  },
+  "Abra": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 63,
+    "gen": 1
+  },
+  "Aggron": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Hoenn steel",
+    "dex": 306,
+    "gen": 3
+  },
+  "Alakazam": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Classic Gen-1 psychic",
+    "dex": 65,
+    "gen": 1
+  },
+  "Alcremie": {
+    "score": 5,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Galar #5",
+    "dex": 869,
+    "gen": 8
+  },
+  "Appletun": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 842,
+    "gen": 8
+  },
+  "Arcanine": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Highly popular Gen-1 fire",
+    "dex": 59,
+    "gen": 1
+  },
+  "Arceus": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Creation legendary; high recognition",
+    "dex": 493,
+    "gen": 4
+  },
+  "Arctibax": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 997,
+    "gen": 9
+  },
+  "Axew": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 610,
+    "gen": 5
+  },
+  "Baltoy": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 343,
+    "gen": 3
+  },
+  "Baxcalibur": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Paldea pseudo-legend",
+    "dex": 998,
+    "gen": 9
+  },
+  "Bayleef": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 153,
+    "gen": 2
+  },
+  "Beldum": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 374,
+    "gen": 3
+  },
+  "Blastoise": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 9,
+    "gen": 1
+  },
+  "Blaziken": {
+    "score": 8,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Hoenn #5; popular starter final",
+    "dex": 257,
+    "gen": 3
+  },
+  "Boltund": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 836,
+    "gen": 8
+  },
+  "Bronzong": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 437,
+    "gen": 4
+  },
+  "Bronzor": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 436,
+    "gen": 4
+  },
+  "Buizel": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 418,
+    "gen": 4
+  },
+  "Buzzwole": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Ultra Beast",
+    "dex": 794,
+    "gen": 7
+  },
+  "Calyrex": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Crown Tundra legendary (incl. riders)",
+    "dex": 898,
+    "gen": 8
+  },
+  "Carkol": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 838,
+    "gen": 8
+  },
+  "Ceruledge": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Paldea fire/ghost",
+    "dex": 937,
+    "gen": 9
+  },
+  "Chandelure": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Unova #1",
+    "dex": 609,
+    "gen": 5
+  },
+  "Charcadet": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 935,
+    "gen": 9
+  },
+  "Charizard": {
+    "score": 10,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #4; franchise icon",
+    "dex": 6,
+    "gen": 1
+  },
+  "Charjabug": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 737,
+    "gen": 7
+  },
+  "Chikorita": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 152,
+    "gen": 2
+  },
+  "Chimchar": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 390,
+    "gen": 4
+  },
+  "Cinderace": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Galar starter final",
+    "dex": 815,
+    "gen": 8
+  },
+  "Claydol": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 344,
+    "gen": 3
+  },
+  "Coalossal": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 839,
+    "gen": 8
+  },
+  "Combusken": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 256,
+    "gen": 3
+  },
+  "Copperajah": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 879,
+    "gen": 8
+  },
+  "Corviknight": {
+    "score": 6,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Galar #3",
+    "dex": 823,
+    "gen": 8
+  },
+  "Cottonee": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 546,
+    "gen": 5
+  },
+  "Cradily": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 346,
+    "gen": 3
+  },
+  "Crocalor": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 910,
+    "gen": 9
+  },
+  "Croconaw": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 159,
+    "gen": 2
+  },
+  "Cyndaquil": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 155,
+    "gen": 2
+  },
+  "Deino": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 633,
+    "gen": 5
+  },
+  "Dhelmise": {
+    "score": 4,
+    "source": "agg",
+    "sourceNote": "Alola ghost/grass",
+    "dex": 781,
+    "gen": 7
+  },
+  "Dialga": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Sinnoh box legendary",
+    "dex": 483,
+    "gen": 4
+  },
+  "Dodrio": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 85,
+    "gen": 1
+  },
+  "Doduo": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 84,
+    "gen": 1
+  },
+  "Dondozo": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 977,
+    "gen": 9
+  },
+  "Dragapult": {
+    "score": 8,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Galar #1",
+    "dex": 887,
+    "gen": 8
+  },
+  "Dragonite": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Beloved Gen-1 pseudo-legendary",
+    "dex": 149,
+    "gen": 1
+  },
+  "Drakloak": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 886,
+    "gen": 8
+  },
+  "Drampa": {
+    "score": 4,
+    "source": "agg",
+    "sourceNote": "Alola normal/dragon",
+    "dex": 780,
+    "gen": 7
+  },
+  "Drednaw": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 834,
+    "gen": 8
+  },
+  "Dreepy": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 885,
+    "gen": 8
+  },
+  "Drifblim": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 426,
+    "gen": 4
+  },
+  "Drifloon": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 425,
+    "gen": 4
+  },
+  "Drizzile": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 817,
+    "gen": 8
+  },
+  "Dubwool": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 832,
+    "gen": 8
+  },
+  "Dusclops": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 356,
+    "gen": 3
+  },
+  "Dusknoir": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Sinnoh ghost final",
+    "dex": 477,
+    "gen": 4
+  },
+  "Duskull": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 355,
+    "gen": 3
+  },
+  "Eevee": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Kanto #5; perennial favorite",
+    "dex": 133,
+    "gen": 1
+  },
+  "Electabuzz": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 125,
+    "gen": 1
+  },
+  "Electivire": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Sinnoh electric final",
+    "dex": 466,
+    "gen": 4
+  },
+  "Elekid": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 239,
+    "gen": 2
+  },
+  "Empoleon": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Sinnoh starter final",
+    "dex": 395,
+    "gen": 4
+  },
+  "Entei": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Johto legendary beast",
+    "dex": 244,
+    "gen": 2
+  },
+  "Espeon": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Popular eeveelution",
+    "dex": 196,
+    "gen": 2
+  },
+  "Eternatus": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Galar central legendary",
+    "dex": 890,
+    "gen": 8
+  },
+  "Farfetch'd": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 83,
+    "gen": 1
+  },
+  "Feraligatr": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Johto starter final",
+    "dex": 160,
+    "gen": 2
+  },
+  "Flapple": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 841,
+    "gen": 8
+  },
+  "Flareon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Eeveelution",
+    "dex": 136,
+    "gen": 1
+  },
+  "Fletchinder": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 662,
+    "gen": 6
+  },
+  "Fletchling": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 661,
+    "gen": 6
+  },
+  "Floragato": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 907,
+    "gen": 9
+  },
+  "Flygon": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Hoenn #3",
+    "dex": 330,
+    "gen": 3
+  },
+  "Fraxure": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 611,
+    "gen": 5
+  },
+  "Frigibax": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 996,
+    "gen": 9
+  },
+  "Frosmoth": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Galar ice/bug",
+    "dex": 873,
+    "gen": 8
+  },
+  "Fuecoco": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 909,
+    "gen": 9
+  },
+  "Gardevoir": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #9",
+    "dex": 282,
+    "gen": 3
+  },
+  "Gengar": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #10",
+    "dex": 94,
+    "gen": 1
+  },
+  "Glaceon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Eeveelution",
+    "dex": 471,
+    "gen": 4
+  },
+  "Goodra": {
+    "score": 6,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Kalos #5",
+    "dex": 706,
+    "gen": 6
+  },
+  "Great Tusk": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Paldea paradox",
+    "dex": 984,
+    "gen": 9
+  },
+  "Greninja": {
+    "score": 10,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #1",
+    "dex": 658,
+    "gen": 6
+  },
+  "Grimmsnarl": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Galar dark/fairy",
+    "dex": 861,
+    "gen": 8
+  },
+  "Grookey": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 810,
+    "gen": 8
+  },
+  "Grotle": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 388,
+    "gen": 4
+  },
+  "Groudon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Hoenn box legendary",
+    "dex": 383,
+    "gen": 3
+  },
+  "Grovyle": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 253,
+    "gen": 3
+  },
+  "Growlithe": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 58,
+    "gen": 1
+  },
+  "Grubbin": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 736,
+    "gen": 7
+  },
+  "Hatenna": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 856,
+    "gen": 8
+  },
+  "Hatterene": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Galar psychic/fairy",
+    "dex": 858,
+    "gen": 8
+  },
+  "Hattrem": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 857,
+    "gen": 8
+  },
+  "Haxorus": {
+    "score": 6,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Unova #5",
+    "dex": 612,
+    "gen": 5
+  },
+  "Heracross": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular bug/fighting",
+    "dex": 214,
+    "gen": 2
+  },
+  "Ho-Oh": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Johto box legendary; iconic",
+    "dex": 250,
+    "gen": 2
+  },
+  "Honchkrow": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Sinnoh dark",
+    "dex": 430,
+    "gen": 4
+  },
+  "Hydreigon": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Unova #3",
+    "dex": 635,
+    "gen": 5
+  },
+  "Impidimp": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 859,
+    "gen": 8
+  },
+  "Infernape": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Sinnoh #5",
+    "dex": 392,
+    "gen": 4
+  },
+  "Inteleon": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Galar starter final",
+    "dex": 818,
+    "gen": 8
+  },
+  "Iron Treads": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Paldea paradox",
+    "dex": 990,
+    "gen": 9
+  },
+  "Jolteon": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Popular eeveelution",
+    "dex": 135,
+    "gen": 1
+  },
+  "Jynx": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 124,
+    "gen": 1
+  },
+  "Kadabra": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 64,
+    "gen": 1
+  },
+  "Keldeo": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Mythical/swords-of-justice",
+    "dex": 647,
+    "gen": 5
+  },
+  "Kirlia": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 281,
+    "gen": 3
+  },
+  "Koffing": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 109,
+    "gen": 1
+  },
+  "Koraidon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Paldea box legendary",
+    "dex": 1007,
+    "gen": 9
+  },
+  "Kyogre": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Hoenn box legendary",
+    "dex": 382,
+    "gen": 3
+  },
+  "Kyurem": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Unova box legendary (incl. Black/White formes)",
+    "dex": 646,
+    "gen": 5
+  },
+  "Leafeon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Eeveelution",
+    "dex": 470,
+    "gen": 4
+  },
+  "Lileep": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 345,
+    "gen": 3
+  },
+  "Linoone": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 264,
+    "gen": 3
+  },
+  "Lokix": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 980,
+    "gen": 9
+  },
+  "Lucario": {
+    "score": 10,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #2",
+    "dex": 448,
+    "gen": 4
+  },
+  "Lugia": {
+    "score": 8,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Johto #3",
+    "dex": 249,
+    "gen": 2
+  },
+  "Lunala": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Alola box legendary",
+    "dex": 792,
+    "gen": 7
+  },
+  "Lunatone": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 337,
+    "gen": 3
+  },
+  "Luxio": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 404,
+    "gen": 4
+  },
+  "Luxray": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Sinnoh #3",
+    "dex": 405,
+    "gen": 4
+  },
+  "Machamp": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Classic Gen-1 fighting",
+    "dex": 68,
+    "gen": 1
+  },
+  "Machoke": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 67,
+    "gen": 1
+  },
+  "Machop": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 66,
+    "gen": 1
+  },
+  "Magby": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 240,
+    "gen": 2
+  },
+  "Magmar": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 126,
+    "gen": 1
+  },
+  "Magmortar": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Sinnoh fire final",
+    "dex": 467,
+    "gen": 4
+  },
+  "Mamoswine": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular ice/ground",
+    "dex": 473,
+    "gen": 4
+  },
+  "Marshtomp": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 259,
+    "gen": 3
+  },
+  "Meganium": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Johto starter final",
+    "dex": 154,
+    "gen": 2
+  },
+  "Meowscarada": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Paldea starter final",
+    "dex": 908,
+    "gen": 9
+  },
+  "Metagross": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Hoenn pseudo-legend",
+    "dex": 376,
+    "gen": 3
+  },
+  "Metang": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 375,
+    "gen": 3
+  },
+  "Mew": {
+    "score": 9,
+    "source": "agg",
+    "sourceNote": "Iconic mythical",
+    "dex": 151,
+    "gen": 1
+  },
+  "Mewtwo": {
+    "score": 10,
+    "source": "agg",
+    "sourceNote": "Iconic Gen-1 legendary; top search interest",
+    "dex": 150,
+    "gen": 1
+  },
+  "Mimikyu": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #3",
+    "dex": 778,
+    "gen": 7
+  },
+  "Miraidon": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Paldea box legendary",
+    "dex": 1008,
+    "gen": 9
+  },
+  "Monferno": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 391,
+    "gen": 4
+  },
+  "Morgrem": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 860,
+    "gen": 8
+  },
+  "Mudbray": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 749,
+    "gen": 7
+  },
+  "Mudkip": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 258,
+    "gen": 3
+  },
+  "Mudsdale": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Alola ground",
+    "dex": 750,
+    "gen": 7
+  },
+  "Murkrow": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 198,
+    "gen": 2
+  },
+  "Nickit": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 827,
+    "gen": 8
+  },
+  "Nidoking": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Classic Gen-1 final",
+    "dex": 34,
+    "gen": 1
+  },
+  "Nidoqueen": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Classic Gen-1 final",
+    "dex": 31,
+    "gen": 1
+  },
+  "Nidoran♀": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 29,
+    "gen": 1
+  },
+  "Nidoran♂": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 32,
+    "gen": 1
+  },
+  "Nidorina": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 30,
+    "gen": 1
+  },
+  "Nidorino": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 33,
+    "gen": 1
+  },
+  "Ninetales": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Gen-1",
+    "dex": 38,
+    "gen": 1
+  },
+  "Noibat": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 714,
+    "gen": 6
+  },
+  "Noivern": {
+    "score": 6,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Kalos #4",
+    "dex": 715,
+    "gen": 6
+  },
+  "Obstagoon": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Galar regional evo",
+    "dex": 862,
+    "gen": 8
+  },
+  "Onix": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 95,
+    "gen": 1
+  },
+  "Orbeetle": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 826,
+    "gen": 8
+  },
+  "Palkia": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Sinnoh box legendary",
+    "dex": 484,
+    "gen": 4
+  },
+  "Pawmi": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 921,
+    "gen": 9
+  },
+  "Pawmo": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 922,
+    "gen": 9
+  },
+  "Pelipper": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 279,
+    "gen": 3
+  },
+  "Pidgeot": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Gen-1 bird final",
+    "dex": 18,
+    "gen": 1
+  },
+  "Pidgeotto": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 17,
+    "gen": 1
+  },
+  "Pidgey": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 16,
+    "gen": 1
+  },
+  "Pikachu": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Kanto #4; franchise mascot",
+    "dex": 25,
+    "gen": 1
+  },
+  "Piloswine": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 221,
+    "gen": 2
+  },
+  "Pinsir": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Gen-1 bug",
+    "dex": 127,
+    "gen": 1
+  },
+  "Piplup": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 393,
+    "gen": 4
+  },
+  "Polteageist": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Galar ghost",
+    "dex": 855,
+    "gen": 8
+  },
+  "Prinplup": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 394,
+    "gen": 4
+  },
+  "Quaquaval": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Paldea starter final",
+    "dex": 914,
+    "gen": 9
+  },
+  "Quaxly": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 912,
+    "gen": 9
+  },
+  "Quaxwell": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 913,
+    "gen": 9
+  },
+  "Quilava": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 156,
+    "gen": 2
+  },
+  "Raboot": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 814,
+    "gen": 8
+  },
+  "Raichu": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 26,
+    "gen": 1
+  },
+  "Raikou": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Johto legendary beast",
+    "dex": 243,
+    "gen": 2
+  },
+  "Ralts": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 280,
+    "gen": 3
+  },
+  "Rayquaza": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #8",
+    "dex": 384,
+    "gen": 3
+  },
+  "Regice": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Hoenn regi golem",
+    "dex": 378,
+    "gen": 3
+  },
+  "Regidrago": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Crown Tundra regi",
+    "dex": 895,
+    "gen": 8
+  },
+  "Regieleki": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Crown Tundra regi",
+    "dex": 894,
+    "gen": 8
+  },
+  "Regirock": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Hoenn regi golem",
+    "dex": 377,
+    "gen": 3
+  },
+  "Registeel": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Hoenn regi golem",
+    "dex": 379,
+    "gen": 3
+  },
+  "Reshiram": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Unova box legendary",
+    "dex": 643,
+    "gen": 5
+  },
+  "Rhyperior": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Sinnoh ground/rock final",
+    "dex": 464,
+    "gen": 4
+  },
+  "Rillaboom": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Galar starter final",
+    "dex": 812,
+    "gen": 8
+  },
+  "Rolycoly": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 837,
+    "gen": 8
+  },
+  "Sandaconda": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 844,
+    "gen": 8
+  },
+  "Sandshrew": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 27,
+    "gen": 1
+  },
+  "Sandslash": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 28,
+    "gen": 1
+  },
+  "Sceptile": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Hoenn #4",
+    "dex": 254,
+    "gen": 3
+  },
+  "Scorbunny": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 813,
+    "gen": 8
+  },
+  "Shinx": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 403,
+    "gen": 4
+  },
+  "Sigilyph": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 561,
+    "gen": 5
+  },
+  "Silicobra": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 843,
+    "gen": 8
+  },
+  "Sinistea": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 854,
+    "gen": 8
+  },
+  "Sirfetch'd": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Galar regional evo",
+    "dex": 865,
+    "gen": 8
+  },
+  "Skeledirge": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Paldea starter final",
+    "dex": 911,
+    "gen": 9
+  },
+  "Slowbro": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 80,
+    "gen": 1
+  },
+  "Slowpoke": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 79,
+    "gen": 1
+  },
+  "Sneasel": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 215,
+    "gen": 2
+  },
+  "Snom": {
+    "score": 6,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Galar #4; meme favorite",
+    "dex": 872,
+    "gen": 8
+  },
+  "Snorlax": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Iconic Gen-1 favorite",
+    "dex": 143,
+    "gen": 1
+  },
+  "Snover": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 459,
+    "gen": 4
+  },
+  "Sobble": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 816,
+    "gen": 8
+  },
+  "Solgaleo": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Alola box legendary",
+    "dex": 791,
+    "gen": 7
+  },
+  "Solrock": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 338,
+    "gen": 3
+  },
+  "Sprigatito": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 906,
+    "gen": 9
+  },
+  "Stakataka": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Ultra Beast",
+    "dex": 805,
+    "gen": 7
+  },
+  "Suicune": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Johto legendary beast; fan favorite",
+    "dex": 245,
+    "gen": 2
+  },
+  "Surskit": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 283,
+    "gen": 3
+  },
+  "Swampert": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular Hoenn starter final",
+    "dex": 260,
+    "gen": 3
+  },
+  "Swinub": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 220,
+    "gen": 2
+  },
+  "Swoobat": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 528,
+    "gen": 5
+  },
+  "Sylveon": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #6",
+    "dex": 700,
+    "gen": 6
+  },
+  "Talonflame": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Popular Kalos fire/flying",
+    "dex": 663,
+    "gen": 6
+  },
+  "Thievul": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 828,
+    "gen": 8
+  },
+  "Thwackey": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 811,
+    "gen": 8
+  },
+  "Togedemaru": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Alola pikaclone",
+    "dex": 777,
+    "gen": 7
+  },
+  "Torchic": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 255,
+    "gen": 3
+  },
+  "Torterra": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Sinnoh starter final",
+    "dex": 389,
+    "gen": 4
+  },
+  "Totodile": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 158,
+    "gen": 2
+  },
+  "Toxel": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 848,
+    "gen": 8
+  },
+  "Toxtricity": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Galar #2",
+    "dex": 849,
+    "gen": 8
+  },
+  "Treecko": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 252,
+    "gen": 3
+  },
+  "Turtonator": {
+    "score": 4,
+    "source": "agg",
+    "sourceNote": "Alola fire/dragon",
+    "dex": 776,
+    "gen": 7
+  },
+  "Turtwig": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 387,
+    "gen": 4
+  },
+  "Typhlosion": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Johto #4",
+    "dex": 157,
+    "gen": 2
+  },
+  "Tyranitar": {
+    "score": 8,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Johto #2",
+    "dex": 248,
+    "gen": 2
+  },
+  "Umbreon": {
+    "score": 9,
+    "source": "poll",
+    "sourceNote": "PotY 2020 global #5",
+    "dex": 197,
+    "gen": 2
+  },
+  "Vaporeon": {
+    "score": 8,
+    "source": "agg",
+    "sourceNote": "Popular eeveelution",
+    "dex": 134,
+    "gen": 1
+  },
+  "Venusaur": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 3,
+    "gen": 1
+  },
+  "Vespiquen": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 416,
+    "gen": 4
+  },
+  "Vikavolt": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Alola bug/electric",
+    "dex": 738,
+    "gen": 7
+  },
+  "Vulpix": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 37,
+    "gen": 1
+  },
+  "Weavile": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Popular dark/ice",
+    "dex": 461,
+    "gen": 4
+  },
+  "Weezing": {
+    "score": 5,
+    "source": "default",
+    "sourceNote": "Final/standalone; default mid tier",
+    "dex": 110,
+    "gen": 1
+  },
+  "Whimsicott": {
+    "score": 5,
+    "source": "agg",
+    "sourceNote": "Popular grass/fairy",
+    "dex": 547,
+    "gen": 5
+  },
+  "Wiglett": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 960,
+    "gen": 9
+  },
+  "Wingull": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 278,
+    "gen": 3
+  },
+  "Woobat": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 527,
+    "gen": 5
+  },
+  "Wooloo": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 831,
+    "gen": 8
+  },
+  "Wugtrio": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 961,
+    "gen": 9
+  },
+  "Xerneas": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Kalos box legendary",
+    "dex": 716,
+    "gen": 6
+  },
+  "Yamper": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 835,
+    "gen": 8
+  },
+  "Yungoos": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 734,
+    "gen": 7
+  },
+  "Yveltal": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Kalos box legendary",
+    "dex": 717,
+    "gen": 6
+  },
+  "Zacian": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Galar box legendary",
+    "dex": 888,
+    "gen": 8
+  },
+  "Zamazenta": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Galar box legendary",
+    "dex": 889,
+    "gen": 8
+  },
+  "Zekrom": {
+    "score": 7,
+    "source": "agg",
+    "sourceNote": "Unova box legendary",
+    "dex": 644,
+    "gen": 5
+  },
+  "Zeraora": {
+    "score": 7,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Alola #5",
+    "dex": 807,
+    "gen": 7
+  },
+  "Zigzagoon": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 263,
+    "gen": 3
+  },
+  "Zoroark": {
+    "score": 8,
+    "source": "poll",
+    "sourceNote": "PotY 2020 Unova #2",
+    "dex": 571,
+    "gen": 5
+  },
+  "Zorua": {
+    "score": 3,
+    "source": "default",
+    "sourceNote": "Early-stage; default low tier",
+    "dex": 570,
+    "gen": 5
+  },
+  "Zweilous": {
+    "score": 4,
+    "source": "default",
+    "sourceNote": "Mid-evolution; default tier",
+    "dex": 634,
+    "gen": 5
+  },
+  "Zygarde": {
+    "score": 6,
+    "source": "agg",
+    "sourceNote": "Kalos trio legendary",
+    "dex": 718,
+    "gen": 6
+  }
+}

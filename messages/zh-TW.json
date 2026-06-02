@@ -1,0 +1,12 @@
+{
+  "common": {
+    "appName": "Mezastar 交換公平性工具",
+    "tag": "標籤",
+    "grade": "等級",
+    "energy": "寶可能量"
+  },
+  "home": {
+    "title": "Mezastar 交換公平性工具",
+    "tagline": "兩個人各挑一批標籤，看看這筆交換公不公平。"
+  }
+}

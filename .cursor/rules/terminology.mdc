@@ -1,0 +1,22 @@
+---
+description: Mezastar domain terminology — enforce in all user-facing copy and new code
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Terminology (Mezastar)
+
+Use the correct domain terms in ALL user-facing copy and ALL new identifiers:
+
+- **tag** / **Meza Tag** — never "card"
+- **Grade** (1–6) — never "rarity". Grade 5 = Star, Grade 6 = Superstar
+- **Energy** (寶可能量) — the power number on a tag; never "level"
+- **Lanes** — the 3 arcade slots; battles are 3v3
+- **Get Gauge** — the catch meter
+- **Memory Tag** — red progress-tracking tag (non-standard type)
+- **Special Tag Battle** — co-op dual-screen mode
+
+The seed dataset (community prototype) uses card/star/rarity internally. When migrating,
+field-name churn can be deferred if risky, but new code and all UI text must use the terms above.
+Account for non-standard tag types (Memory/Special), not only standard Pokémon tags.

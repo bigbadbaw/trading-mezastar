@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+
+# Production
+/dist
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Official tag images must NEVER be committed (see ADR-0003) — bucket-only
+/public/tag-images/
+/tag-images/
+*.tag.png
+*.tag.jpg
+
+# User collection backups (may contain personal photos)
+*-collection-backup.json
+pokemon_collection_*.json
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Test / coverage
+/coverage
+/playwright-report
+/test-results
+
+# Vercel
+.vercel

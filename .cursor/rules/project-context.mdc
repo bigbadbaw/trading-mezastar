@@ -1,0 +1,29 @@
+---
+description: Core project context and conventions for the Mezastar trade-fairness tool
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Project: Pokémon Mezastar Trade-Fairness Tool
+
+A tool where two people each pick a batch of Mezastar tags to trade; it sums a transparent
+point value per side and judges fairness. Audience includes kids — keep UX simple and scoring
+explainable. Standalone project, NOT part of the `pokemon-mezastar` PWA (shares data only).
+Region scope: Taiwan (zh-TW); stats identical to Japanese release.
+
+## Stack
+- Next.js 14 App Router, TypeScript **strict**, Tailwind CSS
+- Supabase (auth + Postgres for per-user collections/favorites) — login is required
+- next-intl (zh-TW + EN, all strings externalized)
+- Zod at every data boundary
+- Fuse.js for EN + zh-TW fuzzy search
+- Vercel deploy
+
+## Hard rules
+- TypeScript strict; avoid `any` (require a written justification if unavoidable).
+- Validate every external input and API response with Zod.
+- Never hardcode user-facing zh/en strings in components — use next-intl message files.
+- Never commit official Pokémon tag images to git. Images live in a storage bucket.
+- Conventional commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`).
+- Record consequential decisions as ADRs in `docs/adr/`.

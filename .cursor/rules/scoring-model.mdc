@@ -1,0 +1,25 @@
+---
+description: Scoring model rules — keep weights in config and transparent
+globs:
+  - "**/scoring*/**"
+  - "**/*scoring*"
+  - "**/*value*"
+alwaysApply: false
+---
+
+# Scoring model
+
+Point value is a **rebalanced hybrid** in a single visible config (`scoring-weights.ts`).
+All weights live in that config and must be surfaced in the UI breakdown.
+
+Dimensions and intended weight:
+- **Rarity / scarcity** — largest (Grade tier + promo/event status)
+- **Popularity** — large; franchise-wide, **species-level** (joined by species, not per-tag).
+  Source: Species Popularity Table (Notion). Captures e.g. Mewtwo > Arceus.
+- **Market price** — SMALL (~15–20%), sanity anchor only. Taiwan resale data is thin/noisy;
+  do not let it dominate. Pure-market scoring was deliberately rejected (see ADR 0002).
+- **Special-mechanic bonus** — small (Gigantamax/Mega/Z-move/Legendary/Paradox)
+
+Fairness verdict uses tolerance bands (baseline <30% fair / 30–100% richer / >2× unfair),
+tunable in config. Never hardcode magic numbers in components — read from config.
+Keep the model explainable: a parent/kid should see why a trade is flagged.

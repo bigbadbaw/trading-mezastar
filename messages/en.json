@@ -1,0 +1,12 @@
+{
+  "common": {
+    "appName": "Mezastar Trade-Fairness Tool",
+    "tag": "Tag",
+    "grade": "Grade",
+    "energy": "Energy"
+  },
+  "home": {
+    "title": "Mezastar Trade-Fairness Tool",
+    "tagline": "Two people each pick a batch of tags — see whether the trade is fair."
+  }
+}

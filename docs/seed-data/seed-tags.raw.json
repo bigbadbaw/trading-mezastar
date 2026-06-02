@@ -1,0 +1,7076 @@
+[
+  {
+    "pack": "g1",
+    "packName": {
+      "zh": "🚀 銀河 1 彈",
+      "en": "🚀 Galaxy 1"
+    },
+    "packDate": "2026 / 04 / 02",
+    "current": true,
+    "officialTotal": 73,
+    "cards": [
+      {
+        "num": "2-1-001",
+        "name": "轟擂金剛猩",
+        "enName": "Rillaboom",
+        "emoji": "🦍",
+        "types": [
+          "grass"
+        ],
+        "star": 6,
+        "atk": 170,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜可超極巨化",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "草系御三家頂點進化型｜可超極巨化（G-Max）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-002",
+        "name": "閃焰王牌",
+        "enName": "Cinderace",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 6,
+        "atk": 170,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜可超極巨化",
+        "price": [
+          600,
+          1200
+        ],
+        "note": "火系御三家頂點進化型｜可超極巨化（G-Max）｜剋制 4 屬性",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-003",
+        "name": "千面避役",
+        "enName": "Inteleon",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 6,
+        "atk": 170,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜可超極巨化",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "水系御三家頂點進化型｜可超極巨化（G-Max）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-004",
+        "name": "皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 6,
+        "atk": 170,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜可超極巨化",
+        "price": [
+          800,
+          1500
+        ],
+        "note": "皮卡丘｜可超極巨化（G-Max）｜招式「超級巨萬雷轟頂」",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-005",
+        "name": "雷公",
+        "enName": "Raikou",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 6,
+        "atk": 175,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜傳說",
+        "price": [
+          600,
+          1200
+        ],
+        "note": "城都地區三聖獸之一｜傳說寶可夢｜⚠️ ATK 待確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "2-1-006",
+        "name": "炎帝",
+        "enName": "Entei",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 6,
+        "atk": 175,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜傳說",
+        "price": [
+          600,
+          1200
+        ],
+        "note": "城都地區三聖獸之一｜傳說寶可夢｜⚠️ ATK 待確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "2-1-007",
+        "name": "水君",
+        "enName": "Suicune",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 6,
+        "atk": 175,
+        "rarity": "gold-star",
+        "label": "★6 超明星｜傳說",
+        "price": [
+          600,
+          1200
+        ],
+        "note": "城都地區三聖獸之一｜傳說寶可夢｜⚠️ ATK 待確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "2-1-008",
+        "name": "超夢",
+        "enName": "Mewtwo",
+        "emoji": "🧠",
+        "types": [
+          "psychic"
+        ],
+        "star": 6,
+        "atk": 184,
+        "rarity": "super-rare",
+        "label": "★6 稀有位｜可極巨化",
+        "price": [
+          800,
+          2000
+        ],
+        "note": "銀河彈攻擊力最高的 ★6｜傳說寶可夢｜可極巨化｜稀有位（玩家社群）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-009",
+        "name": "阿爾宙斯",
+        "enName": "Arceus",
+        "emoji": "✨",
+        "types": [
+          "normal"
+        ],
+        "star": 6,
+        "atk": 192,
+        "rarity": "super-rare",
+        "label": "越級限量｜稀有位",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "神奧神話中創造世界的神獸｜頂點稀有位（玩家社群）｜神獸",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-010",
+        "name": "洗翠索羅亞克",
+        "enName": "Hisuian Zoroark",
+        "emoji": "👻",
+        "types": [
+          "normal",
+          "ghost"
+        ],
+        "star": 6,
+        "atk": 175,
+        "rarity": "gold-star",
+        "label": "★6 超明星",
+        "price": [
+          600,
+          1200
+        ],
+        "note": "洗翠地區型態｜⚠️ ATK 待確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "2-1-011",
+        "name": "凱羅斯",
+        "enName": "Pinsir",
+        "emoji": "🪲",
+        "types": [
+          "bug"
+        ],
+        "star": 5,
+        "atk": 155,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          450
+        ],
+        "note": "鍬形蟲寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-012",
+        "name": "赫拉克羅斯",
+        "enName": "Heracross",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 158,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          450
+        ],
+        "note": "單角仙寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-013",
+        "name": "凱路迪歐",
+        "enName": "Keldeo",
+        "emoji": "🦄",
+        "types": [
+          "water",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 162,
+        "rarity": "normal-5",
+        "label": "★5 幻獸",
+        "price": [
+          350,
+          700
+        ],
+        "note": "神奇寶貝劍奇傳｜幻之寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-014",
+        "name": "瑪狃拉",
+        "enName": "Weavile",
+        "emoji": "🐱",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "star": 5,
+        "atk": 155,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          450
+        ],
+        "note": "魔牙寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-015",
+        "name": "蔥遊兵",
+        "enName": "Sirfetch'd",
+        "emoji": "🥬",
+        "types": [
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 155,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          450
+        ],
+        "note": "伽勒爾大蔥鴨的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-016",
+        "name": "尼多王",
+        "enName": "Nidoking",
+        "emoji": "👑",
+        "types": [
+          "poison",
+          "ground"
+        ],
+        "star": 5,
+        "atk": 155,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          400
+        ],
+        "note": "鑽地寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-017",
+        "name": "沙漠蜻蜓",
+        "enName": "Flygon",
+        "emoji": "🐉",
+        "types": [
+          "ground",
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 158,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          250,
+          500
+        ],
+        "note": "沙漠精靈寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-018",
+        "name": "鰓魚海獸",
+        "enName": "Dondozo",
+        "emoji": "🐟",
+        "types": [
+          "water"
+        ],
+        "star": 5,
+        "atk": 155,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          200,
+          400
+        ],
+        "note": "巨大鯰魚寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-019",
+        "name": "電擊魔獸",
+        "enName": "Electivire",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 5,
+        "atk": 150,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          180,
+          380
+        ],
+        "note": "電擊獸的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-020",
+        "name": "鴨嘴炎獸",
+        "enName": "Magmortar",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 5,
+        "atk": 150,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          180,
+          380
+        ],
+        "note": "鴨嘴火獸的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-021",
+        "name": "顫弦蠑螈",
+        "enName": "Toxtricity (Amped)",
+        "emoji": "🎸",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "star": 5,
+        "atk": 152,
+        "rarity": "normal-5",
+        "label": "★5｜高音型態",
+        "price": [
+          180,
+          380
+        ],
+        "note": "搖滾蠑螈，高音型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-022",
+        "name": "顫弦蠑螈",
+        "enName": "Toxtricity (Low Key)",
+        "emoji": "🎸",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "star": 5,
+        "atk": 152,
+        "rarity": "normal-5",
+        "label": "★5｜低音型態",
+        "price": [
+          180,
+          380
+        ],
+        "note": "搖滾蠑螈，低音型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-023",
+        "name": "雄偉牙",
+        "enName": "Great Tusk",
+        "emoji": "🦣",
+        "types": [
+          "ground",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 158,
+        "rarity": "normal-5",
+        "label": "★5｜古代Paradox",
+        "price": [
+          250,
+          500
+        ],
+        "note": "帕底亞地區古代型態寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-024",
+        "name": "鍬農炮蟲",
+        "enName": "Lokix",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "dark"
+        ],
+        "star": 5,
+        "atk": 150,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          180,
+          380
+        ],
+        "note": "請媽媽確認英文名",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-025",
+        "name": "暴雪王",
+        "enName": "Abomasnow",
+        "emoji": "❄️",
+        "types": [
+          "grass",
+          "ice"
+        ],
+        "star": 5,
+        "atk": 152,
+        "rarity": "normal-5",
+        "label": "★5",
+        "price": [
+          180,
+          380
+        ],
+        "note": "雪笠怪的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-026",
+        "name": "新葉喵",
+        "enName": "Sprigatito",
+        "emoji": "🌿",
+        "types": [
+          "grass"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞草系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-027",
+        "name": "呆火鱷",
+        "enName": "Fuecoco",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞火系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-028",
+        "name": "潤水鴨",
+        "enName": "Quaxly",
+        "emoji": "🦆",
+        "types": [
+          "water"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞水系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-029",
+        "name": "炭小侍",
+        "enName": "Charcadet",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞地區寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-030",
+        "name": "涼脊龍",
+        "enName": "Frigibax",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ice"
+        ],
+        "star": 3,
+        "atk": 92,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞地區寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-031",
+        "name": "布撥",
+        "enName": "Buizel",
+        "emoji": "🦦",
+        "types": [
+          "water"
+        ],
+        "star": 3,
+        "atk": 85,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "海獺寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-032",
+        "name": "敲音猴",
+        "enName": "Grookey",
+        "emoji": "🐒",
+        "types": [
+          "grass"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伽勒爾草系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-033",
+        "name": "啪咚猴",
+        "enName": "Thwackey",
+        "emoji": "🥁",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 115,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "敲音猴的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-034",
+        "name": "轟擂金剛猩",
+        "enName": "Rillaboom",
+        "emoji": "🦍",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "草御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-035",
+        "name": "炎兔兒",
+        "enName": "Scorbunny",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伽勒爾火系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-036",
+        "name": "騰蹴小將",
+        "enName": "Raboot",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 115,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "炎兔兒的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-037",
+        "name": "閃焰王牌",
+        "enName": "Cinderace",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "火御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-038",
+        "name": "淚眼蜥",
+        "enName": "Sobble",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3 御三家",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伽勒爾水系御三家",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-039",
+        "name": "變澀蜥",
+        "enName": "Drizzile",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 115,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "淚眼蜥的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-040",
+        "name": "千面避役",
+        "enName": "Inteleon",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "水御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-041",
+        "name": "雪笠怪",
+        "enName": "Snover",
+        "emoji": "❄️",
+        "types": [
+          "grass",
+          "ice"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "暴雪王的初級型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-042",
+        "name": "暴雪王",
+        "enName": "Abomasnow",
+        "emoji": "❄️",
+        "types": [
+          "grass",
+          "ice"
+        ],
+        "star": 4,
+        "atk": 120,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "雪笠怪的進化型（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-043",
+        "name": "飄飄球",
+        "enName": "Drifloon",
+        "emoji": "🎈",
+        "types": [
+          "ghost",
+          "flying"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "幽靈氣球寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-044",
+        "name": "隨風球",
+        "enName": "Drifblim",
+        "emoji": "🎈",
+        "types": [
+          "ghost",
+          "flying"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "飄飄球的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-045",
+        "name": "洗翠索羅亞",
+        "enName": "Hisuian Zorua",
+        "emoji": "👻",
+        "types": [
+          "normal",
+          "ghost"
+        ],
+        "star": 3,
+        "atk": 92,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          50,
+          120
+        ],
+        "note": "洗翠地區型態（幼年期）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-046",
+        "name": "洗翠索羅亞克",
+        "enName": "Hisuian Zoroark",
+        "emoji": "👻",
+        "types": [
+          "normal",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 122,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "洗翠地區型態（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-047",
+        "name": "觸手百合",
+        "enName": "Lileep",
+        "emoji": "🌺",
+        "types": [
+          "rock",
+          "grass"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3 化石",
+        "price": [
+          40,
+          100
+        ],
+        "note": "海百合化石寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-048",
+        "name": "搖籃百合",
+        "enName": "Cradily",
+        "emoji": "🌺",
+        "types": [
+          "rock",
+          "grass"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "觸手百合的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-049",
+        "name": "伽勒爾大蔥鴨",
+        "enName": "Galarian Farfetch'd",
+        "emoji": "🥬",
+        "types": [
+          "fighting"
+        ],
+        "star": 3,
+        "atk": 92,
+        "rarity": "normal-3",
+        "label": "★3 地區型態",
+        "price": [
+          50,
+          120
+        ],
+        "note": "伽勒爾地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-050",
+        "name": "蔥遊兵",
+        "enName": "Sirfetch'd",
+        "emoji": "🥬",
+        "types": [
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 122,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "伽勒爾大蔥鴨的進化型（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-051",
+        "name": "螺釘地鼠",
+        "enName": "Wiglett",
+        "emoji": "🐟",
+        "types": [
+          "water"
+        ],
+        "star": 3,
+        "atk": 85,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "帕底亞海邊地鼠",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-052",
+        "name": "龍頭地鼠",
+        "enName": "Wugtrio",
+        "emoji": "🐟",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 115,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "螺釘地鼠的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-053",
+        "name": "鴨嘴寶寶",
+        "enName": "Magby",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 85,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "鴨嘴火獸的初級型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-054",
+        "name": "鴨嘴火獸",
+        "enName": "Magmar",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "鴨嘴寶寶的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-055",
+        "name": "鴨嘴炎獸",
+        "enName": "Magmortar",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4（一般版）",
+        "price": [
+          80,
+          180
+        ],
+        "note": "鴨嘴火獸的進化型（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-056",
+        "name": "卡蒂狗",
+        "enName": "Growlithe",
+        "emoji": "🐕",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "小狗寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-057",
+        "name": "風速狗",
+        "enName": "Arcanine",
+        "emoji": "🐕",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 120,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "卡蒂狗的進化型，傳說中的寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-058",
+        "name": "毒電嬰",
+        "enName": "Toxel",
+        "emoji": "⚡",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "顫弦蠑螈的初級型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-059",
+        "name": "顫弦蠑螈",
+        "enName": "Toxtricity (Amped)",
+        "emoji": "🎸",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "star": 4,
+        "atk": 122,
+        "rarity": "normal-4",
+        "label": "★4｜高音型態",
+        "price": [
+          70,
+          160
+        ],
+        "note": "搖滾蠑螈高音型態（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-060",
+        "name": "顫弦蠑螈",
+        "enName": "Toxtricity (Low Key)",
+        "emoji": "🎸",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "star": 4,
+        "atk": 122,
+        "rarity": "normal-4",
+        "label": "★4｜低音型態",
+        "price": [
+          70,
+          160
+        ],
+        "note": "搖滾蠑螈低音型態（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-061",
+        "name": "幼棉棉",
+        "enName": "Cottonee",
+        "emoji": "🌸",
+        "types": [
+          "grass",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "label": "★2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "棉籽寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-062",
+        "name": "白蓬蓬",
+        "enName": "Whimsicott",
+        "emoji": "🌸",
+        "types": [
+          "grass",
+          "fairy"
+        ],
+        "star": 4,
+        "atk": 115,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "幼棉棉的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-063",
+        "name": "狃拉",
+        "enName": "Sneasel",
+        "emoji": "🐱",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "瑪狃拉的初級型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-064",
+        "name": "瑪狃拉",
+        "enName": "Weavile",
+        "emoji": "🐱",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "star": 4,
+        "atk": 120,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "狃拉的進化型（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-065",
+        "name": "尼多蘭",
+        "enName": "Nidoran♀",
+        "emoji": "🐰",
+        "types": [
+          "poison"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "label": "★2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "尼多家族母系初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-066",
+        "name": "尼多娜",
+        "enName": "Nidorina",
+        "emoji": "🐰",
+        "types": [
+          "poison"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "尼多家族母系進化",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-067",
+        "name": "尼多后",
+        "enName": "Nidoqueen",
+        "emoji": "👸",
+        "types": [
+          "poison",
+          "ground"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "尼多家族母系終極進化",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-068",
+        "name": "尼多朗",
+        "enName": "Nidoran♂",
+        "emoji": "🐰",
+        "types": [
+          "poison"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "label": "★2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "尼多家族公系初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-069",
+        "name": "尼多力諾",
+        "enName": "Nidorino",
+        "emoji": "🐰",
+        "types": [
+          "poison"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "label": "★3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "尼多家族公系進化",
+        "unconfirmed": false
+      },
+      {
+        "num": "2-1-070",
+        "name": "尼多王",
+        "enName": "Nidoking",
+        "emoji": "👑",
+        "types": [
+          "poison",
+          "ground"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "label": "★4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "尼多家族公系終極進化（一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-2-1",
+        "name": "超級皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 1,
+        "atk": 102,
+        "rarity": "featured",
+        "label": "復刻卡 R",
+        "price": [
+          100,
+          250
+        ],
+        "note": "銀河彈復刻卡",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-2-2",
+        "name": "超級噴火龍",
+        "enName": "Charizard",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 1,
+        "atk": 126,
+        "rarity": "featured",
+        "label": "復刻卡 R",
+        "price": [
+          120,
+          280
+        ],
+        "note": "銀河彈復刻卡",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-2-3",
+        "name": "超級耿鬼",
+        "enName": "Gengar",
+        "emoji": "👻",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "star": 1,
+        "atk": 118,
+        "rarity": "featured",
+        "label": "復刻卡 R",
+        "price": [
+          100,
+          250
+        ],
+        "note": "銀河彈復刻卡",
+        "unconfirmed": false
+      }
+    ]
+  },
+  {
+    "pack": "s4",
+    "packName": {
+      "zh": "✨ 星塵 4 彈",
+      "en": "✨ Stardust 4"
+    },
+    "packDate": "2025 / 12 / 24",
+    "current": false,
+    "officialTotal": 76,
+    "cards": [
+      {
+        "num": "1-4-001",
+        "name": "帝牙盧卡",
+        "enName": "Dialga",
+        "emoji": "🐲",
+        "types": [
+          "steel",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 180,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "神奧時間神獸｜招式「時光咆哮」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-002",
+        "name": "帕路奇亞",
+        "enName": "Palkia",
+        "emoji": "🦄",
+        "types": [
+          "water",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 180,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "神奧空間神獸｜招式「亞空裂斬」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-003",
+        "name": "哲爾尼亞斯",
+        "enName": "Xerneas (Gigantamax)",
+        "emoji": "🦌",
+        "types": [
+          "fairy"
+        ],
+        "star": 6,
+        "atk": 178,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "卡洛斯生命神獸｜招式「極巨妖精」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-004",
+        "name": "伊裴爾塔爾",
+        "enName": "Yveltal (Gigantamax)",
+        "emoji": "🦅",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "star": 6,
+        "atk": 178,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "卡洛斯毀滅神獸｜招式「極巨惡霸」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-005",
+        "name": "蕾冠王（騎白馬的樣子）",
+        "enName": "Calyrex Ice Rider",
+        "emoji": "🏇",
+        "types": [
+          "psychic",
+          "ice"
+        ],
+        "star": 6,
+        "atk": 182,
+        "rarity": "gold-star",
+        "price": [
+          1800,
+          3500
+        ],
+        "note": "伽勒爾王者寶可夢｜招式「極巨寒冰」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-006",
+        "name": "蕾冠王（騎黑馬的樣子）",
+        "enName": "Calyrex Shadow Rider",
+        "emoji": "🏇",
+        "types": [
+          "psychic",
+          "ghost"
+        ],
+        "star": 6,
+        "atk": 182,
+        "rarity": "gold-star",
+        "price": [
+          1800,
+          3500
+        ],
+        "note": "伽勒爾王者寶可夢｜招式「極巨幽魂」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-007",
+        "name": "謎擬Ｑ",
+        "enName": "Mimikyu",
+        "emoji": "👻",
+        "types": [
+          "ghost",
+          "fairy"
+        ],
+        "star": 6,
+        "atk": 142,
+        "rarity": "gold-star",
+        "price": [
+          1000,
+          2000
+        ],
+        "note": "扮裝寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-008",
+        "name": "焰白酋雷姆",
+        "enName": "White Kyurem",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ice"
+        ],
+        "star": 6,
+        "atk": 180,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "酋雷姆+萊希拉姆結合｜招式「交錯火焰」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-009",
+        "name": "闇黑酋雷姆",
+        "enName": "Black Kyurem",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ice"
+        ],
+        "star": 6,
+        "atk": 180,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "酋雷姆+捷克羅姆結合｜招式「交錯閃電」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-010",
+        "name": "烈空坐",
+        "enName": "Rayquaza",
+        "emoji": "🌪️",
+        "types": [
+          "dragon",
+          "flying"
+        ],
+        "star": 6,
+        "atk": 182,
+        "rarity": "gold-star",
+        "price": [
+          1800,
+          3500
+        ],
+        "note": "豐緣天空傳說｜招式「流星群」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-011",
+        "name": "波士可多拉",
+        "enName": "Aggron",
+        "emoji": "🦏",
+        "types": [
+          "steel",
+          "rock"
+        ],
+        "star": 5,
+        "atk": 134,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "鐵甲寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-012",
+        "name": "大竺葵",
+        "enName": "Meganium",
+        "emoji": "🌸",
+        "types": [
+          "grass"
+        ],
+        "star": 5,
+        "atk": 124,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "城都草御三家頂點｜可使用 Z 招式",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-013",
+        "name": "火爆獸",
+        "enName": "Typhlosion",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 5,
+        "atk": 126,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "城都火御三家頂點｜可使用 Z 招式",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-014",
+        "name": "大力鱷",
+        "enName": "Feraligatr",
+        "emoji": "🐊",
+        "types": [
+          "water"
+        ],
+        "star": 5,
+        "atk": 124,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "城都水御三家頂點｜可使用 Z 招式",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-015",
+        "name": "黏美龍",
+        "enName": "Goodra (Gigantamax)",
+        "emoji": "🐌",
+        "types": [
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 148,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "可極巨化｜招式「極巨龍騎」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-016",
+        "name": "鋼鎧鴉",
+        "enName": "Corviknight",
+        "emoji": "🦅",
+        "types": [
+          "flying",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伽勒爾鋼鴉",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-017",
+        "name": "死神板",
+        "enName": "Dhelmise",
+        "emoji": "⚓",
+        "types": [
+          "ghost",
+          "grass"
+        ],
+        "star": 5,
+        "atk": 120,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "海藻錨寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-018",
+        "name": "怪力",
+        "enName": "Machamp",
+        "emoji": "💪",
+        "types": [
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 122,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "腕力的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-019",
+        "name": "沙奈朵",
+        "enName": "Gardevoir",
+        "emoji": "💖",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 5,
+        "atk": 132,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "胚胎寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-020",
+        "name": "堵攔熊",
+        "enName": "Obstagoon",
+        "emoji": "🦡",
+        "types": [
+          "dark",
+          "normal"
+        ],
+        "star": 5,
+        "atk": 126,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "伽勒爾直衝熊的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-021",
+        "name": "雷吉艾勒奇",
+        "enName": "Regieleki",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 5,
+        "atk": 144,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "伽勒爾電巨像",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-022",
+        "name": "雷吉鐸拉戈",
+        "enName": "Regidrago",
+        "emoji": "🐉",
+        "types": [
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 144,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "伽勒爾龍巨像",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-023",
+        "name": "鐵轍跡",
+        "enName": "Iron Treads",
+        "emoji": "⚙️",
+        "types": [
+          "ground",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 140,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "帕底亞未來寶可夢（Paradox）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-024",
+        "name": "大王銅象",
+        "enName": "Copperajah",
+        "emoji": "🐘",
+        "types": [
+          "steel"
+        ],
+        "star": 5,
+        "atk": 118,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "伽勒爾巨象",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-025",
+        "name": "烈箭鷹",
+        "enName": "Talonflame",
+        "emoji": "🦅",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 5,
+        "atk": 120,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "卡洛斯火鷹",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-026",
+        "name": "蒼炎刃鬼",
+        "enName": "Ceruledge",
+        "emoji": "⚔️",
+        "types": [
+          "fire",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "帕底亞蒼炎之劍",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-027",
+        "name": "戟脊龍",
+        "enName": "Baxcalibur",
+        "emoji": "🐉",
+        "types": [
+          "ice",
+          "dragon"
+        ],
+        "star": 4,
+        "atk": 110,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "帕底亞冰龍頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-028",
+        "name": "菊草葉",
+        "enName": "Chikorita",
+        "emoji": "🌱",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "城都草御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-029",
+        "name": "月桂葉",
+        "enName": "Bayleef",
+        "emoji": "🌿",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "菊草葉的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-030",
+        "name": "大竺葵",
+        "enName": "Meganium",
+        "emoji": "🌸",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "城都草御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-031",
+        "name": "火球鼠",
+        "enName": "Cyndaquil",
+        "emoji": "🐭",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "城都火御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-032",
+        "name": "火岩鼠",
+        "enName": "Quilava",
+        "emoji": "🦝",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "火球鼠的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-033",
+        "name": "火爆獸",
+        "enName": "Typhlosion",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "城都火御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-034",
+        "name": "小鋸鱷",
+        "enName": "Totodile",
+        "emoji": "🐊",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "城都水御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-035",
+        "name": "藍鱷",
+        "enName": "Croconaw",
+        "emoji": "🐊",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "小鋸鱷的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-036",
+        "name": "大力鱷",
+        "enName": "Feraligatr",
+        "emoji": "🐊",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "城都水御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-037",
+        "name": "多龍梅西亞",
+        "enName": "Dreepy",
+        "emoji": "👻",
+        "types": [
+          "dragon",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 70,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伽勒爾隱形龍初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-038",
+        "name": "多龍奇",
+        "enName": "Drakloak",
+        "emoji": "👻",
+        "types": [
+          "dragon",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "多龍梅西亞的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-039",
+        "name": "多龍巴魯托",
+        "enName": "Dragapult",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "伽勒爾隱形龍頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-040",
+        "name": "來悲茶",
+        "enName": "Sinistea",
+        "emoji": "🍵",
+        "types": [
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 70,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伽勒爾紅茶寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-041",
+        "name": "怖思壺",
+        "enName": "Polteageist",
+        "emoji": "🫖",
+        "types": [
+          "ghost"
+        ],
+        "star": 3,
+        "atk": 84,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "來悲茶的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-042",
+        "name": "老翁龍",
+        "enName": "Drampa",
+        "emoji": "🐲",
+        "types": [
+          "normal",
+          "dragon"
+        ],
+        "star": 3,
+        "atk": 80,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "阿羅拉老龍寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-043",
+        "name": "電擊怪",
+        "enName": "Elekid",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 56,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "電擊獸的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-044",
+        "name": "電擊獸",
+        "enName": "Electabuzz",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 76,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "電擊怪的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-045",
+        "name": "電擊魔獸",
+        "enName": "Electivire",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "電擊獸的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-046",
+        "name": "阿羅拉六尾",
+        "enName": "Alolan Vulpix",
+        "emoji": "❄️",
+        "types": [
+          "ice"
+        ],
+        "star": 3,
+        "atk": 60,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "阿羅拉地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-047",
+        "name": "阿羅拉九尾",
+        "enName": "Alolan Ninetales",
+        "emoji": "❄️",
+        "types": [
+          "ice",
+          "fairy"
+        ],
+        "star": 3,
+        "atk": 84,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "阿羅拉六尾的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-048",
+        "name": "毛辮羊",
+        "enName": "Wooloo",
+        "emoji": "🐑",
+        "types": [
+          "normal"
+        ],
+        "star": 3,
+        "atk": 54,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "伽勒爾綿羊",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-049",
+        "name": "毛毛角羊",
+        "enName": "Dubwool",
+        "emoji": "🐑",
+        "types": [
+          "normal"
+        ],
+        "star": 3,
+        "atk": 72,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "毛辮羊的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-050",
+        "name": "單首龍",
+        "enName": "Deino",
+        "emoji": "🐉",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "star": 3,
+        "atk": 60,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "三首惡龍的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-051",
+        "name": "雙首暴龍",
+        "enName": "Zweilous",
+        "emoji": "🐲",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 78,
+        "rarity": "normal-2",
+        "price": [
+          30,
+          80
+        ],
+        "note": "單首龍的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-052",
+        "name": "三首惡龍",
+        "enName": "Hydreigon",
+        "emoji": "🐉",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 95,
+        "rarity": "normal-2",
+        "price": [
+          40,
+          100
+        ],
+        "note": "單首龍最終進化型（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-053",
+        "name": "滾滾蝙蝠",
+        "enName": "Woobat",
+        "emoji": "🦇",
+        "types": [
+          "psychic",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "心形鼻蝙蝠",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-054",
+        "name": "心蝙蝠",
+        "enName": "Swoobat",
+        "emoji": "🦇",
+        "types": [
+          "psychic",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "滾滾蝙蝠的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-055",
+        "name": "腕力",
+        "enName": "Machop",
+        "emoji": "👊",
+        "types": [
+          "fighting"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "怪力的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-056",
+        "name": "豪力",
+        "enName": "Machoke",
+        "emoji": "💪",
+        "types": [
+          "fighting"
+        ],
+        "star": 2,
+        "atk": 58,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "腕力的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-057",
+        "name": "怪力",
+        "enName": "Machamp",
+        "emoji": "💪",
+        "types": [
+          "fighting"
+        ],
+        "star": 2,
+        "atk": 75,
+        "rarity": "normal-2",
+        "price": [
+          30,
+          80
+        ],
+        "note": "怪力（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-058",
+        "name": "黑暗鴉",
+        "enName": "Murkrow",
+        "emoji": "🐦‍⬛",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 42,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "惡鴉寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-059",
+        "name": "烏鴉頭頭",
+        "enName": "Honchkrow",
+        "emoji": "🐦‍⬛",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "黑暗鴉的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-060",
+        "name": "迷布莉姆",
+        "enName": "Hatenna",
+        "emoji": "👶",
+        "types": [
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 36,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾感情寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-061",
+        "name": "提布莉姆",
+        "enName": "Hattrem",
+        "emoji": "🎩",
+        "types": [
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 52,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "迷布莉姆的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-062",
+        "name": "布莉姆溫",
+        "enName": "Hatterene",
+        "emoji": "🧙",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "提布莉姆的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-063",
+        "name": "小山豬",
+        "enName": "Swinub",
+        "emoji": "🐗",
+        "types": [
+          "ice",
+          "ground"
+        ],
+        "star": 2,
+        "atk": 36,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "長毛豬的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-064",
+        "name": "長毛豬",
+        "enName": "Piloswine",
+        "emoji": "🐗",
+        "types": [
+          "ice",
+          "ground"
+        ],
+        "star": 2,
+        "atk": 56,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "小山豬的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-065",
+        "name": "象牙豬",
+        "enName": "Mamoswine",
+        "emoji": "🦣",
+        "types": [
+          "ice",
+          "ground"
+        ],
+        "star": 2,
+        "atk": 75,
+        "rarity": "normal-2",
+        "price": [
+          30,
+          80
+        ],
+        "note": "長毛豬的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-066",
+        "name": "小箭雀",
+        "enName": "Fletchling",
+        "emoji": "🐦",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 36,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "烈箭鷹的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-067",
+        "name": "火箭雀",
+        "enName": "Fletchinder",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "小箭雀的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-068",
+        "name": "烈箭鷹",
+        "enName": "Talonflame",
+        "emoji": "🦅",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 72,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "烈箭鷹（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-069",
+        "name": "嗡蝠",
+        "enName": "Noibat",
+        "emoji": "🦇",
+        "types": [
+          "flying",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "音波龍的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-4-070",
+        "name": "音波龍",
+        "enName": "Noivern",
+        "emoji": "🦇",
+        "types": [
+          "flying",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "嗡蝠的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-4-1",
+        "name": "經典夢幻",
+        "enName": "Mew",
+        "emoji": "💫",
+        "types": [
+          "psychic"
+        ],
+        "star": 6,
+        "atk": 142,
+        "rarity": "classic",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "經典卡匣｜幻之寶可夢紀念版（K-4-1 為工具內部編號，官方僅標「經典卡匣 夢幻」）",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-4-2",
+        "name": "經典蒼響",
+        "enName": "Zacian",
+        "emoji": "⚔️",
+        "types": [
+          "fairy",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "classic",
+        "price": [
+          1000,
+          2200
+        ],
+        "note": "經典卡匣｜伽勒爾劍王紀念版（K-4-2 為工具內部編號）",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-4-3",
+        "name": "經典藏瑪然特",
+        "enName": "Zamazenta",
+        "emoji": "🛡️",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "classic",
+        "price": [
+          1000,
+          2200
+        ],
+        "note": "經典卡匣｜伽勒爾盾王紀念版（K-4-3 為工具內部編號）",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-1",
+        "name": "超級皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 1,
+        "atk": 96,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-2",
+        "name": "超級路卡利歐",
+        "enName": "Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 1,
+        "atk": 102,
+        "rarity": "featured",
+        "price": [
+          400,
+          800
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-3",
+        "name": "超級卡比獸",
+        "enName": "Snorlax",
+        "emoji": "🐻",
+        "types": [
+          "normal"
+        ],
+        "star": 1,
+        "atk": 104,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      }
+    ]
+  },
+  {
+    "pack": "s3",
+    "packName": {
+      "zh": "✨ 星塵 3 彈",
+      "en": "✨ Stardust 3"
+    },
+    "packDate": "2025 / 09 / 25",
+    "current": false,
+    "officialTotal": 76,
+    "cards": [
+      {
+        "num": "1-3-001",
+        "name": "洛奇亞",
+        "enName": "Lugia",
+        "emoji": "🐉",
+        "types": [
+          "psychic",
+          "flying"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2600
+        ],
+        "note": "城都海洋傳說｜招式「氣旋攻擊」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-002",
+        "name": "鳳王",
+        "enName": "Ho-Oh",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 6,
+        "atk": 172,
+        "rarity": "gold-star",
+        "price": [
+          1400,
+          2800
+        ],
+        "note": "城都天空傳說｜招式「神聖之火」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-003",
+        "name": "索爾迦雷歐",
+        "enName": "Solgaleo",
+        "emoji": "🦁",
+        "types": [
+          "psychic",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 172,
+        "rarity": "gold-star",
+        "price": [
+          1400,
+          2800
+        ],
+        "note": "阿羅拉太陽神獸",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-004",
+        "name": "露奈雅拉",
+        "enName": "Lunala",
+        "emoji": "🌙",
+        "types": [
+          "psychic",
+          "ghost"
+        ],
+        "star": 6,
+        "atk": 172,
+        "rarity": "gold-star",
+        "price": [
+          1400,
+          2800
+        ],
+        "note": "阿羅拉月亮神獸",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-005",
+        "name": "甲賀忍蛙",
+        "enName": "Greninja",
+        "emoji": "🥷",
+        "types": [
+          "water",
+          "dark"
+        ],
+        "star": 6,
+        "atk": 142,
+        "rarity": "gold-star",
+        "price": [
+          1000,
+          2000
+        ],
+        "note": "卡洛斯水御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-006",
+        "name": "捷拉奧拉",
+        "enName": "Zeraora",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 6,
+        "atk": 158,
+        "rarity": "gold-star",
+        "price": [
+          1100,
+          2200
+        ],
+        "note": "阿羅拉雷電獸",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-007",
+        "name": "無極汰那",
+        "enName": "Eternatus",
+        "emoji": "☢️",
+        "types": [
+          "poison",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 168,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2600
+        ],
+        "note": "伽勒爾終極反派｜傳說寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-008",
+        "name": "凱路迪歐",
+        "enName": "Keldeo (Gigantamax)",
+        "emoji": "🦄",
+        "types": [
+          "water",
+          "fighting"
+        ],
+        "star": 6,
+        "atk": 159,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2400
+        ],
+        "note": "可極巨化｜招式「極巨拳鬥」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-009",
+        "name": "長毛巨魔",
+        "enName": "Stakataka",
+        "emoji": "🗿",
+        "types": [
+          "rock",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          900,
+          1800
+        ],
+        "note": "究極異獸 UB-LAY",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-010",
+        "name": "基格爾德",
+        "enName": "Zygarde",
+        "emoji": "🐍",
+        "types": [
+          "dragon",
+          "ground"
+        ],
+        "star": 6,
+        "atk": 164,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2600
+        ],
+        "note": "卡洛斯秩序神獸",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-011",
+        "name": "蜥蜴王",
+        "enName": "Sceptile",
+        "emoji": "🦎",
+        "types": [
+          "grass"
+        ],
+        "star": 5,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "豐緣草御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-012",
+        "name": "火焰雞",
+        "enName": "Blaziken",
+        "emoji": "🐔",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "豐緣火御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-013",
+        "name": "巨沼怪",
+        "enName": "Swampert",
+        "emoji": "🐊",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "star": 5,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "豐緣水御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-014",
+        "name": "水晶燈火靈",
+        "enName": "Chandelure",
+        "emoji": "🕯️",
+        "types": [
+          "ghost",
+          "fire"
+        ],
+        "star": 5,
+        "atk": 130,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "吊燈寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-015",
+        "name": "長毛巨魔",
+        "enName": "Stakataka",
+        "emoji": "🗿",
+        "types": [
+          "rock",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 122,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "究極異獸（★5 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-016",
+        "name": "尼多后",
+        "enName": "Nidoqueen",
+        "emoji": "👸",
+        "types": [
+          "poison",
+          "ground"
+        ],
+        "star": 5,
+        "atk": 122,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "尼多家族母系終極",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-017",
+        "name": "大比鳥",
+        "enName": "Pidgeot",
+        "emoji": "🦅",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 5,
+        "atk": 118,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "鳥寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-018",
+        "name": "巨炭山",
+        "enName": "Coalossal",
+        "emoji": "🌋",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "star": 5,
+        "atk": 128,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伽勒爾火山寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-019",
+        "name": "皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "吉祥物",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-020",
+        "name": "胡地",
+        "enName": "Alakazam",
+        "emoji": "🧠",
+        "types": [
+          "psychic"
+        ],
+        "star": 5,
+        "atk": 120,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "凱西的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-021",
+        "name": "雷吉洛克",
+        "enName": "Regirock",
+        "emoji": "🪨",
+        "types": [
+          "rock"
+        ],
+        "star": 5,
+        "atk": 140,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "豐緣岩石巨像",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-022",
+        "name": "雷吉艾斯",
+        "enName": "Regice",
+        "emoji": "🧊",
+        "types": [
+          "ice"
+        ],
+        "star": 5,
+        "atk": 140,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "豐緣冰巨像",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-023",
+        "name": "雷吉斯奇魯",
+        "enName": "Registeel",
+        "emoji": "🤖",
+        "types": [
+          "steel"
+        ],
+        "star": 5,
+        "atk": 140,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "豐緣鋼巨像",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-024",
+        "name": "雄偉牙",
+        "enName": "Great Tusk",
+        "emoji": "🐘",
+        "types": [
+          "ground",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 138,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          900
+        ],
+        "note": "帕底亞古代寶可夢（Paradox）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-025",
+        "name": "雙斧戰龍",
+        "enName": "Haxorus",
+        "emoji": "🪓",
+        "types": [
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 126,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "合眾雙斧龍",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-026",
+        "name": "紅蓮鎧騎",
+        "enName": "Buzzwole",
+        "emoji": "💪",
+        "types": [
+          "bug",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 112,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "究極異獸 UB-02 Absorption（請查證）",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-3-027",
+        "name": "凍脊龍",
+        "enName": "Arctibax",
+        "emoji": "🐉",
+        "types": [
+          "ice",
+          "dragon"
+        ],
+        "star": 4,
+        "atk": 100,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "涼脊龍的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-028",
+        "name": "布土撥",
+        "enName": "Pawmo",
+        "emoji": "🐭",
+        "types": [
+          "electric",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 100,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "布撥的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-029",
+        "name": "木守宮",
+        "enName": "Treecko",
+        "emoji": "🦎",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "豐緣草御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-030",
+        "name": "森林蜥蜴",
+        "enName": "Grovyle",
+        "emoji": "🦎",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "木守宮的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-031",
+        "name": "蜥蜴王",
+        "enName": "Sceptile",
+        "emoji": "🦎",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "豐緣草御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-032",
+        "name": "火稚雞",
+        "enName": "Torchic",
+        "emoji": "🐣",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "豐緣火御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-033",
+        "name": "力壯雞",
+        "enName": "Combusken",
+        "emoji": "🐔",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "火稚雞的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-034",
+        "name": "火焰雞",
+        "enName": "Blaziken",
+        "emoji": "🐔",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "豐緣火御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-035",
+        "name": "水躍魚",
+        "enName": "Mudkip",
+        "emoji": "🐟",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "豐緣水御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-036",
+        "name": "沼躍魚",
+        "enName": "Marshtomp",
+        "emoji": "🐸",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "水躍魚的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-037",
+        "name": "巨沼怪",
+        "enName": "Swampert",
+        "emoji": "🐊",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "豐緣水御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-038",
+        "name": "鴨嘴寶寶",
+        "enName": "Magby",
+        "emoji": "🦎",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 70,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "鴨嘴火獸的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-039",
+        "name": "鴨嘴火獸",
+        "enName": "Magmar",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "鴨嘴寶寶的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-040",
+        "name": "鴨嘴炎獸",
+        "enName": "Magmortar",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "鴨嘴火獸的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-041",
+        "name": "瓦斯彈",
+        "enName": "Koffing",
+        "emoji": "💣",
+        "types": [
+          "poison"
+        ],
+        "star": 3,
+        "atk": 56,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "毒氣寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-042",
+        "name": "伽勒爾雙彈瓦斯",
+        "enName": "Galarian Weezing",
+        "emoji": "💨",
+        "types": [
+          "poison",
+          "fairy"
+        ],
+        "star": 3,
+        "atk": 80,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伽勒爾地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-043",
+        "name": "鐵啞鈴",
+        "enName": "Beldum",
+        "emoji": "🔩",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 3,
+        "atk": 60,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "巨金怪的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-044",
+        "name": "金屬怪",
+        "enName": "Metang",
+        "emoji": "🤖",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 3,
+        "atk": 78,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "鐵啞鈴的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-045",
+        "name": "巨金怪",
+        "enName": "Metagross",
+        "emoji": "🤖",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "鋼鎧合體寶可夢（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-046",
+        "name": "小貓怪",
+        "enName": "Shinx",
+        "emoji": "🐱",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 50,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "電擊寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-047",
+        "name": "勒克貓",
+        "enName": "Luxio",
+        "emoji": "🐱",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 68,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "小貓怪的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-048",
+        "name": "倫琴貓",
+        "enName": "Luxray",
+        "emoji": "🐱",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 84,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "勒克貓的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-049",
+        "name": "索偵蟲",
+        "enName": "Charjabug",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "electric"
+        ],
+        "star": 3,
+        "atk": 62,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "⚠️ 名稱請查證",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-3-050",
+        "name": "天罩蟲",
+        "enName": "Orbeetle",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "psychic"
+        ],
+        "star": 3,
+        "atk": 72,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "伽勒爾蟲寶可夢",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-3-051",
+        "name": "以歐路普",
+        "enName": "Yungoos",
+        "emoji": "🦦",
+        "types": [
+          "normal"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "⚠️ 屬性請查證",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-3-052",
+        "name": "沙包蛇",
+        "enName": "Silicobra",
+        "emoji": "🐍",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 44,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "沙土蛇寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-053",
+        "name": "沙螺蟒",
+        "enName": "Sandaconda",
+        "emoji": "🐍",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "沙包蛇的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-054",
+        "name": "小炭仔",
+        "enName": "Rolycoly",
+        "emoji": "⬛",
+        "types": [
+          "rock"
+        ],
+        "star": 2,
+        "atk": 36,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾煤炭寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-055",
+        "name": "大炭車",
+        "enName": "Carkol",
+        "emoji": "🪨",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "star": 2,
+        "atk": 56,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "小炭仔的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-056",
+        "name": "巨炭山",
+        "enName": "Coalossal",
+        "emoji": "🌋",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "star": 2,
+        "atk": 75,
+        "rarity": "normal-2",
+        "price": [
+          30,
+          80
+        ],
+        "note": "伽勒爾火山寶可夢（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-057",
+        "name": "泥驢仔",
+        "enName": "Mudbray",
+        "emoji": "🐴",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "驢寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-058",
+        "name": "重泥挽馬",
+        "enName": "Mudsdale",
+        "emoji": "🐴",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "泥驢仔的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-059",
+        "name": "搗蛋小妖",
+        "enName": "Impidimp",
+        "emoji": "👹",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾惡妖精寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-060",
+        "name": "詐唬魔",
+        "enName": "Morgrem",
+        "emoji": "👹",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "搗蛋小妖的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-061",
+        "name": "長毛巨魔",
+        "enName": "Grimmsnarl",
+        "emoji": "👺",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 75,
+        "rarity": "normal-2",
+        "price": [
+          30,
+          80
+        ],
+        "note": "詐唬魔的最終進化型（伽勒爾長毛巨魔，與 1-3-009 究極異獸不同）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-062",
+        "name": "爆焰龜獸",
+        "enName": "Turtonator",
+        "emoji": "🐢",
+        "types": [
+          "fire",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "爆裂寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-063",
+        "name": "偷兒狐",
+        "enName": "Nickit",
+        "emoji": "🦊",
+        "types": [
+          "dark"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾偷兒狐寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-064",
+        "name": "狐大盜",
+        "enName": "Thievul",
+        "emoji": "🦊",
+        "types": [
+          "dark"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "偷兒狐的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-065",
+        "name": "夜巡靈",
+        "enName": "Duskull",
+        "emoji": "💀",
+        "types": [
+          "ghost"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "彷徨夜靈的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-066",
+        "name": "彷徨夜靈",
+        "enName": "Dusclops",
+        "emoji": "👁️",
+        "types": [
+          "ghost"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "夜巡靈的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-067",
+        "name": "黑夜魔靈",
+        "enName": "Dusknoir",
+        "emoji": "🌑",
+        "types": [
+          "ghost"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "彷徨夜靈的最終進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-068",
+        "name": "牙牙",
+        "enName": "Axew",
+        "emoji": "🦷",
+        "types": [
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "雙斧戰龍的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-069",
+        "name": "斧牙龍",
+        "enName": "Fraxure",
+        "emoji": "🐲",
+        "types": [
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "牙牙的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-3-070",
+        "name": "雙斧戰龍",
+        "enName": "Haxorus",
+        "emoji": "🪓",
+        "types": [
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 72,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "雙斧戰龍（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-3-1",
+        "name": "經典妙蛙花",
+        "enName": "Venusaur",
+        "emoji": "🌺",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "star": 6,
+        "atk": 122,
+        "rarity": "classic",
+        "price": [
+          800,
+          1800
+        ],
+        "note": "經典卡匣｜關都草御三家頂點紀念版（K-3-1 為工具內部編號，官方僅標「經典卡匣 妙蛙花」）",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-3-2",
+        "name": "經典噴火龍",
+        "enName": "Charizard",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "star": 6,
+        "atk": 124,
+        "rarity": "classic",
+        "price": [
+          1000,
+          2200
+        ],
+        "note": "經典卡匣｜關都火御三家頂點紀念版（K-3-2 為工具內部編號）",
+        "unconfirmed": false
+      },
+      {
+        "num": "K-3-3",
+        "name": "經典水箭龜",
+        "enName": "Blastoise",
+        "emoji": "🐢",
+        "types": [
+          "water"
+        ],
+        "star": 6,
+        "atk": 124,
+        "rarity": "classic",
+        "price": [
+          800,
+          1800
+        ],
+        "note": "經典卡匣｜關都水御三家頂點紀念版（K-3-3 為工具內部編號）",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-1",
+        "name": "超級皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 1,
+        "atk": 96,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-2",
+        "name": "超級路卡利歐",
+        "enName": "Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 1,
+        "atk": 102,
+        "rarity": "featured",
+        "price": [
+          400,
+          800
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-3",
+        "name": "超級卡比獸",
+        "enName": "Snorlax",
+        "emoji": "🐻",
+        "types": [
+          "normal"
+        ],
+        "star": 1,
+        "atk": 104,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      }
+    ]
+  },
+  {
+    "pack": "s2",
+    "packName": {
+      "zh": "✨ 星塵 2 彈",
+      "en": "✨ Stardust 2"
+    },
+    "packDate": "2025 / 06 / 05",
+    "current": false,
+    "officialTotal": 73,
+    "cards": [
+      {
+        "num": "1-2-001",
+        "name": "蓋歐卡",
+        "enName": "Kyogre",
+        "emoji": "🌊",
+        "types": [
+          "water"
+        ],
+        "star": 6,
+        "atk": 152,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "神奧海洋傳說",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-002",
+        "name": "固拉多",
+        "enName": "Groudon",
+        "emoji": "🌋",
+        "types": [
+          "ground"
+        ],
+        "star": 6,
+        "atk": 152,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "神奧大地傳說",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-003",
+        "name": "故勒頓",
+        "enName": "Koraidon",
+        "emoji": "🐉",
+        "types": [
+          "fighting",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "帕底亞紅光神獸（寶可夢 朱）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-004",
+        "name": "皮卡丘",
+        "enName": "Pikachu (Gigantamax)",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 6,
+        "atk": 102,
+        "rarity": "gold-star",
+        "price": [
+          800,
+          1500
+        ],
+        "note": "可極巨化的吉祥物",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-005",
+        "name": "卡比獸",
+        "enName": "Snorlax (Gigantamax)",
+        "emoji": "🐻",
+        "types": [
+          "normal"
+        ],
+        "star": 6,
+        "atk": 144,
+        "rarity": "gold-star",
+        "price": [
+          900,
+          1800
+        ],
+        "note": "可極巨化｜招式「極巨攻擊」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-006",
+        "name": "杖尾鱗甲龍",
+        "enName": "Drakloak",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ghost"
+        ],
+        "star": 6,
+        "atk": 153,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2500
+        ],
+        "note": "伽勒爾龍系｜⚠️ 屬性請確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-2-007",
+        "name": "沙奈朵",
+        "enName": "Mega Gardevoir",
+        "emoji": "💖",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 6,
+        "atk": 124,
+        "rarity": "gold-star",
+        "price": [
+          1000,
+          2000
+        ],
+        "note": "超級進化｜招式「精神強念」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-008",
+        "name": "萊希拉姆",
+        "enName": "Reshiram",
+        "emoji": "🔥",
+        "types": [
+          "dragon",
+          "fire"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2500
+        ],
+        "note": "合眾真實傳說｜招式「交錯火焰」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-009",
+        "name": "捷克羅姆",
+        "enName": "Zekrom",
+        "emoji": "⚡",
+        "types": [
+          "dragon",
+          "electric"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2500
+        ],
+        "note": "合眾理想傳說｜招式「交錯閃電」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-010",
+        "name": "酋雷姆",
+        "enName": "Kyurem",
+        "emoji": "❄️",
+        "types": [
+          "dragon",
+          "ice"
+        ],
+        "star": 6,
+        "atk": 156,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2300
+        ],
+        "note": "合眾境界傳說｜招式「暴風雪」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-011",
+        "name": "雷伊布",
+        "enName": "Jolteon",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的電屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-012",
+        "name": "太陽伊布",
+        "enName": "Espeon",
+        "emoji": "☀️",
+        "types": [
+          "psychic"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的超能屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-013",
+        "name": "葉伊布",
+        "enName": "Leafeon",
+        "emoji": "🍃",
+        "types": [
+          "grass"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的草屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-014",
+        "name": "仙子伊布",
+        "enName": "Sylveon",
+        "emoji": "🎀",
+        "types": [
+          "fairy"
+        ],
+        "star": 5,
+        "atk": 116,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的妖精屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-015",
+        "name": "路卡利歐",
+        "enName": "Mega Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 118,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "超級進化｜招式「波導彈」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-016",
+        "name": "土台龜",
+        "enName": "Torterra",
+        "emoji": "🌳",
+        "types": [
+          "grass",
+          "ground"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "神奧草御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-017",
+        "name": "烈焰猴",
+        "enName": "Infernape",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "神奧火御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-018",
+        "name": "帝王拿波",
+        "enName": "Empoleon",
+        "emoji": "🐧",
+        "types": [
+          "water",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "神奧水御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-019",
+        "name": "阿羅拉九尾",
+        "enName": "Alolan Ninetales",
+        "emoji": "🦊",
+        "types": [
+          "ice",
+          "fairy"
+        ],
+        "star": 5,
+        "atk": 122,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "阿羅拉地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-020",
+        "name": "班基拉斯",
+        "enName": "Tyranitar",
+        "emoji": "🦖",
+        "types": [
+          "rock",
+          "dark"
+        ],
+        "star": 5,
+        "atk": 132,
+        "rarity": "gold-star",
+        "price": [
+          450,
+          900
+        ],
+        "note": "鎧甲寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-021",
+        "name": "巨金怪",
+        "enName": "Metagross",
+        "emoji": "🤖",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 5,
+        "atk": 132,
+        "rarity": "gold-star",
+        "price": [
+          450,
+          900
+        ],
+        "note": "鋼鎧合體寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-022",
+        "name": "蘋裹龍",
+        "enName": "Flapple",
+        "emoji": "🍎",
+        "types": [
+          "grass",
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 110,
+        "rarity": "gold-star",
+        "price": [
+          300,
+          600
+        ],
+        "note": "伽勒爾蘋果寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-023",
+        "name": "豐蜜龍",
+        "enName": "Appletun",
+        "emoji": "🍎",
+        "types": [
+          "grass",
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 110,
+        "rarity": "gold-star",
+        "price": [
+          300,
+          600
+        ],
+        "note": "伽勒爾蘋果寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-024",
+        "name": "霜奶仙",
+        "enName": "Alcremie",
+        "emoji": "🍦",
+        "types": [
+          "fairy"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "奶油寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-025",
+        "name": "暴噬龜",
+        "enName": "Drednaw",
+        "emoji": "🐢",
+        "types": [
+          "water",
+          "rock"
+        ],
+        "star": 5,
+        "atk": 104,
+        "rarity": "gold-star",
+        "price": [
+          300,
+          600
+        ],
+        "note": "伽勒爾咬合龜",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-026",
+        "name": "魔幻假面喵",
+        "enName": "Meowscarada",
+        "emoji": "🐱",
+        "types": [
+          "grass",
+          "dark"
+        ],
+        "star": 4,
+        "atk": 100,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "帕底亞草御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-027",
+        "name": "骨紋巨聲鱷",
+        "enName": "Skeledirge",
+        "emoji": "🐊",
+        "types": [
+          "fire",
+          "ghost"
+        ],
+        "star": 4,
+        "atk": 100,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "帕底亞火御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-028",
+        "name": "狂歡浪舞鴨",
+        "enName": "Quaquaval",
+        "emoji": "🦆",
+        "types": [
+          "water",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 100,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "帕底亞水御三家頂點",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-029",
+        "name": "炭小侍",
+        "enName": "Charcadet",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞地區寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-030",
+        "name": "涼脊龍",
+        "enName": "Frigibax",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "ice"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞冰龍寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-031",
+        "name": "布撥",
+        "enName": "Pawmi",
+        "emoji": "🐭",
+        "types": [
+          "electric"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞電鼠",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-032",
+        "name": "草苗龜",
+        "enName": "Turtwig",
+        "emoji": "🌱",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "神奧草御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-033",
+        "name": "樹林龜",
+        "enName": "Grotle",
+        "emoji": "🌿",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "草苗龜的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-034",
+        "name": "土台龜",
+        "enName": "Torterra",
+        "emoji": "🌳",
+        "types": [
+          "grass",
+          "ground"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "神奧草御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-035",
+        "name": "小火焰猴",
+        "enName": "Chimchar",
+        "emoji": "🐒",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "神奧火御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-036",
+        "name": "猛火猴",
+        "enName": "Monferno",
+        "emoji": "🐵",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "小火焰猴的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-037",
+        "name": "烈焰猴",
+        "enName": "Infernape",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "神奧火御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-038",
+        "name": "波加曼",
+        "enName": "Piplup",
+        "emoji": "🐧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 78,
+        "rarity": "normal-4",
+        "price": [
+          50,
+          130
+        ],
+        "note": "神奧水御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-039",
+        "name": "波皇子",
+        "enName": "Prinplup",
+        "emoji": "🐧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 90,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "波加曼的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-040",
+        "name": "帝王拿波",
+        "enName": "Empoleon",
+        "emoji": "🐧",
+        "types": [
+          "water",
+          "steel"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "神奧水御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-041",
+        "name": "水伊布",
+        "enName": "Vaporeon",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 3,
+        "atk": 80,
+        "rarity": "normal-3",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伊布水屬性（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-042",
+        "name": "火伊布",
+        "enName": "Flareon",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 3,
+        "atk": 80,
+        "rarity": "normal-3",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伊布火屬性（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-043",
+        "name": "月亮伊布",
+        "enName": "Umbreon",
+        "emoji": "🌙",
+        "types": [
+          "dark"
+        ],
+        "star": 3,
+        "atk": 82,
+        "rarity": "normal-3",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伊布惡屬性（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-044",
+        "name": "冰伊布",
+        "enName": "Glaceon",
+        "emoji": "❄️",
+        "types": [
+          "ice"
+        ],
+        "star": 3,
+        "atk": 84,
+        "rarity": "normal-3",
+        "price": [
+          50,
+          130
+        ],
+        "note": "伊布冰屬性（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-045",
+        "name": "來電汪",
+        "enName": "Yamper",
+        "emoji": "🐕",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 60,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "伽勒爾小電狗",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-046",
+        "name": "逐電犬",
+        "enName": "Boltund",
+        "emoji": "🐕",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 84,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "來電汪的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-047",
+        "name": "波波",
+        "enName": "Pidgey",
+        "emoji": "🐦",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 3,
+        "atk": 56,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "鳥寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-048",
+        "name": "比比鳥",
+        "enName": "Pidgeotto",
+        "emoji": "🐦",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 3,
+        "atk": 70,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "波波的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-049",
+        "name": "大比鳥",
+        "enName": "Pidgeot",
+        "emoji": "🦅",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "比比鳥的進化型（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-050",
+        "name": "阿羅拉穿山鼠",
+        "enName": "Alolan Sandshrew",
+        "emoji": "❄️",
+        "types": [
+          "ice",
+          "steel"
+        ],
+        "star": 3,
+        "atk": 58,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "阿羅拉地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-051",
+        "name": "阿羅拉穿山王",
+        "enName": "Alolan Sandslash",
+        "emoji": "❄️",
+        "types": [
+          "ice",
+          "steel"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "阿羅拉地區型態（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-052",
+        "name": "銅鏡怪",
+        "enName": "Bronzor",
+        "emoji": "🪞",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "銅鏡寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-053",
+        "name": "青銅鐘",
+        "enName": "Bronzong",
+        "emoji": "🔔",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "銅鏡怪的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-054",
+        "name": "大顎蟻",
+        "enName": "Vespiquen",
+        "emoji": "🐝",
+        "types": [
+          "bug",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "蜂王寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-055",
+        "name": "超音波幼蟲",
+        "enName": "Surskit",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "water"
+        ],
+        "star": 2,
+        "atk": 32,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "池塘漂寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-056",
+        "name": "沙漠蜻蜓",
+        "enName": "Flygon",
+        "emoji": "🐉",
+        "types": [
+          "ground",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "沙漠精靈寶可夢（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-057",
+        "name": "長翅鷗",
+        "enName": "Wingull",
+        "emoji": "🐦",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 38,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "海鳥寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-058",
+        "name": "大嘴鷗",
+        "enName": "Pelipper",
+        "emoji": "🐦",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "長翅鷗的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-059",
+        "name": "迷唇姐",
+        "enName": "Jynx",
+        "emoji": "💋",
+        "types": [
+          "ice",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 56,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "人形寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-060",
+        "name": "凱西",
+        "enName": "Abra",
+        "emoji": "🦊",
+        "types": [
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 42,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "超能寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-061",
+        "name": "勇基拉",
+        "enName": "Kadabra",
+        "emoji": "🧠",
+        "types": [
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 56,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "凱西的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-062",
+        "name": "胡地",
+        "enName": "Alakazam",
+        "emoji": "🧠",
+        "types": [
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "凱西最終進化（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-063",
+        "name": "飄飄球",
+        "enName": "Drifloon",
+        "emoji": "🎈",
+        "types": [
+          "ghost",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 42,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "幽靈氣球寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-064",
+        "name": "隨風球",
+        "enName": "Drifblim",
+        "emoji": "🎈",
+        "types": [
+          "ghost",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "飄飄球的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-065",
+        "name": "好壞星",
+        "enName": "Lunatone/Solrock",
+        "emoji": "🌟",
+        "types": [
+          "rock",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 48,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "⚠️ 屬性請確認",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-2-066",
+        "name": "托戈德瑪爾",
+        "enName": "Togedemaru",
+        "emoji": "⚡",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "star": 2,
+        "atk": 50,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "阿羅拉電刺蝟",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-067",
+        "name": "拉魯拉絲",
+        "enName": "Ralts",
+        "emoji": "👶",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 32,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "感情寶可夢初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-068",
+        "name": "奇魯莉安",
+        "enName": "Kirlia",
+        "emoji": "💃",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 50,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "拉魯拉絲的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-069",
+        "name": "沙奈朵",
+        "enName": "Gardevoir",
+        "emoji": "💖",
+        "types": [
+          "psychic",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "拉魯拉絲最終進化（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-2-070",
+        "name": "大岩蛇",
+        "enName": "Onix",
+        "emoji": "🐍",
+        "types": [
+          "rock",
+          "ground"
+        ],
+        "star": 2,
+        "atk": 50,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "岩石蛇寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-1",
+        "name": "超級皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 1,
+        "atk": 96,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-2",
+        "name": "超級路卡利歐",
+        "enName": "Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 1,
+        "atk": 102,
+        "rarity": "featured",
+        "price": [
+          400,
+          800
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-3",
+        "name": "超級卡比獸",
+        "enName": "Snorlax",
+        "emoji": "🐻",
+        "types": [
+          "normal"
+        ],
+        "star": 1,
+        "atk": 104,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR｜可極巨化",
+        "unconfirmed": false
+      }
+    ]
+  },
+  {
+    "pack": "s1",
+    "packName": {
+      "zh": "✨ 星塵 1 彈",
+      "en": "✨ Stardust 1"
+    },
+    "packDate": "2025 / 04 / 02",
+    "current": false,
+    "officialTotal": 73,
+    "cards": [
+      {
+        "num": "1-1-001",
+        "name": "超夢",
+        "enName": "Mewtwo",
+        "emoji": "🧠",
+        "types": [
+          "psychic"
+        ],
+        "star": 6,
+        "atk": 158,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "基因寶可夢｜傳說寶可夢｜可極巨化｜招式「精神擊破」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-002",
+        "name": "夢幻",
+        "enName": "Mew",
+        "emoji": "💫",
+        "types": [
+          "psychic"
+        ],
+        "star": 6,
+        "atk": 142,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "幻之寶可夢｜招式「精神強念」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-003",
+        "name": "蒼響",
+        "enName": "Zacian",
+        "emoji": "⚔️",
+        "types": [
+          "fairy",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "伽勒爾劍王｜傳說寶可夢｜鋼屬性招式「巨獸斬」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-004",
+        "name": "藏瑪然特",
+        "enName": "Zamazenta",
+        "emoji": "🛡️",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "伽勒爾盾王｜傳說寶可夢｜鋼屬性招式「巨獸彈」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-005",
+        "name": "班基拉斯",
+        "enName": "Tyranitar",
+        "emoji": "🦖",
+        "types": [
+          "rock",
+          "dark"
+        ],
+        "star": 6,
+        "atk": 144,
+        "rarity": "gold-star",
+        "price": [
+          1000,
+          2000
+        ],
+        "note": "鎧甲寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-006",
+        "name": "巨金怪",
+        "enName": "Metagross",
+        "emoji": "🤖",
+        "types": [
+          "steel",
+          "psychic"
+        ],
+        "star": 6,
+        "atk": 144,
+        "rarity": "gold-star",
+        "price": [
+          1000,
+          2000
+        ],
+        "note": "鋼鎧合體寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-007",
+        "name": "密勒頓",
+        "enName": "Miraidon",
+        "emoji": "🤖",
+        "types": [
+          "electric",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 162,
+        "rarity": "gold-star",
+        "price": [
+          1500,
+          3000
+        ],
+        "note": "帕底亞紫光神獸（寶可夢 紫）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-008",
+        "name": "妙蛙花",
+        "enName": "Mega Venusaur",
+        "emoji": "🌺",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "star": 6,
+        "atk": 122,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "超級進化｜草屬性招式「飛葉風暴」",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-1-009",
+        "name": "噴火龍",
+        "enName": "Mega Charizard X",
+        "emoji": "🔥",
+        "types": [
+          "fire",
+          "dragon"
+        ],
+        "star": 6,
+        "atk": 124,
+        "rarity": "gold-star",
+        "price": [
+          1300,
+          2600
+        ],
+        "note": "超級進化 X｜火屬性招式「噴射火焰」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-010",
+        "name": "水箭龜",
+        "enName": "Mega Blastoise",
+        "emoji": "🐢",
+        "types": [
+          "water"
+        ],
+        "star": 6,
+        "atk": 124,
+        "rarity": "gold-star",
+        "price": [
+          1200,
+          2500
+        ],
+        "note": "超級進化｜水屬性招式「水炮」",
+        "unconfirmed": true
+      },
+      {
+        "num": "1-1-011",
+        "name": "水伊布",
+        "enName": "Vaporeon",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 5,
+        "atk": 100,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的水屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-012",
+        "name": "火伊布",
+        "enName": "Flareon",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的火屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-013",
+        "name": "月亮伊布",
+        "enName": "Umbreon",
+        "emoji": "🌙",
+        "types": [
+          "dark"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的惡屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-014",
+        "name": "冰伊布",
+        "enName": "Glaceon",
+        "emoji": "❄️",
+        "types": [
+          "ice"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伊布的冰屬性進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-015",
+        "name": "大比鳥",
+        "enName": "Pidgeot",
+        "emoji": "🦅",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 5,
+        "atk": 100,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "鳥寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-016",
+        "name": "耿鬼",
+        "enName": "Gengar",
+        "emoji": "👻",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "影子寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-017",
+        "name": "風速狗",
+        "enName": "Arcanine",
+        "emoji": "🐕",
+        "types": [
+          "fire"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "傳說中的寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-018",
+        "name": "超甲狂犀",
+        "enName": "Rhyperior",
+        "emoji": "🦏",
+        "types": [
+          "ground",
+          "rock"
+        ],
+        "star": 5,
+        "atk": 110,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "鑽地寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-019",
+        "name": "皮卡丘",
+        "enName": "Pikachu (Gigantamax)",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 5,
+        "atk": 98,
+        "rarity": "gold-star",
+        "price": [
+          500,
+          1000
+        ],
+        "note": "可使用「極巨閃電」",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-020",
+        "name": "沙漠蜻蜓",
+        "enName": "Flygon",
+        "emoji": "🐉",
+        "types": [
+          "ground",
+          "dragon"
+        ],
+        "star": 5,
+        "atk": 114,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "沙漠精靈寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-021",
+        "name": "轟擂金剛猩",
+        "enName": "Rillaboom (G-Max)",
+        "emoji": "🦍",
+        "types": [
+          "grass"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伽勒爾草御三家頂點｜可超極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-022",
+        "name": "閃焰王牌",
+        "enName": "Cinderace (G-Max)",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伽勒爾火御三家頂點｜可超極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-023",
+        "name": "千面避役",
+        "enName": "Inteleon (G-Max)",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 5,
+        "atk": 108,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "伽勒爾水御三家頂點｜可超極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-024",
+        "name": "堵攔熊",
+        "enName": "Obstagoon",
+        "emoji": "🦡",
+        "types": [
+          "dark",
+          "normal"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          350,
+          700
+        ],
+        "note": "伽勒爾直衝熊的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-025",
+        "name": "凱路迪歐",
+        "enName": "Keldeo",
+        "emoji": "🦄",
+        "types": [
+          "water",
+          "fighting"
+        ],
+        "star": 5,
+        "atk": 112,
+        "rarity": "gold-star",
+        "price": [
+          400,
+          800
+        ],
+        "note": "神奇寶貝劍奇傳｜幻之寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-026",
+        "name": "新葉喵",
+        "enName": "Sprigatito",
+        "emoji": "🌿",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞草御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-027",
+        "name": "蒂蕾喵",
+        "enName": "Floragato",
+        "emoji": "🌿",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "新葉喵的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-028",
+        "name": "呆火鱷",
+        "enName": "Fuecoco",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞火御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-029",
+        "name": "炙燙鱷",
+        "enName": "Crocalor",
+        "emoji": "🔥",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "呆火鱷的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-030",
+        "name": "潤水鴨",
+        "enName": "Quaxly",
+        "emoji": "🦆",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "帕底亞水御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-031",
+        "name": "湧躍鴨",
+        "enName": "Quaxwell",
+        "emoji": "🦆",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "潤水鴨的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-032",
+        "name": "敲音猴",
+        "enName": "Grookey",
+        "emoji": "🐒",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "伽勒爾草御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-033",
+        "name": "啪咚猴",
+        "enName": "Thwackey",
+        "emoji": "🥁",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "敲音猴的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-034",
+        "name": "轟擂金剛猩",
+        "enName": "Rillaboom",
+        "emoji": "🦍",
+        "types": [
+          "grass"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "伽勒爾草御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-035",
+        "name": "炎兔兒",
+        "enName": "Scorbunny",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "伽勒爾火御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-036",
+        "name": "騰蹴小將",
+        "enName": "Raboot",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "炎兔兒的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-037",
+        "name": "閃焰王牌",
+        "enName": "Cinderace",
+        "emoji": "🐰",
+        "types": [
+          "fire"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "伽勒爾火御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-038",
+        "name": "淚眼蜥",
+        "enName": "Sobble",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 80,
+        "rarity": "normal-4",
+        "price": [
+          60,
+          150
+        ],
+        "note": "伽勒爾水御三家初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-039",
+        "name": "變澀蜥",
+        "enName": "Drizzile",
+        "emoji": "💧",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 105,
+        "rarity": "normal-4",
+        "price": [
+          70,
+          160
+        ],
+        "note": "淚眼蜥的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-040",
+        "name": "千面避役",
+        "enName": "Inteleon",
+        "emoji": "🦎",
+        "types": [
+          "water"
+        ],
+        "star": 4,
+        "atk": 118,
+        "rarity": "normal-4",
+        "price": [
+          80,
+          180
+        ],
+        "note": "伽勒爾水御三家頂點（★4 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-041",
+        "name": "咚咚鼠",
+        "enName": "Pawmi",
+        "emoji": "🐭",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 60,
+        "rarity": "normal-3",
+        "price": [
+          25,
+          70
+        ],
+        "note": "帕底亞地區寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-042",
+        "name": "皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 80,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "吉祥物（★3 一般版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-043",
+        "name": "雷丘",
+        "enName": "Raichu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 90,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "皮卡丘的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-044",
+        "name": "伊布",
+        "enName": "Eevee",
+        "emoji": "🦊",
+        "types": [
+          "normal"
+        ],
+        "star": 3,
+        "atk": 70,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "進化寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-045",
+        "name": "雷伊布",
+        "enName": "Jolteon",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 3,
+        "atk": 85,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伊布的電屬性進化型（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-046",
+        "name": "太陽伊布",
+        "enName": "Espeon",
+        "emoji": "☀️",
+        "types": [
+          "psychic"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伊布的超能屬性進化型（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-047",
+        "name": "葉伊布",
+        "enName": "Leafeon",
+        "emoji": "🍃",
+        "types": [
+          "grass"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伊布的草屬性進化型（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-048",
+        "name": "仙子伊布",
+        "enName": "Sylveon",
+        "emoji": "🎀",
+        "types": [
+          "fairy"
+        ],
+        "star": 3,
+        "atk": 88,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "伊布的妖精屬性進化型（★3 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-049",
+        "name": "狃拉",
+        "enName": "Sneasel",
+        "emoji": "🐱",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "star": 3,
+        "atk": 75,
+        "rarity": "normal-3",
+        "price": [
+          30,
+          80
+        ],
+        "note": "瑪狃拉的初級",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-050",
+        "name": "瑪狃拉",
+        "enName": "Weavile",
+        "emoji": "🐱",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "star": 3,
+        "atk": 95,
+        "rarity": "normal-3",
+        "price": [
+          40,
+          100
+        ],
+        "note": "狃拉的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-051",
+        "name": "泥偶小人",
+        "enName": "Baltoy",
+        "emoji": "🪆",
+        "types": [
+          "ground",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "土偶寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-052",
+        "name": "泥偶巨人",
+        "enName": "Claydol",
+        "emoji": "🪆",
+        "types": [
+          "ground",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "泥偶小人的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-053",
+        "name": "呆呆獸",
+        "enName": "Slowpoke",
+        "emoji": "🦥",
+        "types": [
+          "water",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 45,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "遲鈍寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-054",
+        "name": "呆殼獸",
+        "enName": "Slowbro",
+        "emoji": "🦥",
+        "types": [
+          "water",
+          "psychic"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "呆呆獸的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-055",
+        "name": "泥驢仔",
+        "enName": "Mudbray",
+        "emoji": "🐴",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "驢寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-056",
+        "name": "重泥挽馬",
+        "enName": "Mudsdale",
+        "emoji": "🐴",
+        "types": [
+          "ground"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "泥驢仔的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-057",
+        "name": "伽勒爾蛇紋熊",
+        "enName": "Galarian Zigzagoon",
+        "emoji": "🦡",
+        "types": [
+          "dark",
+          "normal"
+        ],
+        "star": 2,
+        "atk": 35,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾地區型態",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-058",
+        "name": "伽勒爾直衝熊",
+        "enName": "Galarian Linoone",
+        "emoji": "🦡",
+        "types": [
+          "dark",
+          "normal"
+        ],
+        "star": 2,
+        "atk": 55,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "伽勒爾蛇紋熊的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-059",
+        "name": "堵攔熊",
+        "enName": "Obstagoon",
+        "emoji": "🦡",
+        "types": [
+          "dark",
+          "normal"
+        ],
+        "star": 2,
+        "atk": 70,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "伽勒爾直衝熊的進化型（★2 版）",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-060",
+        "name": "強顎雞母蟲",
+        "enName": "Grubbin",
+        "emoji": "🪲",
+        "types": [
+          "bug"
+        ],
+        "star": 2,
+        "atk": 35,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "幼蟲寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-061",
+        "name": "蟲電寶",
+        "enName": "Charjabug",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "electric"
+        ],
+        "star": 2,
+        "atk": 50,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "強顎雞母蟲的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-062",
+        "name": "鍬農炮蟲",
+        "enName": "Vikavolt",
+        "emoji": "🪲",
+        "types": [
+          "bug",
+          "electric"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "蟲電寶的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-063",
+        "name": "嘟嘟",
+        "enName": "Doduo",
+        "emoji": "🐦",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "雙鳥寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-064",
+        "name": "嘟嘟利",
+        "enName": "Dodrio",
+        "emoji": "🐦",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "嘟嘟的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-065",
+        "name": "幼棉棉",
+        "enName": "Cottonee",
+        "emoji": "🌸",
+        "types": [
+          "grass",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "棉籽寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-066",
+        "name": "白蓬蓬",
+        "enName": "Whimsicott",
+        "emoji": "🌸",
+        "types": [
+          "grass",
+          "fairy"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "幼棉棉的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-067",
+        "name": "爆焰龜獸",
+        "enName": "Turtonator",
+        "emoji": "🐢",
+        "types": [
+          "fire",
+          "dragon"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "爆裂寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-068",
+        "name": "古月鳥",
+        "enName": "Sigilyph",
+        "emoji": "🦅",
+        "types": [
+          "psychic",
+          "flying"
+        ],
+        "star": 2,
+        "atk": 60,
+        "rarity": "normal-2",
+        "price": [
+          20,
+          60
+        ],
+        "note": "阻擋寶可夢",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-069",
+        "name": "雪吞蟲",
+        "enName": "Snom",
+        "emoji": "🪱",
+        "types": [
+          "ice",
+          "bug"
+        ],
+        "star": 2,
+        "atk": 40,
+        "rarity": "normal-2",
+        "price": [
+          15,
+          50
+        ],
+        "note": "伽勒爾雪蟲",
+        "unconfirmed": false
+      },
+      {
+        "num": "1-1-070",
+        "name": "雪絨蛾",
+        "enName": "Frosmoth",
+        "emoji": "🪲",
+        "types": [
+          "ice",
+          "bug"
+        ],
+        "star": 2,
+        "atk": 65,
+        "rarity": "normal-2",
+        "price": [
+          25,
+          70
+        ],
+        "note": "雪吞蟲的進化型",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-1",
+        "name": "超級皮卡丘",
+        "enName": "Pikachu",
+        "emoji": "⚡",
+        "types": [
+          "electric"
+        ],
+        "star": 1,
+        "atk": 96,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR 卡匣｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-2",
+        "name": "超級路卡利歐",
+        "enName": "Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 1,
+        "atk": 102,
+        "rarity": "featured",
+        "price": [
+          400,
+          800
+        ],
+        "note": "精選 MEZASTAR 卡匣｜可極巨化",
+        "unconfirmed": false
+      },
+      {
+        "num": "R-1-3",
+        "name": "超級卡比獸",
+        "enName": "Snorlax",
+        "emoji": "🐻",
+        "types": [
+          "normal"
+        ],
+        "star": 1,
+        "atk": 104,
+        "rarity": "featured",
+        "price": [
+          300,
+          600
+        ],
+        "note": "精選 MEZASTAR 卡匣｜可極巨化",
+        "unconfirmed": false
+      }
+    ]
+  },
+  {
+    "pack": "sp",
+    "packName": {
+      "zh": "🎁 特別活動卡",
+      "en": "🎁 Special Event"
+    },
+    "packDate": "官方活動限定",
+    "current": false,
+    "officialTotal": 50,
+    "cards": [
+      {
+        "num": "EV-LUC",
+        "name": "路卡利歐",
+        "enName": "Lucario",
+        "emoji": "🥋",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "star": 5,
+        "atk": 94,
+        "rarity": "special",
+        "label": "Special｜活動發放",
+        "price": [
+          200,
+          500
+        ],
+        "note": "先行體驗會限量發放（2025/3 高雄駁二+台北東森）｜⚠️ ATK 待校對",
+        "unconfirmed": true
+      },
+      {
+        "num": "EV-DRG",
+        "name": "快龍",
+        "enName": "Dragonite",
+        "emoji": "🐉",
+        "types": [
+          "dragon",
+          "flying"
+        ],
+        "star": 5,
+        "atk": 118,
+        "rarity": "special",
+        "label": "Special｜活動發放",
+        "price": [
+          200,
+          500
+        ],
+        "note": "Pokemon Center TAIPEI 特別發卡活動｜⚠️ ATK 待校對",
+        "unconfirmed": true
+      },
+      {
+        "num": "EV-MMQ",
+        "name": "謎擬Q",
+        "enName": "Mimikyu",
+        "emoji": "👻",
+        "types": [
+          "ghost",
+          "fairy"
+        ],
+        "star": 5,
+        "atk": 120,
+        "rarity": "special",
+        "label": "Special｜銀河彈上市紀念",
+        "price": [
+          300,
+          600
+        ],
+        "note": "銀河彈上市紀念贈卡活動｜⚠️ ATK 待校對",
+        "unconfirmed": true
+      }
+    ]
+  }
+]
