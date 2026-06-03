@@ -43,6 +43,18 @@ The point values are a **subjective, non-market collectability model** intended 
 make trades roughly fair for collectors and kids. They are **not** appraisals, investment
 advice, or purchasing advice.
 
+### Your data & privacy
+
+To use the collection features you sign in with your email via a one-time magic link
+(no password). Your collection data — which tags you mark as owned, wanted, or most-wanted, and
+the quantities — is stored in this project's **Supabase** database, tied to your
+email-authenticated account. Row-Level Security ensures **each row is visible only to the
+account that created it**; other signed-in users cannot read, change, or delete your
+collection. We do not store any tag images on the server tied to your account, and the market
+price figures shown are **reference-only** estimates, not data we collect from you. If you sign
+out, the local session is cleared from your browser. You can ask the maintainer (via a GitHub
+Issue) to delete your account data.
+
 ### Takedown requests
 
 If any content here constitutes copyright or trademark infringement, the rights holder may
@@ -85,6 +97,10 @@ The Pokémon Company／任天堂／Creatures Inc.／GAME FREAK inc.／株式会�
 ### 交換公平性評分
 
 點數為**主觀、非市場導向的收藏性模型**，僅用於協助收藏者與孩童進行大致公平的交換，**不**構成估價、投資或購買建議。
+
+### 你的資料與隱私
+
+使用收藏功能時，你會以電子郵件透過一次性魔法連結（magic link）登入（不需密碼）。你的收藏資料——你標記為已擁有、想要或最想要的標籤，以及數量——會儲存在本專案的 **Supabase** 資料庫中，並與你以電子郵件驗證的帳號綁定。資料列層級安全性（Row-Level Security）確保**每一筆資料只有建立它的帳號才能看見**；其他已登入的使用者無法讀取、修改或刪除你的收藏。我們不會在伺服器上儲存與你帳號綁定的任何標籤圖像，畫面上顯示的市場價格僅為**參考用**估計值，並非向你蒐集的資料。登出後，本機的登入工作階段會從你的瀏覽器清除。你可透過 GitHub Issue 聯繫維護者，要求刪除你的帳號資料。
 
 ### 移除請求
 

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 
 import { ScoreBreakdownTable } from '@/components/catalog/ScoreBreakdownTable';
 import { TypeBadge } from '@/components/catalog/TypeBadge';
+import { CollectionControls } from '@/components/collection/CollectionControls';
 import { getScoredCatalog, getScoredTag, type ScoredTag } from '@/data/catalog';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
@@ -99,6 +100,10 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
       </section>
 
       {zh && <p className="mt-2 text-sm text-slate-400">{zh}</p>}
+
+      <section className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <CollectionControls tagId={tag.tagId} />
+      </section>
 
       <section className="mt-8">
         <ScoreBreakdownTable score={score} />

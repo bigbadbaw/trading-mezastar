@@ -106,5 +106,29 @@
     "legendary": "傳說",
     "classic": "經典",
     "highAtk": "高寶可能量"
+  },
+  "auth": {
+    "loading": "…",
+    "signIn": "登入",
+    "signOut": "登出",
+    "signInTitle": "登入",
+    "signInIntro": "輸入你的電子郵件，我們會寄一條一次性的登入連結給你，不需要密碼。",
+    "emailLabel": "電子郵件",
+    "emailPlaceholder": "you@example.com",
+    "sendLink": "寄送登入連結",
+    "sending": "寄送中…",
+    "linkSent": "請查看收件匣，我們已將登入連結寄到 {email}。請在此裝置上開啟連結以完成登入。",
+    "sendError": "無法寄送連結，請確認電子郵件地址後再試一次。",
+    "backToCatalog": "返回圖鑑"
+  },
+  "collection": {
+    "statusLabel": "收藏狀態",
+    "owned": "已擁有",
+    "wanted": "想要",
+    "mostWanted": "最想要",
+    "quantity": "數量",
+    "increment": "增加數量",
+    "decrement": "減少數量",
+    "signInToTrack": "登入以記錄你的收藏"
   }
 }

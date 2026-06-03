@@ -106,5 +106,29 @@
     "legendary": "Legendary",
     "classic": "Classic",
     "highAtk": "High Energy"
+  },
+  "auth": {
+    "loading": "…",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signInTitle": "Sign in",
+    "signInIntro": "Enter your email and we'll send you a one-time sign-in link. No password needed.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "sendLink": "Send sign-in link",
+    "sending": "Sending…",
+    "linkSent": "Check your inbox — we sent a sign-in link to {email}. Open it on this device to finish signing in.",
+    "sendError": "We couldn't send the link. Check the email address and try again.",
+    "backToCatalog": "Back to catalog"
+  },
+  "collection": {
+    "statusLabel": "Collection status",
+    "owned": "Owned",
+    "wanted": "Wanted",
+    "mostWanted": "Most wanted",
+    "quantity": "Quantity",
+    "increment": "Increase quantity",
+    "decrement": "Decrease quantity",
+    "signInToTrack": "Sign in to track your collection"
   }
 }

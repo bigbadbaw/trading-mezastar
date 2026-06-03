@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { AuthStatus } from '@/components/auth/AuthStatus';
+import { CollectionProvider } from '@/components/collection/CollectionProvider';
+import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import '../globals.css';
 
@@ -30,11 +33,25 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const tCommon = await getTranslations('common');
 
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <CollectionProvider>
+            <header className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-2 sm:px-6">
+              <Link
+                href="/catalog"
+                className="inline-flex min-h-11 items-center text-sm font-semibold text-slate-900 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              >
+                {tCommon('appName')}
+              </Link>
+              <AuthStatus />
+            </header>
+            {children}
+          </CollectionProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -11,9 +11,12 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "migrate": "tsx scripts/migrate-prototype.ts"
+    "migrate": "tsx scripts/migrate-prototype.ts",
+    "gate:rls": "tsx scripts/rls-gate.mts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.107.0",
     "next": "14.2.15",
     "next-intl": "^3.26.0",
     "react": "18.3.1",
