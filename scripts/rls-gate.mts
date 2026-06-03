@@ -1,8 +1,13 @@
 /**
  * SECURITY GATE — cross-user RLS isolation proof for `collection_items`.
  *
- * Uses ONLY the public anon key and TWO REAL magic-link sessions (no
+ * Uses ONLY the public anon key and TWO REAL email-OTP sessions (no
  * service_role, no admin API). You paste the 6-digit codes from your inbox.
+ *
+ * EMAIL TEMPLATE REQUIREMENT: signInWithOtp emits whatever the project's
+ * "Magic Link" email template renders. To receive a 6-digit code (not a
+ * clickable link) the template MUST include the {{ .Token }} variable.
+ * See docs/adr or the run instructions if your inbox shows a link instead.
  *
  * Proves:
  *   1. User A can INSERT a row (auth.uid() = user_id).
@@ -80,7 +85,11 @@ async function signInViaOtp(
     options: { shouldCreateUser: true },
   });
   if (sendErr) throw new Error(`[${label}] signInWithOtp failed: ${sendErr.message}`);
-  console.log(`[${label}] code sent to ${email}. Check the inbox.`);
+  console.log(
+    `[${label}] 6-digit code sent to ${email}. Check the inbox ` +
+      `(if you see a link instead of a code, the Magic Link email template ` +
+      `is missing {{ .Token }} — see run instructions).`,
+  );
 
   const token = (await rl.question(`[${label}] paste the 6-digit code: `)).trim();
   const { data, error } = await client.auth.verifyOtp({
