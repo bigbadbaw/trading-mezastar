@@ -9,6 +9,7 @@
   "officialTotal": 73,
   "tags": [
     {
+      "tagId": "s2-1-2-001",
       "num": "1-2-001",
       "pack": "s2",
       "nameZh": "蓋歐卡",
@@ -42,6 +43,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-002",
       "num": "1-2-002",
       "pack": "s2",
       "nameZh": "固拉多",
@@ -75,6 +77,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-003",
       "num": "1-2-003",
       "pack": "s2",
       "nameZh": "故勒頓",
@@ -109,6 +112,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-004",
       "num": "1-2-004",
       "pack": "s2",
       "nameZh": "皮卡丘",
@@ -142,6 +146,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-005",
       "num": "1-2-005",
       "pack": "s2",
       "nameZh": "卡比獸",
@@ -175,6 +180,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-006",
       "num": "1-2-006",
       "pack": "s2",
       "nameZh": "杖尾鱗甲龍",
@@ -209,6 +215,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "s2-1-2-007",
       "num": "1-2-007",
       "pack": "s2",
       "nameZh": "沙奈朵",
@@ -243,6 +250,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-008",
       "num": "1-2-008",
       "pack": "s2",
       "nameZh": "萊希拉姆",
@@ -277,6 +285,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-009",
       "num": "1-2-009",
       "pack": "s2",
       "nameZh": "捷克羅姆",
@@ -311,6 +320,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-010",
       "num": "1-2-010",
       "pack": "s2",
       "nameZh": "酋雷姆",
@@ -345,6 +355,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-011",
       "num": "1-2-011",
       "pack": "s2",
       "nameZh": "雷伊布",
@@ -378,6 +389,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-012",
       "num": "1-2-012",
       "pack": "s2",
       "nameZh": "太陽伊布",
@@ -411,6 +423,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-013",
       "num": "1-2-013",
       "pack": "s2",
       "nameZh": "葉伊布",
@@ -444,6 +457,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-014",
       "num": "1-2-014",
       "pack": "s2",
       "nameZh": "仙子伊布",
@@ -477,6 +491,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-015",
       "num": "1-2-015",
       "pack": "s2",
       "nameZh": "路卡利歐",
@@ -511,6 +526,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-016",
       "num": "1-2-016",
       "pack": "s2",
       "nameZh": "土台龜",
@@ -545,6 +561,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-017",
       "num": "1-2-017",
       "pack": "s2",
       "nameZh": "烈焰猴",
@@ -579,6 +596,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-018",
       "num": "1-2-018",
       "pack": "s2",
       "nameZh": "帝王拿波",
@@ -613,6 +631,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-019",
       "num": "1-2-019",
       "pack": "s2",
       "nameZh": "阿羅拉九尾",
@@ -647,6 +666,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-020",
       "num": "1-2-020",
       "pack": "s2",
       "nameZh": "班基拉斯",
@@ -681,6 +701,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-021",
       "num": "1-2-021",
       "pack": "s2",
       "nameZh": "巨金怪",
@@ -715,6 +736,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-022",
       "num": "1-2-022",
       "pack": "s2",
       "nameZh": "蘋裹龍",
@@ -749,6 +771,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-023",
       "num": "1-2-023",
       "pack": "s2",
       "nameZh": "豐蜜龍",
@@ -783,6 +806,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-024",
       "num": "1-2-024",
       "pack": "s2",
       "nameZh": "霜奶仙",
@@ -816,6 +840,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-025",
       "num": "1-2-025",
       "pack": "s2",
       "nameZh": "暴噬龜",
@@ -850,6 +875,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-026",
       "num": "1-2-026",
       "pack": "s2",
       "nameZh": "魔幻假面喵",
@@ -884,6 +910,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-027",
       "num": "1-2-027",
       "pack": "s2",
       "nameZh": "骨紋巨聲鱷",
@@ -918,6 +945,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-028",
       "num": "1-2-028",
       "pack": "s2",
       "nameZh": "狂歡浪舞鴨",
@@ -952,6 +980,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-029",
       "num": "1-2-029",
       "pack": "s2",
       "nameZh": "炭小侍",
@@ -985,6 +1014,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-030",
       "num": "1-2-030",
       "pack": "s2",
       "nameZh": "涼脊龍",
@@ -1019,6 +1049,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-031",
       "num": "1-2-031",
       "pack": "s2",
       "nameZh": "布撥",
@@ -1052,6 +1083,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-032",
       "num": "1-2-032",
       "pack": "s2",
       "nameZh": "草苗龜",
@@ -1085,6 +1117,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-033",
       "num": "1-2-033",
       "pack": "s2",
       "nameZh": "樹林龜",
@@ -1118,6 +1151,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-034",
       "num": "1-2-034",
       "pack": "s2",
       "nameZh": "土台龜",
@@ -1152,6 +1186,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-035",
       "num": "1-2-035",
       "pack": "s2",
       "nameZh": "小火焰猴",
@@ -1185,6 +1220,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-036",
       "num": "1-2-036",
       "pack": "s2",
       "nameZh": "猛火猴",
@@ -1219,6 +1255,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-037",
       "num": "1-2-037",
       "pack": "s2",
       "nameZh": "烈焰猴",
@@ -1253,6 +1290,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-038",
       "num": "1-2-038",
       "pack": "s2",
       "nameZh": "波加曼",
@@ -1286,6 +1324,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-039",
       "num": "1-2-039",
       "pack": "s2",
       "nameZh": "波皇子",
@@ -1319,6 +1358,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-040",
       "num": "1-2-040",
       "pack": "s2",
       "nameZh": "帝王拿波",
@@ -1353,6 +1393,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-041",
       "num": "1-2-041",
       "pack": "s2",
       "nameZh": "水伊布",
@@ -1386,6 +1427,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-042",
       "num": "1-2-042",
       "pack": "s2",
       "nameZh": "火伊布",
@@ -1419,6 +1461,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-043",
       "num": "1-2-043",
       "pack": "s2",
       "nameZh": "月亮伊布",
@@ -1452,6 +1495,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-044",
       "num": "1-2-044",
       "pack": "s2",
       "nameZh": "冰伊布",
@@ -1485,6 +1529,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-045",
       "num": "1-2-045",
       "pack": "s2",
       "nameZh": "來電汪",
@@ -1518,6 +1563,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-046",
       "num": "1-2-046",
       "pack": "s2",
       "nameZh": "逐電犬",
@@ -1551,6 +1597,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-047",
       "num": "1-2-047",
       "pack": "s2",
       "nameZh": "波波",
@@ -1585,6 +1632,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-048",
       "num": "1-2-048",
       "pack": "s2",
       "nameZh": "比比鳥",
@@ -1619,6 +1667,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-049",
       "num": "1-2-049",
       "pack": "s2",
       "nameZh": "大比鳥",
@@ -1653,6 +1702,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-050",
       "num": "1-2-050",
       "pack": "s2",
       "nameZh": "阿羅拉穿山鼠",
@@ -1687,6 +1737,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-051",
       "num": "1-2-051",
       "pack": "s2",
       "nameZh": "阿羅拉穿山王",
@@ -1721,6 +1772,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-052",
       "num": "1-2-052",
       "pack": "s2",
       "nameZh": "銅鏡怪",
@@ -1755,6 +1807,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-053",
       "num": "1-2-053",
       "pack": "s2",
       "nameZh": "青銅鐘",
@@ -1789,6 +1842,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-054",
       "num": "1-2-054",
       "pack": "s2",
       "nameZh": "大顎蟻",
@@ -1823,6 +1877,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-055",
       "num": "1-2-055",
       "pack": "s2",
       "nameZh": "超音波幼蟲",
@@ -1857,6 +1912,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-056",
       "num": "1-2-056",
       "pack": "s2",
       "nameZh": "沙漠蜻蜓",
@@ -1891,6 +1947,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-057",
       "num": "1-2-057",
       "pack": "s2",
       "nameZh": "長翅鷗",
@@ -1925,6 +1982,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-058",
       "num": "1-2-058",
       "pack": "s2",
       "nameZh": "大嘴鷗",
@@ -1959,6 +2017,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-059",
       "num": "1-2-059",
       "pack": "s2",
       "nameZh": "迷唇姐",
@@ -1993,6 +2052,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-060",
       "num": "1-2-060",
       "pack": "s2",
       "nameZh": "凱西",
@@ -2026,6 +2086,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-061",
       "num": "1-2-061",
       "pack": "s2",
       "nameZh": "勇基拉",
@@ -2059,6 +2120,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-062",
       "num": "1-2-062",
       "pack": "s2",
       "nameZh": "胡地",
@@ -2092,6 +2154,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-063",
       "num": "1-2-063",
       "pack": "s2",
       "nameZh": "飄飄球",
@@ -2126,6 +2189,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-064",
       "num": "1-2-064",
       "pack": "s2",
       "nameZh": "隨風球",
@@ -2160,6 +2224,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-065",
       "num": "1-2-065",
       "pack": "s2",
       "nameZh": "好壞星",
@@ -2195,6 +2260,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "s2-1-2-066",
       "num": "1-2-066",
       "pack": "s2",
       "nameZh": "托戈德瑪爾",
@@ -2229,6 +2295,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-067",
       "num": "1-2-067",
       "pack": "s2",
       "nameZh": "拉魯拉絲",
@@ -2263,6 +2330,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-068",
       "num": "1-2-068",
       "pack": "s2",
       "nameZh": "奇魯莉安",
@@ -2297,6 +2365,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-069",
       "num": "1-2-069",
       "pack": "s2",
       "nameZh": "沙奈朵",
@@ -2331,6 +2400,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-1-2-070",
       "num": "1-2-070",
       "pack": "s2",
       "nameZh": "大岩蛇",
@@ -2365,6 +2435,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-R-1-1",
       "num": "R-1-1",
       "pack": "s2",
       "nameZh": "超級皮卡丘",
@@ -2398,6 +2469,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-R-1-2",
       "num": "R-1-2",
       "pack": "s2",
       "nameZh": "超級路卡利歐",
@@ -2432,6 +2504,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s2-R-1-3",
       "num": "R-1-3",
       "pack": "s2",
       "nameZh": "超級卡比獸",

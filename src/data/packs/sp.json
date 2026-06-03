@@ -9,6 +9,7 @@
   "officialTotal": 50,
   "tags": [
     {
+      "tagId": "sp-EV-LUC",
       "num": "EV-LUC",
       "pack": "sp",
       "nameZh": "路卡利歐",
@@ -43,6 +44,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "sp-EV-DRG",
       "num": "EV-DRG",
       "pack": "sp",
       "nameZh": "快龍",
@@ -77,6 +79,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "sp-EV-MMQ",
       "num": "EV-MMQ",
       "pack": "sp",
       "nameZh": "謎擬Q",

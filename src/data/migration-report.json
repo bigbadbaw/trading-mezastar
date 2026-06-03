@@ -1,5 +1,13 @@
 {
   "generatedFromTags": 374,
+  "tagId": {
+    "adopted": true,
+    "scheme": "`${pack}-${num}`",
+    "total": 374,
+    "distinct": 374,
+    "unique": true,
+    "duplicates": []
+  },
   "byPack": {
     "g1": {
       "migrated": 73,

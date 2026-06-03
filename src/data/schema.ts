@@ -52,6 +52,10 @@ export const MechanicsSchema = z.object(
  * only inside the migration script.
  */
 export const TagSchema = z.object({
+  /** Stable globally-unique identity: `${pack}-${num}` (e.g. "s2-R-1-1").
+   *  Computed in the migration, never hand-written. `num` alone is not unique
+   *  (reprints like R-1-1 repeat across packs); this is the catalog/UI key. */
+  tagId: z.string().min(1),
   /** Collection number. Natural key WITHIN a pack; NOT globally unique
    *  (reprints like R-1-1 repeat across packs). Global key is pack + num. */
   num: z.string().min(1),

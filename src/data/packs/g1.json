@@ -9,6 +9,7 @@
   "officialTotal": 73,
   "tags": [
     {
+      "tagId": "g1-2-1-001",
       "num": "2-1-001",
       "pack": "g1",
       "nameZh": "轟擂金剛猩",
@@ -42,6 +43,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-002",
       "num": "2-1-002",
       "pack": "g1",
       "nameZh": "閃焰王牌",
@@ -75,6 +77,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-003",
       "num": "2-1-003",
       "pack": "g1",
       "nameZh": "千面避役",
@@ -108,6 +111,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-004",
       "num": "2-1-004",
       "pack": "g1",
       "nameZh": "皮卡丘",
@@ -141,6 +145,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-005",
       "num": "2-1-005",
       "pack": "g1",
       "nameZh": "雷公",
@@ -174,6 +179,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "g1-2-1-006",
       "num": "2-1-006",
       "pack": "g1",
       "nameZh": "炎帝",
@@ -207,6 +213,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "g1-2-1-007",
       "num": "2-1-007",
       "pack": "g1",
       "nameZh": "水君",
@@ -240,6 +247,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "g1-2-1-008",
       "num": "2-1-008",
       "pack": "g1",
       "nameZh": "超夢",
@@ -273,6 +281,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-009",
       "num": "2-1-009",
       "pack": "g1",
       "nameZh": "阿爾宙斯",
@@ -306,6 +315,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-010",
       "num": "2-1-010",
       "pack": "g1",
       "nameZh": "洗翠索羅亞克",
@@ -340,6 +350,7 @@
       "unconfirmed": true
     },
     {
+      "tagId": "g1-2-1-011",
       "num": "2-1-011",
       "pack": "g1",
       "nameZh": "凱羅斯",
@@ -373,6 +384,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-012",
       "num": "2-1-012",
       "pack": "g1",
       "nameZh": "赫拉克羅斯",
@@ -407,6 +419,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-013",
       "num": "2-1-013",
       "pack": "g1",
       "nameZh": "凱路迪歐",
@@ -441,6 +454,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-014",
       "num": "2-1-014",
       "pack": "g1",
       "nameZh": "瑪狃拉",
@@ -475,6 +489,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-015",
       "num": "2-1-015",
       "pack": "g1",
       "nameZh": "蔥遊兵",
@@ -508,6 +523,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-016",
       "num": "2-1-016",
       "pack": "g1",
       "nameZh": "尼多王",
@@ -542,6 +558,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-017",
       "num": "2-1-017",
       "pack": "g1",
       "nameZh": "沙漠蜻蜓",
@@ -576,6 +593,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-018",
       "num": "2-1-018",
       "pack": "g1",
       "nameZh": "鰓魚海獸",
@@ -609,6 +627,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-019",
       "num": "2-1-019",
       "pack": "g1",
       "nameZh": "電擊魔獸",
@@ -642,6 +661,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-020",
       "num": "2-1-020",
       "pack": "g1",
       "nameZh": "鴨嘴炎獸",
@@ -675,6 +695,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-021",
       "num": "2-1-021",
       "pack": "g1",
       "nameZh": "顫弦蠑螈",
@@ -709,6 +730,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-022",
       "num": "2-1-022",
       "pack": "g1",
       "nameZh": "顫弦蠑螈",
@@ -743,6 +765,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-023",
       "num": "2-1-023",
       "pack": "g1",
       "nameZh": "雄偉牙",
@@ -777,6 +800,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-024",
       "num": "2-1-024",
       "pack": "g1",
       "nameZh": "鍬農炮蟲",
@@ -811,6 +835,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-025",
       "num": "2-1-025",
       "pack": "g1",
       "nameZh": "暴雪王",
@@ -845,6 +870,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-026",
       "num": "2-1-026",
       "pack": "g1",
       "nameZh": "新葉喵",
@@ -878,6 +904,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-027",
       "num": "2-1-027",
       "pack": "g1",
       "nameZh": "呆火鱷",
@@ -911,6 +938,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-028",
       "num": "2-1-028",
       "pack": "g1",
       "nameZh": "潤水鴨",
@@ -944,6 +972,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-029",
       "num": "2-1-029",
       "pack": "g1",
       "nameZh": "炭小侍",
@@ -977,6 +1006,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-030",
       "num": "2-1-030",
       "pack": "g1",
       "nameZh": "涼脊龍",
@@ -1011,6 +1041,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-031",
       "num": "2-1-031",
       "pack": "g1",
       "nameZh": "布撥",
@@ -1044,6 +1075,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-032",
       "num": "2-1-032",
       "pack": "g1",
       "nameZh": "敲音猴",
@@ -1077,6 +1109,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-033",
       "num": "2-1-033",
       "pack": "g1",
       "nameZh": "啪咚猴",
@@ -1110,6 +1143,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-034",
       "num": "2-1-034",
       "pack": "g1",
       "nameZh": "轟擂金剛猩",
@@ -1143,6 +1177,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-035",
       "num": "2-1-035",
       "pack": "g1",
       "nameZh": "炎兔兒",
@@ -1176,6 +1211,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-036",
       "num": "2-1-036",
       "pack": "g1",
       "nameZh": "騰蹴小將",
@@ -1209,6 +1245,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-037",
       "num": "2-1-037",
       "pack": "g1",
       "nameZh": "閃焰王牌",
@@ -1242,6 +1279,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-038",
       "num": "2-1-038",
       "pack": "g1",
       "nameZh": "淚眼蜥",
@@ -1275,6 +1313,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-039",
       "num": "2-1-039",
       "pack": "g1",
       "nameZh": "變澀蜥",
@@ -1308,6 +1347,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-040",
       "num": "2-1-040",
       "pack": "g1",
       "nameZh": "千面避役",
@@ -1341,6 +1381,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-041",
       "num": "2-1-041",
       "pack": "g1",
       "nameZh": "雪笠怪",
@@ -1375,6 +1416,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-042",
       "num": "2-1-042",
       "pack": "g1",
       "nameZh": "暴雪王",
@@ -1409,6 +1451,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-043",
       "num": "2-1-043",
       "pack": "g1",
       "nameZh": "飄飄球",
@@ -1443,6 +1486,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-044",
       "num": "2-1-044",
       "pack": "g1",
       "nameZh": "隨風球",
@@ -1477,6 +1521,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-045",
       "num": "2-1-045",
       "pack": "g1",
       "nameZh": "洗翠索羅亞",
@@ -1511,6 +1556,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-046",
       "num": "2-1-046",
       "pack": "g1",
       "nameZh": "洗翠索羅亞克",
@@ -1545,6 +1591,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-047",
       "num": "2-1-047",
       "pack": "g1",
       "nameZh": "觸手百合",
@@ -1579,6 +1626,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-048",
       "num": "2-1-048",
       "pack": "g1",
       "nameZh": "搖籃百合",
@@ -1613,6 +1661,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-049",
       "num": "2-1-049",
       "pack": "g1",
       "nameZh": "伽勒爾大蔥鴨",
@@ -1646,6 +1695,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-050",
       "num": "2-1-050",
       "pack": "g1",
       "nameZh": "蔥遊兵",
@@ -1679,6 +1729,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-051",
       "num": "2-1-051",
       "pack": "g1",
       "nameZh": "螺釘地鼠",
@@ -1712,6 +1763,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-052",
       "num": "2-1-052",
       "pack": "g1",
       "nameZh": "龍頭地鼠",
@@ -1745,6 +1797,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-053",
       "num": "2-1-053",
       "pack": "g1",
       "nameZh": "鴨嘴寶寶",
@@ -1778,6 +1831,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-054",
       "num": "2-1-054",
       "pack": "g1",
       "nameZh": "鴨嘴火獸",
@@ -1811,6 +1865,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-055",
       "num": "2-1-055",
       "pack": "g1",
       "nameZh": "鴨嘴炎獸",
@@ -1844,6 +1899,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-056",
       "num": "2-1-056",
       "pack": "g1",
       "nameZh": "卡蒂狗",
@@ -1877,6 +1933,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-057",
       "num": "2-1-057",
       "pack": "g1",
       "nameZh": "風速狗",
@@ -1910,6 +1967,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-058",
       "num": "2-1-058",
       "pack": "g1",
       "nameZh": "毒電嬰",
@@ -1944,6 +2002,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-059",
       "num": "2-1-059",
       "pack": "g1",
       "nameZh": "顫弦蠑螈",
@@ -1978,6 +2037,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-060",
       "num": "2-1-060",
       "pack": "g1",
       "nameZh": "顫弦蠑螈",
@@ -2012,6 +2072,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-061",
       "num": "2-1-061",
       "pack": "g1",
       "nameZh": "幼棉棉",
@@ -2046,6 +2107,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-062",
       "num": "2-1-062",
       "pack": "g1",
       "nameZh": "白蓬蓬",
@@ -2080,6 +2142,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-063",
       "num": "2-1-063",
       "pack": "g1",
       "nameZh": "狃拉",
@@ -2114,6 +2177,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-064",
       "num": "2-1-064",
       "pack": "g1",
       "nameZh": "瑪狃拉",
@@ -2148,6 +2212,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-065",
       "num": "2-1-065",
       "pack": "g1",
       "nameZh": "尼多蘭",
@@ -2181,6 +2246,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-066",
       "num": "2-1-066",
       "pack": "g1",
       "nameZh": "尼多娜",
@@ -2214,6 +2280,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-067",
       "num": "2-1-067",
       "pack": "g1",
       "nameZh": "尼多后",
@@ -2248,6 +2315,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-068",
       "num": "2-1-068",
       "pack": "g1",
       "nameZh": "尼多朗",
@@ -2281,6 +2349,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-069",
       "num": "2-1-069",
       "pack": "g1",
       "nameZh": "尼多力諾",
@@ -2314,6 +2383,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-2-1-070",
       "num": "2-1-070",
       "pack": "g1",
       "nameZh": "尼多王",
@@ -2348,6 +2418,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-R-2-1",
       "num": "R-2-1",
       "pack": "g1",
       "nameZh": "超級皮卡丘",
@@ -2381,6 +2452,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-R-2-2",
       "num": "R-2-2",
       "pack": "g1",
       "nameZh": "超級噴火龍",
@@ -2415,6 +2487,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "g1-R-2-3",
       "num": "R-2-3",
       "pack": "g1",
       "nameZh": "超級耿鬼",

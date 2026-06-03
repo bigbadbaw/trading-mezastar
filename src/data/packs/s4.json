@@ -9,6 +9,7 @@
   "officialTotal": 76,
   "tags": [
     {
+      "tagId": "s4-1-4-001",
       "num": "1-4-001",
       "pack": "s4",
       "nameZh": "帝牙盧卡",
@@ -43,6 +44,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-002",
       "num": "1-4-002",
       "pack": "s4",
       "nameZh": "帕路奇亞",
@@ -77,6 +79,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-003",
       "num": "1-4-003",
       "pack": "s4",
       "nameZh": "哲爾尼亞斯",
@@ -110,6 +113,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-004",
       "num": "1-4-004",
       "pack": "s4",
       "nameZh": "伊裴爾塔爾",
@@ -144,6 +148,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-005",
       "num": "1-4-005",
       "pack": "s4",
       "nameZh": "蕾冠王（騎白馬的樣子）",
@@ -178,6 +183,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-006",
       "num": "1-4-006",
       "pack": "s4",
       "nameZh": "蕾冠王（騎黑馬的樣子）",
@@ -212,6 +218,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-007",
       "num": "1-4-007",
       "pack": "s4",
       "nameZh": "謎擬Ｑ",
@@ -246,6 +253,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-008",
       "num": "1-4-008",
       "pack": "s4",
       "nameZh": "焰白酋雷姆",
@@ -280,6 +288,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-009",
       "num": "1-4-009",
       "pack": "s4",
       "nameZh": "闇黑酋雷姆",
@@ -314,6 +323,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-010",
       "num": "1-4-010",
       "pack": "s4",
       "nameZh": "烈空坐",
@@ -348,6 +358,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-011",
       "num": "1-4-011",
       "pack": "s4",
       "nameZh": "波士可多拉",
@@ -382,6 +393,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-012",
       "num": "1-4-012",
       "pack": "s4",
       "nameZh": "大竺葵",
@@ -415,6 +427,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-013",
       "num": "1-4-013",
       "pack": "s4",
       "nameZh": "火爆獸",
@@ -448,6 +461,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-014",
       "num": "1-4-014",
       "pack": "s4",
       "nameZh": "大力鱷",
@@ -481,6 +495,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-015",
       "num": "1-4-015",
       "pack": "s4",
       "nameZh": "黏美龍",
@@ -514,6 +529,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-016",
       "num": "1-4-016",
       "pack": "s4",
       "nameZh": "鋼鎧鴉",
@@ -548,6 +564,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-017",
       "num": "1-4-017",
       "pack": "s4",
       "nameZh": "死神板",
@@ -582,6 +599,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-018",
       "num": "1-4-018",
       "pack": "s4",
       "nameZh": "怪力",
@@ -615,6 +633,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-019",
       "num": "1-4-019",
       "pack": "s4",
       "nameZh": "沙奈朵",
@@ -649,6 +668,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-020",
       "num": "1-4-020",
       "pack": "s4",
       "nameZh": "堵攔熊",
@@ -683,6 +703,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-021",
       "num": "1-4-021",
       "pack": "s4",
       "nameZh": "雷吉艾勒奇",
@@ -716,6 +737,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-022",
       "num": "1-4-022",
       "pack": "s4",
       "nameZh": "雷吉鐸拉戈",
@@ -749,6 +771,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-023",
       "num": "1-4-023",
       "pack": "s4",
       "nameZh": "鐵轍跡",
@@ -783,6 +806,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-024",
       "num": "1-4-024",
       "pack": "s4",
       "nameZh": "大王銅象",
@@ -816,6 +840,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-025",
       "num": "1-4-025",
       "pack": "s4",
       "nameZh": "烈箭鷹",
@@ -850,6 +875,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-026",
       "num": "1-4-026",
       "pack": "s4",
       "nameZh": "蒼炎刃鬼",
@@ -884,6 +910,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-027",
       "num": "1-4-027",
       "pack": "s4",
       "nameZh": "戟脊龍",
@@ -918,6 +945,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-028",
       "num": "1-4-028",
       "pack": "s4",
       "nameZh": "菊草葉",
@@ -951,6 +979,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-029",
       "num": "1-4-029",
       "pack": "s4",
       "nameZh": "月桂葉",
@@ -984,6 +1013,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-030",
       "num": "1-4-030",
       "pack": "s4",
       "nameZh": "大竺葵",
@@ -1017,6 +1047,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-031",
       "num": "1-4-031",
       "pack": "s4",
       "nameZh": "火球鼠",
@@ -1050,6 +1081,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-032",
       "num": "1-4-032",
       "pack": "s4",
       "nameZh": "火岩鼠",
@@ -1083,6 +1115,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-033",
       "num": "1-4-033",
       "pack": "s4",
       "nameZh": "火爆獸",
@@ -1116,6 +1149,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-034",
       "num": "1-4-034",
       "pack": "s4",
       "nameZh": "小鋸鱷",
@@ -1149,6 +1183,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-035",
       "num": "1-4-035",
       "pack": "s4",
       "nameZh": "藍鱷",
@@ -1182,6 +1217,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-036",
       "num": "1-4-036",
       "pack": "s4",
       "nameZh": "大力鱷",
@@ -1215,6 +1251,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-037",
       "num": "1-4-037",
       "pack": "s4",
       "nameZh": "多龍梅西亞",
@@ -1249,6 +1286,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-038",
       "num": "1-4-038",
       "pack": "s4",
       "nameZh": "多龍奇",
@@ -1283,6 +1321,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-039",
       "num": "1-4-039",
       "pack": "s4",
       "nameZh": "多龍巴魯托",
@@ -1317,6 +1356,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-040",
       "num": "1-4-040",
       "pack": "s4",
       "nameZh": "來悲茶",
@@ -1350,6 +1390,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-041",
       "num": "1-4-041",
       "pack": "s4",
       "nameZh": "怖思壺",
@@ -1383,6 +1424,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-042",
       "num": "1-4-042",
       "pack": "s4",
       "nameZh": "老翁龍",
@@ -1417,6 +1459,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-043",
       "num": "1-4-043",
       "pack": "s4",
       "nameZh": "電擊怪",
@@ -1450,6 +1493,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-044",
       "num": "1-4-044",
       "pack": "s4",
       "nameZh": "電擊獸",
@@ -1483,6 +1527,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-045",
       "num": "1-4-045",
       "pack": "s4",
       "nameZh": "電擊魔獸",
@@ -1516,6 +1561,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-046",
       "num": "1-4-046",
       "pack": "s4",
       "nameZh": "阿羅拉六尾",
@@ -1549,6 +1595,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-047",
       "num": "1-4-047",
       "pack": "s4",
       "nameZh": "阿羅拉九尾",
@@ -1583,6 +1630,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-048",
       "num": "1-4-048",
       "pack": "s4",
       "nameZh": "毛辮羊",
@@ -1616,6 +1664,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-049",
       "num": "1-4-049",
       "pack": "s4",
       "nameZh": "毛毛角羊",
@@ -1649,6 +1698,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-050",
       "num": "1-4-050",
       "pack": "s4",
       "nameZh": "單首龍",
@@ -1683,6 +1733,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-051",
       "num": "1-4-051",
       "pack": "s4",
       "nameZh": "雙首暴龍",
@@ -1717,6 +1768,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-052",
       "num": "1-4-052",
       "pack": "s4",
       "nameZh": "三首惡龍",
@@ -1751,6 +1803,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-053",
       "num": "1-4-053",
       "pack": "s4",
       "nameZh": "滾滾蝙蝠",
@@ -1785,6 +1838,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-054",
       "num": "1-4-054",
       "pack": "s4",
       "nameZh": "心蝙蝠",
@@ -1819,6 +1873,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-055",
       "num": "1-4-055",
       "pack": "s4",
       "nameZh": "腕力",
@@ -1852,6 +1907,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-056",
       "num": "1-4-056",
       "pack": "s4",
       "nameZh": "豪力",
@@ -1885,6 +1941,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-057",
       "num": "1-4-057",
       "pack": "s4",
       "nameZh": "怪力",
@@ -1918,6 +1975,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-058",
       "num": "1-4-058",
       "pack": "s4",
       "nameZh": "黑暗鴉",
@@ -1952,6 +2010,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-059",
       "num": "1-4-059",
       "pack": "s4",
       "nameZh": "烏鴉頭頭",
@@ -1986,6 +2045,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-060",
       "num": "1-4-060",
       "pack": "s4",
       "nameZh": "迷布莉姆",
@@ -2019,6 +2079,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-061",
       "num": "1-4-061",
       "pack": "s4",
       "nameZh": "提布莉姆",
@@ -2052,6 +2113,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-062",
       "num": "1-4-062",
       "pack": "s4",
       "nameZh": "布莉姆溫",
@@ -2086,6 +2148,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-063",
       "num": "1-4-063",
       "pack": "s4",
       "nameZh": "小山豬",
@@ -2120,6 +2183,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-064",
       "num": "1-4-064",
       "pack": "s4",
       "nameZh": "長毛豬",
@@ -2154,6 +2218,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-065",
       "num": "1-4-065",
       "pack": "s4",
       "nameZh": "象牙豬",
@@ -2188,6 +2253,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-066",
       "num": "1-4-066",
       "pack": "s4",
       "nameZh": "小箭雀",
@@ -2222,6 +2288,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-067",
       "num": "1-4-067",
       "pack": "s4",
       "nameZh": "火箭雀",
@@ -2256,6 +2323,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-068",
       "num": "1-4-068",
       "pack": "s4",
       "nameZh": "烈箭鷹",
@@ -2290,6 +2358,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-069",
       "num": "1-4-069",
       "pack": "s4",
       "nameZh": "嗡蝠",
@@ -2324,6 +2393,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-1-4-070",
       "num": "1-4-070",
       "pack": "s4",
       "nameZh": "音波龍",
@@ -2358,6 +2428,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-K-4-1",
       "num": "K-4-1",
       "pack": "s4",
       "nameZh": "經典夢幻",
@@ -2391,6 +2462,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-K-4-2",
       "num": "K-4-2",
       "pack": "s4",
       "nameZh": "經典蒼響",
@@ -2425,6 +2497,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-K-4-3",
       "num": "K-4-3",
       "pack": "s4",
       "nameZh": "經典藏瑪然特",
@@ -2459,6 +2532,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-R-1-1",
       "num": "R-1-1",
       "pack": "s4",
       "nameZh": "超級皮卡丘",
@@ -2492,6 +2566,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-R-1-2",
       "num": "R-1-2",
       "pack": "s4",
       "nameZh": "超級路卡利歐",
@@ -2526,6 +2601,7 @@
       "unconfirmed": false
     },
     {
+      "tagId": "s4-R-1-3",
       "num": "R-1-3",
       "pack": "s4",
       "nameZh": "超級卡比獸",

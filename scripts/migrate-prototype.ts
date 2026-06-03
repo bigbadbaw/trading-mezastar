@@ -83,6 +83,14 @@ interface Ref {
 }
 const report = {
   generatedFromTags: 0,
+  tagId: {
+    adopted: true,
+    scheme: '`${pack}-${num}`',
+    total: 0,
+    distinct: 0,
+    unique: false,
+    duplicates: [] as string[],
+  },
   byPack: {} as Record<string, { migrated: number; officialTotal: number }>,
   dualTagsSplit: [] as (Ref & { species: string[] })[],
   speciesNeedingReview: [] as (Ref & { species: string[]; reason: string })[],
@@ -108,6 +116,8 @@ const report = {
 
 const PACKS_DIR = join(process.cwd(), 'src', 'data', 'packs');
 mkdirSync(PACKS_DIR, { recursive: true });
+
+const allTagIds: string[] = [];
 
 for (const rp of seed) {
   const tags: Tag[] = [];
@@ -144,6 +154,7 @@ for (const rp of seed) {
     }
 
     tags.push({
+      tagId: `${rp.pack}-${c.num}`,
       num: c.num,
       pack: rp.pack as Tag['pack'],
       nameZh: c.name,
@@ -173,6 +184,8 @@ for (const rp of seed) {
     tags,
   });
 
+  for (const t of pack.tags) allTagIds.push(t.tagId);
+
   report.generatedFromTags += tags.length;
   report.byPack[rp.pack] = {
     migrated: tags.length,
@@ -194,6 +207,25 @@ for (const rp of seed) {
   );
 }
 
+// ---- tagId uniqueness assertion (catalog identity invariant) --------------
+
+const seen = new Set<string>();
+const duplicates = new Set<string>();
+for (const id of allTagIds) {
+  if (seen.has(id)) duplicates.add(id);
+  seen.add(id);
+}
+report.tagId.total = allTagIds.length;
+report.tagId.distinct = seen.size;
+report.tagId.unique = duplicates.size === 0;
+report.tagId.duplicates = [...duplicates];
+
+if (!report.tagId.unique) {
+  throw new Error(
+    `tagId uniqueness violated: ${duplicates.size} duplicate id(s) -> ${[...duplicates].join(', ')}`,
+  );
+}
+
 writeFileSync(
   join(process.cwd(), 'src', 'data', 'migration-report.json'),
   JSON.stringify(report, null, 2) + '\n',
@@ -202,6 +234,7 @@ writeFileSync(
 
 console.log(
   `Migrated ${report.generatedFromTags} tags across ${seed.length} packs.\n` +
+    `  tagId unique:           ${report.tagId.unique} (${report.tagId.distinct}/${report.tagId.total} distinct)\n` +
     `  dual-tags split:        ${report.dualTagsSplit.length}\n` +
     `  species needing review: ${report.speciesNeedingReview.length}\n` +
     `  unconfirmed tags:       ${report.unconfirmedTags.length}\n` +
