@@ -23,11 +23,21 @@ export const SCARCITY_POINTS: Record<GradeTier, number> = {
   'super-rare': 40,
   classic: 36,
   'gold-star': 28,
-  special: 24,
+  // TUNED (post-M4 calibration): 24 → 29.
+  // Event-exclusive tags should outrank standard gold-star pulls (24 placed
+  // them below gold-star = 28, which felt wrong for limited-event acquisition).
+  // New value sits one point above gold-star and well below classic (36).
+  special: 29,
   featured: 22,
   'normal-5': 20,
   'normal-4': 14,
-  'normal-3': 8,
+  // TUNED (post-M4 calibration): 8 → 12.
+  // Closes the "beloved-common paradox": with the old value a 3-tag basket of
+  // beloved Grade-3 icons (pop 9) scored as "slight" against 3 obscure Grade-5
+  // tags (pop 4). The +4 is enough for the popularity axis to carry the tie —
+  // 3× Pikachu (114) vs 3× Lokix (120) → diff 6 pts / 5.3% → "fair".
+  // All §7.3 spec-pinned scores (super-rare tier) are unaffected.
+  'normal-3': 12,
   'normal-2': 3,
 };
 /** Used if a tag's gradeTier is somehow absent from the map above. */
