@@ -43,10 +43,29 @@ function loadEnv(): { url: string; anonKey: string } {
   return { url, anonKey };
 }
 
+/**
+ * No-op WebSocket stub. The gate only performs PostgREST HTTP operations and
+ * never subscribes to realtime channels. However, `@supabase/realtime-js`
+ * throws at client construction when neither `globalThis.WebSocket` nor
+ * `options.transport` is present (Node 20 has no native WebSocket).
+ * Providing a stub constructor satisfies that check without opening any socket.
+ */
+class NoopWS {
+  static CONNECTING = 0;
+  static OPEN = 1;
+  static CLOSING = 2;
+  static CLOSED = 3;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  constructor(_address: string, _protocols?: string | string[]) {}
+  close() {}
+  send(_data: unknown) {}
+}
+
 function freshClient(url: string, anonKey: string): SupabaseClient {
   // Each client keeps its own in-memory session so A and B never share auth.
   return createClient(url, anonKey, {
     auth: { persistSession: false, autoRefreshToken: false },
+    realtime: { transport: NoopWS as unknown as typeof WebSocket },
   });
 }
 
