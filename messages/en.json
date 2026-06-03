@@ -7,6 +7,104 @@
   },
   "home": {
     "title": "Mezastar Trade-Fairness Tool",
-    "tagline": "Two people each pick a batch of tags — see whether the trade is fair."
+    "tagline": "Two people each pick a batch of tags — see whether the trade is fair.",
+    "viewCatalog": "Browse the tag catalog"
+  },
+  "catalog": {
+    "title": "Tag Catalog",
+    "subtitle": "Browse all migrated Meza Tags with their transparent score breakdown.",
+    "searchLabel": "Search tags",
+    "searchPlaceholder": "Name or number (e.g. Pikachu, 皮卡丘, R-1-1)",
+    "filterPack": "Pack",
+    "filterGrade": "Grade",
+    "filterType": "Type",
+    "allPacks": "All packs",
+    "allGrades": "All grades",
+    "allTypes": "All types",
+    "gradeOption": "★{grade}",
+    "results": "{count, plural, =0 {No tags} =1 {1 tag} other {# tags}}",
+    "noResults": "No tags match your search and filters.",
+    "clearFilters": "Clear filters",
+    "migratedOf": "{migrated} of {official} migrated",
+    "current": "Current pack",
+    "viewDetail": "View score breakdown",
+    "energy": "Energy",
+    "price": "Price",
+    "unverified": "≈ unverified",
+    "unverifiedTitle": "Price is unverified (confidence {confidence})",
+    "backToCatalog": "Back to catalog"
+  },
+  "scoring": {
+    "total": "Total",
+    "headComponent": "Component",
+    "headDetail": "Detail",
+    "headPoints": "Points",
+    "points": "{points} pts",
+    "popScore": "popularity {score}/10",
+    "source": "source: {source}",
+    "confidence": "confidence ×{confidence}",
+    "species": "Species",
+    "flags": "Mechanics",
+    "none": "none",
+    "grade": {
+      "S": "S — Top tier",
+      "A": "A — Excellent",
+      "B": "B — Strong",
+      "C": "C — Fair",
+      "D": "D — Modest",
+      "F": "F — Minimal"
+    },
+    "component": {
+      "scarcity": "Scarcity",
+      "popularity": "Popularity",
+      "market": "Market price",
+      "mechanic": "Special mechanic"
+    },
+    "sourceLabel": {
+      "poll": "fan poll",
+      "agg": "aggregate",
+      "search": "search interest",
+      "default": "default tier"
+    }
+  },
+  "gradeTier": {
+    "super-rare": "Super Rare",
+    "classic": "Classic",
+    "gold-star": "Gold Star",
+    "featured": "Featured",
+    "normal-5": "Normal 5",
+    "normal-4": "Normal 4",
+    "normal-3": "Normal 3",
+    "normal-2": "Normal 2",
+    "special": "Special (Event)"
+  },
+  "types": {
+    "normal": "Normal",
+    "fire": "Fire",
+    "water": "Water",
+    "electric": "Electric",
+    "grass": "Grass",
+    "ice": "Ice",
+    "fighting": "Fighting",
+    "poison": "Poison",
+    "ground": "Ground",
+    "flying": "Flying",
+    "psychic": "Psychic",
+    "bug": "Bug",
+    "rock": "Rock",
+    "ghost": "Ghost",
+    "dragon": "Dragon",
+    "dark": "Dark",
+    "steel": "Steel",
+    "fairy": "Fairy"
+  },
+  "mechanics": {
+    "gigantamax": "Gigantamax",
+    "mega": "Mega",
+    "rareSlot": "Rare Slot",
+    "zMove": "Z-Move",
+    "legendary": "Legendary",
+    "classic": "Classic",
+    "highAtk": "High Energy"
   }
 }
