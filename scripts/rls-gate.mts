@@ -1,13 +1,19 @@
 /**
  * SECURITY GATE — cross-user RLS isolation proof for `collection_items`.
  *
- * Uses ONLY the public anon key and TWO REAL email-OTP sessions (no
- * service_role, no admin API). You paste the 6-digit codes from your inbox.
+ * Uses ONLY the public anon key and TWO REAL email+PASSWORD sessions (no
+ * service_role, no admin API, no email/SMTP). The script creates two throwaway
+ * test users via the normal anon-key signUp flow and signs them in by password.
  *
- * EMAIL TEMPLATE REQUIREMENT: signInWithOtp emits whatever the project's
- * "Magic Link" email template renders. To receive a 6-digit code (not a
- * clickable link) the template MUST include the {{ .Token }} variable.
- * See docs/adr or the run instructions if your inbox shows a link instead.
+ * WHY PASSWORD (not OTP/magic-link): editing the OTP email template to emit a
+ * 6-digit code requires custom SMTP on this project, and the default email
+ * flows were unreliable headlessly. Password sign-in needs no email at all —
+ * it only needs the two users to be confirmed. If "Confirm email" is enabled
+ * the script cannot confirm them without admin access, so it prints the exact
+ * dashboard steps and exits FAIL (see CONFIRMATION NOTE below).
+ *
+ * SECURITY: this gate deliberately never uses the service_role / secret key.
+ * Everything here runs with the same anon key a browser client would use.
  *
  * Proves:
  *   1. User A can INSERT a row (auth.uid() = user_id).
@@ -15,16 +21,17 @@
  *   3. User B CANNOT UPDATE A's row (0 rows affected).
  *   4. User B CANNOT DELETE A's row (0 rows affected).
  *   5. User A CAN SELECT its own row (1 row).
- * Cleanup: A deletes its row via RLS.
+ * Cleanup: A deletes its row via RLS; the script prints how to remove the two
+ * throwaway test users (user deletion needs admin access we intentionally lack).
  *
  * Run:  pnpm gate:rls
  * (The pg_policies assertion is performed separately by the agent via the
  *  Supabase MCP; this script is the live behavioral proof.)
  */
 
+import { randomBytes } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { createInterface } from 'node:readline/promises';
-import { stdin as input, stdout as output } from 'node:process';
+import { stdout as output } from 'node:process';
 
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
@@ -74,34 +81,96 @@ function freshClient(url: string, anonKey: string): SupabaseClient {
   });
 }
 
-async function signInViaOtp(
+type Cred = { email: string; password: string };
+
+/** Strong, throwaway password generated per run. Mixes classes to satisfy any
+ * reasonable password policy; never logged. */
+function generatePassword(): string {
+  return `${randomBytes(18).toString('base64url')}aA1!`;
+}
+
+/** Thrown when sign-in is blocked solely because the user is unconfirmed. */
+class EmailNotConfirmedError extends Error {
+  constructor() {
+    super('email not confirmed');
+    this.name = 'EmailNotConfirmedError';
+  }
+}
+
+/** Create a throwaway user with the anon key. No email is consumed by the gate;
+ * if "Confirm email" is on, Supabase may try to send one, but we never read it. */
+async function signUpUser(
   client: SupabaseClient,
-  rl: ReturnType<typeof createInterface>,
+  cred: Cred,
+  label: string,
+): Promise<void> {
+  const { error } = await client.auth.signUp({
+    email: cred.email,
+    password: cred.password,
+  });
+  // "User already registered" is fine on a re-run with a colliding email; we
+  // still attempt password sign-in next.
+  if (error && !/already registered|already exists/i.test(error.message)) {
+    throw new Error(`[${label}] signUp failed: ${error.message}`);
+  }
+}
+
+/** Sign in by password and return the authenticated user id. */
+async function signInUser(
+  client: SupabaseClient,
+  cred: Cred,
   label: string,
 ): Promise<{ email: string; userId: string }> {
-  const email = (await rl.question(`\n[${label}] email: `)).trim();
-  const { error: sendErr } = await client.auth.signInWithOtp({
-    email,
-    options: { shouldCreateUser: true },
-  });
-  if (sendErr) throw new Error(`[${label}] signInWithOtp failed: ${sendErr.message}`);
-  console.log(
-    `[${label}] 6-digit code sent to ${email}. Check the inbox ` +
-      `(if you see a link instead of a code, the Magic Link email template ` +
-      `is missing {{ .Token }} — see run instructions).`,
-  );
-
-  const token = (await rl.question(`[${label}] paste the 6-digit code: `)).trim();
-  const { data, error } = await client.auth.verifyOtp({
-    email,
-    token,
-    type: 'email',
+  const { data, error } = await client.auth.signInWithPassword({
+    email: cred.email,
+    password: cred.password,
   });
   if (error || !data.user) {
-    throw new Error(`[${label}] verifyOtp failed: ${error?.message ?? 'no user'}`);
+    if (/email not confirmed|not confirmed/i.test(error?.message ?? '')) {
+      throw new EmailNotConfirmedError();
+    }
+    throw new Error(`[${label}] signInWithPassword failed: ${error?.message ?? 'no user'}`);
   }
   console.log(`[${label}] signed in as ${data.user.id}`);
-  return { email, userId: data.user.id };
+  return { email: cred.email, userId: data.user.id };
+}
+
+function printConfirmationInstructions(emailA: string, emailB: string): void {
+  output.write(
+    [
+      '',
+      '────────────────────────────────────────────────────────────────',
+      'GATE BLOCKED: the two test users exist but are NOT confirmed, so',
+      'password sign-in is refused. No email/SMTP is available to confirm',
+      'them, and this gate intentionally does not use the service_role key.',
+      '',
+      'Do ONE of the following in the Supabase dashboard, then re-run',
+      '`pnpm gate:rls` (a fresh pair of users is created each run):',
+      '',
+      'OPTION 1 — temporarily allow unconfirmed sign-in (fastest):',
+      '  1. Dashboard → Authentication → Sign In / Providers → Email.',
+      '  2. Turn OFF "Confirm email" (a.k.a. "Enable email confirmations").',
+      '  3. Save, re-run `pnpm gate:rls`.',
+      '  4. IMPORTANT: turn "Confirm email" back ON afterward to restore',
+      '     your original auth config.',
+      '',
+      'OPTION 2 — manually confirm just these two users (leaves config as-is):',
+      '  1. Dashboard → Authentication → Users.',
+      `  2. Find ${emailA}`,
+      `         and ${emailB}`,
+      '  3. For each: ⋯ menu → "Confirm email" (or "Send confirmation" is NOT',
+      '     needed — pick the confirm action).',
+      '  4. Re-run `pnpm gate:rls` — but note step (1) creates NEW users with a',
+      '     new timestamp each run, so for Option 2 keep these exact users:',
+      '     re-running regenerates emails. If you confirm manually, instead',
+      '     prefer OPTION 1 which works with freshly-created users.',
+      '',
+      'Also ensure Authentication → Sign In / Providers → Email has',
+      '"Allow new users to sign up" ENABLED, or signUp will be rejected.',
+      '────────────────────────────────────────────────────────────────',
+      '',
+    ].join('\n'),
+  );
 }
 
 type Check = { name: string; pass: boolean; detail: string };
@@ -110,21 +179,47 @@ async function main(): Promise<void> {
   const { url, anonKey } = loadEnv();
   const clientA = freshClient(url, anonKey);
   const clientB = freshClient(url, anonKey);
-  const rl = createInterface({ input, output });
+
+  const ts = Date.now();
+  // example.com / RFC-2606 reserved domains are rejected by GoTrue's validator,
+  // so default to a domain it accepts. Override with RLS_GATE_EMAIL_DOMAIN if
+  // your project has an email-domain allowlist.
+  const domain = (process.env.RLS_GATE_EMAIL_DOMAIN ?? 'gmail.com').replace(/^@/, '');
+  const credA: Cred = { email: `rls-gate-a-${ts}@${domain}`, password: generatePassword() };
+  const credB: Cred = { email: `rls-gate-b-${ts}@${domain}`, password: generatePassword() };
 
   const checks: Check[] = [];
   let insertedId: string | null = null;
 
   try {
-    console.log('=== RLS cross-user isolation gate ===');
-    const a = await signInViaOtp(clientA, rl, 'A');
-    const b = await signInViaOtp(clientB, rl, 'B');
+    console.log('=== RLS cross-user isolation gate (password test users) ===');
+    console.log(`test user A: ${credA.email}`);
+    console.log(`test user B: ${credB.email}`);
 
-    if (a.userId === b.userId) {
-      throw new Error('A and B resolved to the SAME user — use two different emails.');
+    // Create both throwaway users with the anon key.
+    await signUpUser(clientA, credA, 'A');
+    await signUpUser(clientB, credB, 'B');
+
+    // Sign both in by password → two independent authenticated sessions.
+    let a: { email: string; userId: string };
+    let b: { email: string; userId: string };
+    try {
+      a = await signInUser(clientA, credA, 'A');
+      b = await signInUser(clientB, credB, 'B');
+    } catch (err) {
+      if (err instanceof EmailNotConfirmedError) {
+        printConfirmationInstructions(credA.email, credB.email);
+        console.log('\nGATE: FAIL (test users not confirmed — see steps above)');
+        process.exit(1);
+      }
+      throw err;
     }
 
-    const tagId = `gate-test-${Date.now()}`;
+    if (a.userId === b.userId) {
+      throw new Error('A and B resolved to the SAME user — unexpected.');
+    }
+
+    const tagId = `gate-test-${ts}`;
 
     // 1. A inserts its own row.
     {
@@ -216,7 +311,8 @@ async function main(): Promise<void> {
         error ? `\ncleanup: FAILED (${error.message})` : '\ncleanup: A deleted its test row',
       );
     }
-    rl.close();
+    await clientA.auth.signOut();
+    await clientB.auth.signOut();
   }
 
   console.log('\n=== Results ===');
@@ -225,6 +321,20 @@ async function main(): Promise<void> {
   }
   const allPass = checks.length === 5 && checks.every((c) => c.pass);
   console.log(`\nGATE: ${allPass ? 'PASS' : 'FAIL'}`);
+
+  // Throwaway-user removal: deleting a user needs admin access (service_role /
+  // dashboard), which this gate intentionally avoids. Tell the operator how to
+  // purge them so the auth user list stays clean.
+  console.log(
+    [
+      '',
+      'TEST USER CLEANUP (manual — gate avoids service_role/admin):',
+      `  Dashboard → Authentication → Users → delete ${credA.email}`,
+      `                                       and ${credB.email}`,
+      '  (They are harmless throwaways with random passwords if left in place.)',
+    ].join('\n'),
+  );
+
   process.exit(allPass ? 0 : 1);
 }
 
