@@ -3,12 +3,15 @@
     "appName": "Mezastar 交換公平性工具",
     "tag": "標籤",
     "grade": "等級",
-    "energy": "寶可能量"
+    "energy": "寶可能量",
+    "navCatalog": "圖鑑",
+    "navCompare": "比較交換"
   },
   "home": {
     "title": "Mezastar 交換公平性工具",
     "tagline": "兩個人各挑一批標籤，看看這筆交換公不公平。",
-    "viewCatalog": "瀏覽標籤圖鑑"
+    "viewCatalog": "瀏覽標籤圖鑑",
+    "viewCompare": "比較一筆交換"
   },
   "catalog": {
     "title": "標籤圖鑑",
@@ -130,5 +133,47 @@
     "increment": "增加數量",
     "decrement": "減少數量",
     "signInToTrack": "登入以記錄你的收藏"
+  },
+  "compare": {
+    "title": "交換比較器",
+    "subtitle": "為交換的雙方各挑選標籤，看看公不公平，並完整說明原因。",
+    "mySide": "我方",
+    "theirSide": "對方",
+    "sideScore": "本方總分",
+    "sideMarket": "市場價值",
+    "clearSide": "清除這一方",
+    "clearAll": "全部清除",
+    "emptySide": "尚未加入標籤——可從下方的收藏或圖鑑加入。",
+    "lineTotal": "{score} 分 × {quantity}",
+    "remove": "移除標籤",
+    "showBreakdown": "顯示評分明細",
+    "hideBreakdown": "隱藏評分明細",
+    "dualTag": "雙人標籤",
+    "addHeading": "加入標籤",
+    "fromCollection": "從我的收藏",
+    "fromCatalog": "從圖鑑",
+    "signInToPull": "登入以從你的收藏加入標籤。",
+    "noOwned": "尚無已擁有的標籤——在圖鑑中將標籤標記為已擁有，即可在此快速加入。",
+    "searchPlaceholder": "以名稱或編號搜尋（例如 皮卡丘、Pikachu、R-1-1）",
+    "searchResults": "{count, plural, =0 {沒有符合} other {# 個符合}}",
+    "noResults": "沒有符合搜尋條件的標籤。",
+    "addToMine": "加入我方",
+    "addToTheirs": "加入對方",
+    "addToMineShort": "＋ 我方",
+    "addToTheirsShort": "＋ 對方",
+    "verdictHeading": "判定",
+    "addBothSides": "雙方各加入至少一個標籤即可看到判定。",
+    "verdictFair": "公平交換",
+    "verdictSlight": "略不對等",
+    "verdictUnfair": "不公平交換",
+    "whyDiff": "分數差距：{diff} 分（{pct}%）",
+    "richerMine": "我方價值較高。",
+    "richerTheirs": "對方價值較高。",
+    "richerEqual": "雙方分數相同。",
+    "topUpHeading": "建議倒貼金額",
+    "topUpMine": "我方可再補約 NT${amount} 以平衡市場價值。",
+    "topUpTheirs": "對方可再補約 NT${amount} 以平衡市場價值。",
+    "topUpNone": "市場價值已相當——不需倒貼。",
+    "topUpNote": "依市場價格差距（各標籤中位數總和）計算，與分數分開呈現。"
   }
 }

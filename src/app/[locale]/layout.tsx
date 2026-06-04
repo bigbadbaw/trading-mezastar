@@ -41,12 +41,20 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <CollectionProvider>
             <header className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-2 sm:px-6">
-              <Link
-                href="/catalog"
-                className="inline-flex min-h-11 items-center text-sm font-semibold text-slate-900 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              >
-                {tCommon('appName')}
-              </Link>
+              <nav className="flex items-center gap-3">
+                <Link
+                  href="/catalog"
+                  className="inline-flex min-h-11 items-center text-sm font-semibold text-slate-900 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  {tCommon('appName')}
+                </Link>
+                <Link
+                  href="/compare"
+                  className="inline-flex min-h-11 items-center rounded-lg px-2 text-sm font-medium text-slate-600 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  {tCommon('navCompare')}
+                </Link>
+              </nav>
               <AuthStatus />
             </header>
             {children}

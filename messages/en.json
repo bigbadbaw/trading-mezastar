@@ -3,12 +3,15 @@
     "appName": "Mezastar Trade-Fairness Tool",
     "tag": "Tag",
     "grade": "Grade",
-    "energy": "Energy"
+    "energy": "Energy",
+    "navCatalog": "Catalog",
+    "navCompare": "Compare"
   },
   "home": {
     "title": "Mezastar Trade-Fairness Tool",
     "tagline": "Two people each pick a batch of tags — see whether the trade is fair.",
-    "viewCatalog": "Browse the tag catalog"
+    "viewCatalog": "Browse the tag catalog",
+    "viewCompare": "Compare a trade"
   },
   "catalog": {
     "title": "Tag Catalog",
@@ -130,5 +133,47 @@
     "increment": "Increase quantity",
     "decrement": "Decrease quantity",
     "signInToTrack": "Sign in to track your collection"
+  },
+  "compare": {
+    "title": "Trade Comparator",
+    "subtitle": "Build each side of a trade and see whether it's fair — with the full reason why.",
+    "mySide": "My side",
+    "theirSide": "Their side",
+    "sideScore": "Side score",
+    "sideMarket": "Market value",
+    "clearSide": "Clear this side",
+    "clearAll": "Clear all",
+    "emptySide": "No tags yet — add from your collection or the catalog below.",
+    "lineTotal": "{score} pts × {quantity}",
+    "remove": "Remove tag",
+    "showBreakdown": "Show score breakdown",
+    "hideBreakdown": "Hide score breakdown",
+    "dualTag": "Dual tag",
+    "addHeading": "Add tags",
+    "fromCollection": "From my collection",
+    "fromCatalog": "From the catalog",
+    "signInToPull": "Sign in to pull tags from your collection.",
+    "noOwned": "No owned tags yet — mark tags as owned in the catalog to quick-add them here.",
+    "searchPlaceholder": "Search by name or number (e.g. Pikachu, 皮卡丘, R-1-1)",
+    "searchResults": "{count, plural, =0 {No matches} =1 {1 match} other {# matches}}",
+    "noResults": "No tags match your search.",
+    "addToMine": "Add to my side",
+    "addToTheirs": "Add to their side",
+    "addToMineShort": "＋ My",
+    "addToTheirsShort": "＋ Their",
+    "verdictHeading": "Verdict",
+    "addBothSides": "Add at least one tag to each side to see the verdict.",
+    "verdictFair": "Fair trade",
+    "verdictSlight": "Slightly uneven",
+    "verdictUnfair": "Unfair trade",
+    "whyDiff": "Score gap: {diff} pts ({pct}%)",
+    "richerMine": "Your side is worth more.",
+    "richerTheirs": "Their side is worth more.",
+    "richerEqual": "Both sides score the same.",
+    "topUpHeading": "Suggested cash top-up",
+    "topUpMine": "Your side could add about NT${amount} to match the market value.",
+    "topUpTheirs": "Their side could add about NT${amount} to match the market value.",
+    "topUpNone": "Market values already match — no cash top-up needed.",
+    "topUpNote": "Based on the market-price gap (sum of medians), separate from the score."
   }
 }
