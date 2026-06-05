@@ -178,6 +178,21 @@
     "topUpMine": "Your side could add about NT${amount} to match the market value.",
     "topUpTheirs": "Their side could add about NT${amount} to match the market value.",
     "topUpNone": "Market values already match — no cash top-up needed.",
-    "topUpNote": "Based on the market-price gap (sum of medians), separate from the score."
+    "topUpNote": "Based on the market-price gap (sum of medians), separate from the score.",
+    "axisCollector": "Collector value",
+    "axisMarket": "Market value (cash)",
+    "stateAgree": "Fair on both collector value and market.",
+    "stateReinforceMine": "Your side is ahead on both collector value and market.",
+    "stateReinforceTheirs": "Their side is ahead on both collector value and market.",
+    "divergeScoreEvenMarketMine": "Even on collector value — but your side is worth about NT${amount} more at market.",
+    "divergeScoreEvenMarketTheirs": "Even on collector value — but their side is worth about NT${amount} more at market.",
+    "divergeMarketEvenScoreMine": "Your side is ahead on collector value, but the market values are about even.",
+    "divergeMarketEvenScoreTheirs": "Their side is ahead on collector value, but the market values are about even.",
+    "divergeOppositeScoreMine": "Your side scores higher on collector value, but their side is worth about NT${amount} more at market.",
+    "divergeOppositeScoreTheirs": "Their side scores higher on collector value, but your side is worth about NT${amount} more at market.",
+    "marketGapMine": "Your side is worth about NT${amount} more.",
+    "marketGapTheirs": "Their side is worth about NT${amount} more.",
+    "marketGapEven": "Market values are about even.",
+    "marketUnverifiedNote": "≈ This cash figure leans on unverified prices — treat it as a rough guide."
   }
 }

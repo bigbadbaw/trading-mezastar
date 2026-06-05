@@ -178,6 +178,21 @@
     "topUpMine": "我方可再補約 NT${amount} 以平衡市場價值。",
     "topUpTheirs": "對方可再補約 NT${amount} 以平衡市場價值。",
     "topUpNone": "市場價值已相當——不需倒貼。",
-    "topUpNote": "依市場價格差距（各標籤中位數總和）計算，與分數分開呈現。"
+    "topUpNote": "依市場價格差距（各標籤中位數總和）計算，與分數分開呈現。",
+    "axisCollector": "收藏價值",
+    "axisMarket": "市場價值（現金）",
+    "stateAgree": "收藏價值與市場價值都公平。",
+    "stateReinforceMine": "我方在收藏價值與市場價值上都較高。",
+    "stateReinforceTheirs": "對方在收藏價值與市場價值上都較高。",
+    "divergeScoreEvenMarketMine": "收藏價值相當——但我方在市場上約多值 NT${amount}。",
+    "divergeScoreEvenMarketTheirs": "收藏價值相當——但對方在市場上約多值 NT${amount}。",
+    "divergeMarketEvenScoreMine": "我方收藏價值較高，但市場價值大致相當。",
+    "divergeMarketEvenScoreTheirs": "對方收藏價值較高，但市場價值大致相當。",
+    "divergeOppositeScoreMine": "我方收藏價值較高，但對方在市場上約多值 NT${amount}。",
+    "divergeOppositeScoreTheirs": "對方收藏價值較高，但我方在市場上約多值 NT${amount}。",
+    "marketGapMine": "我方約多值 NT${amount}。",
+    "marketGapTheirs": "對方約多值 NT${amount}。",
+    "marketGapEven": "市場價值大致相當。",
+    "marketUnverifiedNote": "≈ 此金額部分依據未驗證價格，僅供參考。"
   }
 }
