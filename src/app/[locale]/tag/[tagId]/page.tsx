@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { ScoreBreakdownTable } from '@/components/catalog/ScoreBreakdownTable';
+import { TagImage } from '@/components/catalog/TagImage';
 import { TypeBadge } from '@/components/catalog/TypeBadge';
 import { CollectionControls } from '@/components/collection/CollectionControls';
 import { getScoredCatalog, getScoredTag, type ScoredTag } from '@/data/catalog';
@@ -48,9 +49,13 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
       </Link>
 
       <header className="mt-4 flex items-start gap-4">
-        <span className="text-6xl leading-none" role="img" aria-label={tag.nameEn}>
-          {tag.emoji}
-        </span>
+        <TagImage
+          tagId={tag.tagId}
+          emoji={tag.emoji}
+          nameEn={tag.nameEn}
+          imgClassName="h-16 w-16 rounded object-contain"
+          emojiClassName="text-6xl leading-none"
+        />
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-slate-900">{tag.nameEn}</h1>
           <p className="text-lg text-slate-500">{tag.nameZh}</p>

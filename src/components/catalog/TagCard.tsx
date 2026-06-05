@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
 import { isUnconfirmed, tagLabelParts, zhEnrichment } from '@/lib/tag-display';
 
+import { TagImage } from './TagImage';
 import { TypeBadge } from './TypeBadge';
 
 /** A single catalog card. Links to the detail view keyed by the stable tagId. */
@@ -26,9 +27,13 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
         className="flex flex-1 flex-col gap-2 rounded-t-xl p-4 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-600"
       >
         <div className="flex items-start justify-between gap-2">
-          <span className="text-4xl leading-none" role="img" aria-label={tag.nameEn}>
-            {tag.emoji}
-          </span>
+          <TagImage
+            tagId={tag.tagId}
+            emoji={tag.emoji}
+            nameEn={tag.nameEn}
+            imgClassName="h-11 w-11 rounded object-contain"
+            emojiClassName="text-4xl leading-none"
+          />
           <span
             className={`inline-flex min-w-9 items-center justify-center rounded-md px-2 py-1 text-sm font-bold ${gradeBadgeClass(score.grade.grade)}`}
             title={tScoring('total')}
