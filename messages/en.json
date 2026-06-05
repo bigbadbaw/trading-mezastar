@@ -124,6 +124,11 @@
     "sendError": "We couldn't send the link. Check the email address and try again.",
     "backToCatalog": "Back to catalog"
   },
+  "pending": {
+    "title": "Awaiting approval",
+    "body": "Your account is set up and you're signed in. Access is invite-only, so member features unlock once an admin approves you.",
+    "detail": "No action needed — check back soon. You can sign out from the menu above."
+  },
   "collection": {
     "statusLabel": "Collection status",
     "owned": "Owned",

@@ -15,12 +15,25 @@
  * SECURITY: this gate deliberately never uses the service_role / secret key.
  * Everything here runs with the same anon key a browser client would use.
  *
- * Proves:
+ * Proves (collection_items isolation):
  *   1. User A can INSERT a row (auth.uid() = user_id).
  *   2. User B CANNOT SELECT A's row (0 rows).
  *   3. User B CANNOT UPDATE A's row (0 rows affected).
  *   4. User B CANNOT DELETE A's row (0 rows affected).
  *   5. User A CAN SELECT its own row (1 row).
+ *
+ * Proves (M5 invite/approval gate — profiles):
+ *   6. A's profile row was auto-created with approved = false (SELECT own).
+ *   7. A CANNOT self-approve: UPDATE approved=true affects 0 rows AND a re-read
+ *      still shows false (no UPDATE policy ⇒ the gate cannot be bypassed).
+ *   8. B CANNOT SELECT A's profile (0 rows — select-own).
+ *   9. The real getApprovalState helper over A's live (unapproved) session
+ *      resolves to { authenticated: true, approved: false } → blocked.
+ *  10–13. The same helper maps a controlled approved row → approved:true
+ *      (passes), and missing-row / query-error / unauthenticated → approved:false
+ *      (fail-closed). This proves "approved passes" without ever using the
+ *      service_role key (checks 6–9 need the migration applied; 10–13 are pure).
+ *
  * Cleanup: A deletes its row via RLS; the script prints how to remove the two
  * throwaway test users (user deletion needs admin access we intentionally lack).
  *
@@ -34,6 +47,8 @@ import { readFileSync } from 'node:fs';
 import { stdout as output } from 'node:process';
 
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+
+import { getApprovalState } from '../src/lib/auth/approval';
 
 function loadEnv(): { url: string; anonKey: string } {
   const raw = readFileSync('.env.local', 'utf8');
@@ -79,6 +94,32 @@ function freshClient(url: string, anonKey: string): SupabaseClient {
     auth: { persistSession: false, autoRefreshToken: false },
     realtime: { transport: NoopWS as unknown as typeof WebSocket },
   });
+}
+
+/**
+ * Minimal in-memory SupabaseClient stub for the approval-helper MAPPING checks.
+ * It implements only what getApprovalState touches — auth.getUser() and
+ * from('profiles').select(...).eq(...).maybeSingle() — so we can prove the
+ * helper's decision (approved row → pass, missing/error/unauth → fail-closed)
+ * without a live admin flip and without the service_role key.
+ */
+function stubClient(opts: {
+  user: { id: string } | null;
+  row?: { approved: boolean } | null;
+  error?: boolean;
+}): SupabaseClient {
+  const result = opts.error
+    ? { data: null, error: { message: 'stub query error' } }
+    : { data: opts.row ?? null, error: null };
+  const builder = {
+    select: () => builder,
+    eq: () => builder,
+    maybeSingle: async () => result,
+  };
+  return {
+    auth: { getUser: async () => ({ data: { user: opts.user }, error: null }) },
+    from: () => builder,
+  } as unknown as SupabaseClient;
 }
 
 type Cred = { email: string; password: string };
@@ -300,6 +341,105 @@ async function main(): Promise<void> {
           : `error: ${error?.message}, quantity: ${data?.quantity}`,
       });
     }
+
+    // ===== M5 invite/approval gate (profiles) =====
+
+    // 6. A's profile row exists and was auto-created with approved = false.
+    {
+      const { data, error } = await clientA
+        .from('profiles')
+        .select('approved')
+        .eq('id', a.userId)
+        .maybeSingle();
+      const pass = !error && data?.approved === false;
+      checks.push({
+        name: 'A profile auto-created, approved = false',
+        pass,
+        detail: error
+          ? `error: ${error.message} (is migration 0002 applied?)`
+          : `approved = ${data?.approved}`,
+      });
+    }
+
+    // 7. A CANNOT self-approve (no UPDATE policy ⇒ 0 rows; re-read stays false).
+    {
+      const upd = await clientA
+        .from('profiles')
+        .update({ approved: true })
+        .eq('id', a.userId)
+        .select('*');
+      const affected = upd.data?.length ?? 0;
+      const re = await clientA
+        .from('profiles')
+        .select('approved')
+        .eq('id', a.userId)
+        .maybeSingle();
+      const pass = affected === 0 && re.data?.approved === false;
+      checks.push({
+        name: 'A CANNOT self-approve (the gate)',
+        pass,
+        detail: `rows affected: ${affected}, approved after: ${re.data?.approved}`,
+      });
+    }
+
+    // 8. B cannot SELECT A's profile (select-own).
+    {
+      const { data, error } = await clientB
+        .from('profiles')
+        .select('approved')
+        .eq('id', a.userId);
+      const rows = data?.length ?? 0;
+      checks.push({
+        name: "B CANNOT SELECT A's profile",
+        pass: !error && rows === 0,
+        detail: `rows returned: ${rows}${error ? `, error: ${error.message}` : ''}`,
+      });
+    }
+
+    // 9. The real helper over A's live (unapproved) session → blocked.
+    {
+      const state = await getApprovalState(clientA);
+      const pass = state.authenticated && !state.approved;
+      checks.push({
+        name: 'helper: live unapproved user → blocked',
+        pass,
+        detail: `authenticated=${state.authenticated}, approved=${state.approved}`,
+      });
+    }
+
+    // 10–13. Helper decision mapping (pure stubs — no DB, no service_role).
+    {
+      const approved = await getApprovalState(stubClient({ user: { id: 'x' }, row: { approved: true } }));
+      checks.push({
+        name: 'helper: approved row → passes',
+        pass: approved.approved === true,
+        detail: `approved=${approved.approved}`,
+      });
+    }
+    {
+      const missing = await getApprovalState(stubClient({ user: { id: 'x' }, row: null }));
+      checks.push({
+        name: 'helper: missing profile → fail-closed',
+        pass: missing.authenticated && missing.approved === false,
+        detail: `authenticated=${missing.authenticated}, approved=${missing.approved}`,
+      });
+    }
+    {
+      const errored = await getApprovalState(stubClient({ user: { id: 'x' }, error: true }));
+      checks.push({
+        name: 'helper: query error → fail-closed',
+        pass: errored.approved === false,
+        detail: `approved=${errored.approved}`,
+      });
+    }
+    {
+      const anon = await getApprovalState(stubClient({ user: null }));
+      checks.push({
+        name: 'helper: unauthenticated → blocked',
+        pass: anon.authenticated === false && anon.approved === false,
+        detail: `authenticated=${anon.authenticated}, approved=${anon.approved}`,
+      });
+    }
   } finally {
     // Cleanup: A removes its own row via RLS.
     if (insertedId) {
@@ -319,7 +459,7 @@ async function main(): Promise<void> {
   for (const c of checks) {
     console.log(`${c.pass ? 'PASS' : 'FAIL'}  ${c.name} — ${c.detail}`);
   }
-  const allPass = checks.length === 5 && checks.every((c) => c.pass);
+  const allPass = checks.length === 13 && checks.every((c) => c.pass);
   console.log(`\nGATE: ${allPass ? 'PASS' : 'FAIL'}`);
 
   // Throwaway-user removal: deleting a user needs admin access (service_role /
