@@ -99,7 +99,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
   }
 
   return (
-    <ul className="flex max-h-80 flex-col gap-2 overflow-y-auto">
+    <ul className="flex max-h-[30rem] flex-col gap-2 overflow-y-auto">
       {GROUP_ORDER.map((key) => {
         const rows = groups[key];
         if (rows.length === 0) return null;
@@ -114,15 +114,17 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                 return (
                   <li
                     key={entry.tag.tagId}
-                    className="flex items-center gap-2 rounded-lg border border-slate-200 bg-white p-2"
+                    className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-3"
                   >
-                    <TagImage
-                      tagId={entry.tag.tagId}
-                      emoji={entry.tag.emoji}
-                      nameEn={entry.tag.nameEn}
-                      imgClassName="h-8 w-8 rounded object-contain"
-                      emojiClassName="text-2xl leading-none"
-                    />
+                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-slate-50">
+                      <TagImage
+                        tagId={entry.tag.tagId}
+                        emoji={entry.tag.emoji}
+                        nameEn={entry.tag.nameEn}
+                        imgClassName="h-16 w-auto object-contain"
+                        emojiClassName="text-5xl leading-none"
+                      />
+                    </div>
                     <div className="min-w-0 flex-1">
                       <p className="truncate text-sm font-semibold text-slate-900">{entry.tag.nameEn}</p>
                       <p className="truncate text-xs text-slate-500">{entry.tag.nameZh}</p>

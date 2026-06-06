@@ -34,13 +34,15 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
   return (
     <li className="rounded-lg border border-slate-200 bg-white p-3">
       <div className="flex items-start gap-3">
-        <TagImage
-          tagId={tag.tagId}
-          emoji={tag.emoji}
-          nameEn={tag.nameEn}
-          imgClassName="h-10 w-10 rounded object-contain"
-          emojiClassName="text-3xl leading-none"
-        />
+        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-slate-50">
+          <TagImage
+            tagId={tag.tagId}
+            emoji={tag.emoji}
+            nameEn={tag.nameEn}
+            imgClassName="h-20 w-auto object-contain"
+            emojiClassName="text-6xl leading-none"
+          />
+        </div>
 
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
