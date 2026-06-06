@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import { ScoreBreakdownTable } from '@/components/catalog/ScoreBreakdownTable';
+import { TagImage } from '@/components/catalog/TagImage';
 import type { ScoredLine } from '@/lib/compare/basket';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
 import { isUnconfirmed } from '@/lib/tag-display';
@@ -33,9 +34,13 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
   return (
     <li className="rounded-lg border border-slate-200 bg-white p-3">
       <div className="flex items-start gap-3">
-        <span className="text-3xl leading-none" role="img" aria-label={tag.nameEn}>
-          {tag.emoji}
-        </span>
+        <TagImage
+          tagId={tag.tagId}
+          emoji={tag.emoji}
+          nameEn={tag.nameEn}
+          imgClassName="h-10 w-10 rounded object-contain"
+          emojiClassName="text-3xl leading-none"
+        />
 
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">

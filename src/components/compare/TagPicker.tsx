@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import type { ScoredTag } from '@/data/catalog';
+import { TagImage } from '@/components/catalog/TagImage';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
 
 import type { SideId } from './BasketPanel';
@@ -66,9 +67,13 @@ export function TagPicker({ entries, onAdd }: Props) {
                   key={entry.tag.tagId}
                   className="flex items-center gap-2 rounded-lg border border-slate-200 bg-white p-2"
                 >
-                  <span className="text-2xl leading-none" role="img" aria-label={entry.tag.nameEn}>
-                    {entry.tag.emoji}
-                  </span>
+                  <TagImage
+                    tagId={entry.tag.tagId}
+                    emoji={entry.tag.emoji}
+                    nameEn={entry.tag.nameEn}
+                    imgClassName="h-8 w-8 rounded object-contain"
+                    emojiClassName="text-2xl leading-none"
+                  />
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-semibold text-slate-900">{entry.tag.nameEn}</p>
                     <p className="truncate text-xs text-slate-500">{entry.tag.nameZh}</p>
