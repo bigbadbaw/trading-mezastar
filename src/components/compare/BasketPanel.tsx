@@ -40,7 +40,10 @@ export function BasketPanel({ side, score, locale, onSetQuantity, onRemove, onCl
         </h2>
         <div className="text-right">
           <p className="text-sm text-slate-500">{t('sideScore')}</p>
-          <p className="text-2xl font-bold tabular-nums text-slate-900">{basket.total}</p>
+          <p className="text-2xl font-bold tabular-nums text-slate-900">
+            {basket.total}{' '}
+            <span className="text-base font-medium text-slate-500">{t('sideScoreUnit')}</span>
+          </p>
         </div>
       </div>
 

@@ -55,11 +55,13 @@ export function VerdictPanel({ result }: { result: ComparisonResult }) {
   const meta = VERDICT_META[verdict.verdict];
 
   const richerKey =
-    verdict.richerSide === 'left'
-      ? 'richerMine'
-      : verdict.richerSide === 'right'
-        ? 'richerTheirs'
-        : 'richerEqual';
+    verdict.verdict === 'fair'
+      ? 'richerFair'
+      : verdict.richerSide === 'left'
+        ? 'richerMine'
+        : verdict.richerSide === 'right'
+          ? 'richerTheirs'
+          : 'richerEqual';
 
   const gapKey =
     axes.marketDirection === 'mine'

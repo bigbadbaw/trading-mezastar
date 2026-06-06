@@ -179,6 +179,8 @@
     "richerMine": "我方價值較高。",
     "richerTheirs": "對方價值較高。",
     "richerEqual": "雙方分數相同。",
+    "richerFair": "分數在公平範圍內。",
+    "sideScoreUnit": "分",
     "topUpHeading": "建議倒貼金額",
     "topUpMine": "我方可再補約 NT${amount} 以平衡市場價值。",
     "topUpTheirs": "對方可再補約 NT${amount} 以平衡市場價值。",

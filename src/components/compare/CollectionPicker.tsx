@@ -153,7 +153,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('theirs', entry.tag.tagId, quantity)}
                           aria-label={t('addToTheirs')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-500 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-600 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                         >
                           {t('addToTheirsShort')}
                         </button>
@@ -172,7 +172,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('mine', entry.tag.tagId, quantity)}
                           aria-label={t('addToMine')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-500 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-600 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                         >
                           {t('addToMineShort')}
                         </button>

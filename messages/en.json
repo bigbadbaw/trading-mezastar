@@ -179,6 +179,8 @@
     "richerMine": "Your side is worth more.",
     "richerTheirs": "Their side is worth more.",
     "richerEqual": "Both sides score the same.",
+    "richerFair": "Scores are within the fair range.",
+    "sideScoreUnit": "pts",
     "topUpHeading": "Suggested cash top-up",
     "topUpMine": "Your side could add about NT${amount} to match the market value.",
     "topUpTheirs": "Their side could add about NT${amount} to match the market value.",

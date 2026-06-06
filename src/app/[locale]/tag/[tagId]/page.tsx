@@ -48,27 +48,34 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
         ← {t('backToCatalog')}
       </Link>
 
-      <header className="mt-4 flex items-start gap-4">
-        <TagImage
-          tagId={tag.tagId}
-          emoji={tag.emoji}
-          nameEn={tag.nameEn}
-          imgClassName="h-16 w-16 rounded object-contain"
-          emojiClassName="text-6xl leading-none"
-        />
-        <div className="flex-1">
-          <h1 className="text-3xl font-bold text-slate-900">{tag.nameEn}</h1>
-          <p className="text-lg text-slate-500">{tag.nameZh}</p>
-          <p className="mt-1 font-mono text-xs text-slate-400">
-            {tag.tagId} · {locale === 'zh-TW' ? pack.name.zh : pack.name.en}
-          </p>
+      <header className="mt-4">
+        {/* Hero art — focal point of the detail page */}
+        <div className="flex justify-center rounded-xl bg-slate-50 p-8">
+          <TagImage
+            tagId={tag.tagId}
+            emoji={tag.emoji}
+            nameEn={tag.nameEn}
+            imgClassName="h-48 w-auto object-contain"
+            emojiClassName="text-9xl leading-none"
+          />
         </div>
-        <span
-          className={`inline-flex flex-col items-center rounded-lg px-3 py-2 text-center font-bold ${gradeBadgeClass(score.grade.grade)}`}
-        >
-          <span className="text-2xl leading-none">{score.grade.grade}</span>
-          <span className="text-sm tabular-nums">{score.total}</span>
-        </span>
+
+        {/* Title + grade below art */}
+        <div className="mt-4 flex items-start gap-4">
+          <div className="flex-1">
+            <h1 className="text-3xl font-bold text-slate-900">{tag.nameEn}</h1>
+            <p className="text-lg text-slate-500">{tag.nameZh}</p>
+            <p className="mt-1 font-mono text-xs text-slate-400">
+              {tag.tagId} · {locale === 'zh-TW' ? pack.name.zh : pack.name.en}
+            </p>
+          </div>
+          <span
+            className={`inline-flex flex-col items-center rounded-lg px-3 py-2 text-center font-bold ${gradeBadgeClass(score.grade.grade)}`}
+          >
+            <span className="text-2xl leading-none">{score.grade.grade}</span>
+            <span className="text-sm tabular-nums">{score.total}</span>
+          </span>
+        </div>
       </header>
 
       <section className="mt-6 flex flex-wrap items-center gap-2 text-base text-slate-700">
