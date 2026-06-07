@@ -1,13 +1,25 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 
 import type { PackMeta, ScoredTag } from '@/data/catalog';
 import type { PokemonType } from '@/data/schema';
+import { useRouter } from '@/i18n/navigation';
+import {
+  buildCatalogHref,
+  catalogScrollStorageKey,
+  hasActiveCatalogFilters,
+  parseCatalogFilters,
+  type CatalogFilters,
+} from '@/lib/catalog-filters';
 import { ALL_TYPES } from '@/lib/pokemon-types';
 
 import { TagCard } from './TagCard';
+
+const CATALOG_PATH = '/catalog';
+const SEARCH_DEBOUNCE_MS = 300;
 
 interface Props {
   entries: ScoredTag[];
@@ -19,15 +31,75 @@ function normalize(s: string): string {
   return s.normalize('NFKC').toLowerCase().trim();
 }
 
+function saveCatalogScroll(scrollKey: string): void {
+  try {
+    sessionStorage.setItem(scrollKey, String(window.scrollY));
+  } catch {
+    // sessionStorage unavailable (private mode, quota, etc.)
+  }
+}
+
+function readAndClearScroll(scrollKey: string): number | null {
+  try {
+    const raw = sessionStorage.getItem(scrollKey);
+    if (raw === null) return null;
+    sessionStorage.removeItem(scrollKey);
+    const y = Number.parseInt(raw, 10);
+    return Number.isFinite(y) ? y : null;
+  } catch {
+    return null;
+  }
+}
+
 export function CatalogBrowser({ entries, packs, locale }: Props) {
   const t = useTranslations('catalog');
-  const tTier = useTranslations('gradeTier');
   const tTypes = useTranslations('types');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const queryString = searchParams.toString();
+  const filters = useMemo(
+    () => parseCatalogFilters(searchParams),
+    [searchParams],
+  );
 
-  const [query, setQuery] = useState('');
-  const [pack, setPack] = useState('');
-  const [grade, setGrade] = useState('');
-  const [type, setType] = useState('');
+  const [queryDraft, setQueryDraft] = useState(filters.q);
+  const scrollRestoredRef = useRef(false);
+  /** undefined = not read yet; null = no saved position for this key. */
+  const savedScrollRef = useRef<number | null | undefined>(undefined);
+
+  const replaceFilters = useCallback(
+    (patch: Partial<CatalogFilters>) => {
+      const current = parseCatalogFilters(searchParams);
+      router.replace(buildCatalogHref({ ...current, ...patch }));
+    },
+    [router, searchParams],
+  );
+
+  // Keep the search input in sync when the URL changes (back/forward, clear, locale swap).
+  useEffect(() => {
+    setQueryDraft(filters.q);
+  }, [filters.q]);
+
+  // Debounce search → URL (replace, not push).
+  useEffect(() => {
+    const trimmedDraft = queryDraft.trim();
+    if (trimmedDraft === filters.q.trim()) return;
+
+    const handle = window.setTimeout(() => {
+      replaceFilters({ q: queryDraft });
+    }, SEARCH_DEBOUNCE_MS);
+
+    return () => window.clearTimeout(handle);
+  }, [queryDraft, filters.q, replaceFilters]);
+
+  const scrollKey = catalogScrollStorageKey(CATALOG_PATH, queryString);
+
+  // Save scroll when leaving the catalog (e.g. into a tag detail route).
+  useEffect(() => {
+    return () => {
+      saveCatalogScroll(scrollKey);
+    };
+  }, [scrollKey]);
 
   const grades = useMemo(
     () => [...new Set(entries.map((e) => e.tag.grade))].sort((a, b) => b - a),
@@ -35,19 +107,19 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
   );
 
   const filtered = useMemo(() => {
-    const q = normalize(query);
-    const gradeNum = grade === '' ? null : Number(grade);
+    const q = normalize(filters.q);
+    const gradeNum = filters.grade === '' ? null : Number(filters.grade);
     return entries.filter(({ tag }) => {
-      if (pack && tag.pack !== pack) return false;
+      if (filters.pack && tag.pack !== filters.pack) return false;
       if (gradeNum !== null && tag.grade !== gradeNum) return false;
-      if (type && !tag.types.includes(type as PokemonType)) return false;
+      if (filters.type && !tag.types.includes(filters.type as PokemonType)) return false;
       if (q) {
         const hay = `${normalize(tag.nameEn)} ${normalize(tag.nameZh)} ${normalize(tag.num)}`;
         if (!hay.includes(q)) return false;
       }
       return true;
     });
-  }, [entries, query, pack, grade, type]);
+  }, [entries, filters]);
 
   const grouped = useMemo(
     () =>
@@ -60,13 +132,41 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
     [packs, filtered],
   );
 
-  const hasFilters = query !== '' || pack !== '' || grade !== '' || type !== '';
+  const hasFilters = hasActiveCatalogFilters(filters);
 
-  function clear() {
-    setQuery('');
-    setPack('');
-    setGrade('');
-    setType('');
+  // Reset scroll-restore bookkeeping when the catalog URL identity changes.
+  useEffect(() => {
+    scrollRestoredRef.current = false;
+    savedScrollRef.current = undefined;
+  }, [scrollKey]);
+
+  // Restore scroll after the filtered list has rendered (clamp if filters shrank the page).
+  useLayoutEffect(() => {
+    if (scrollRestoredRef.current) return;
+
+    if (savedScrollRef.current === undefined) {
+      savedScrollRef.current = readAndClearScroll(scrollKey);
+    }
+    const savedY = savedScrollRef.current;
+    if (savedY === null) return;
+
+    const applyScroll = (): void => {
+      const maxScroll = Math.max(
+        0,
+        document.documentElement.scrollHeight - window.innerHeight,
+      );
+      window.scrollTo(0, Math.min(Math.max(0, savedY), maxScroll));
+      scrollRestoredRef.current = true;
+    };
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(applyScroll);
+    });
+  }, [scrollKey, grouped.length, filtered.length]);
+
+  function clear(): void {
+    setQueryDraft('');
+    router.replace(CATALOG_PATH);
   }
 
   return (
@@ -83,8 +183,8 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
           <input
             id="catalog-search"
             type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            value={queryDraft}
+            onChange={(e) => setQueryDraft(e.target.value)}
             placeholder={t('searchPlaceholder')}
             className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           />
@@ -96,8 +196,8 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
           </label>
           <select
             id="filter-pack"
-            value={pack}
-            onChange={(e) => setPack(e.target.value)}
+            value={filters.pack}
+            onChange={(e) => replaceFilters({ pack: e.target.value })}
             className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allPacks')}</option>
@@ -115,8 +215,8 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
           </label>
           <select
             id="filter-grade"
-            value={grade}
-            onChange={(e) => setGrade(e.target.value)}
+            value={filters.grade}
+            onChange={(e) => replaceFilters({ grade: e.target.value })}
             className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allGrades')}</option>
@@ -134,8 +234,8 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
           </label>
           <select
             id="filter-type"
-            value={type}
-            onChange={(e) => setType(e.target.value)}
+            value={filters.type}
+            onChange={(e) => replaceFilters({ type: e.target.value })}
             className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allTypes')}</option>
