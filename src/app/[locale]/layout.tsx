@@ -6,6 +6,7 @@ import { AuthStatus } from '@/components/auth/AuthStatus';
 import { CollectionProvider } from '@/components/collection/CollectionProvider';
 import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
+import { fontVariables } from '@/lib/fonts';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={fontVariables}>
         <NextIntlClientProvider messages={messages}>
           <CollectionProvider>
             <header className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-2 sm:px-6">
