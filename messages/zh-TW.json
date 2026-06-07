@@ -5,7 +5,8 @@
     "grade": "等級",
     "energy": "寶可能量",
     "navCatalog": "圖鑑",
-    "navCompare": "比較交換"
+    "navCompare": "比較交換",
+    "switchLanguage": "切換語言"
   },
   "home": {
     "title": "Mezastar 交換公平性工具",

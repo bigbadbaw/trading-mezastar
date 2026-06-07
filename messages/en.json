@@ -5,7 +5,8 @@
     "grade": "Grade",
     "energy": "Energy",
     "navCatalog": "Catalog",
-    "navCompare": "Compare"
+    "navCompare": "Compare",
+    "switchLanguage": "Switch language"
   },
   "home": {
     "title": "Mezastar Trade-Fairness Tool",

@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 import { AuthStatus } from '@/components/auth/AuthStatus';
+import { LocaleSwitcher } from '@/components/LocaleSwitcher';
 import { CollectionProvider } from '@/components/collection/CollectionProvider';
 import { Link } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
@@ -56,7 +58,12 @@ export default async function LocaleLayout({
                   {tCommon('navCompare')}
                 </Link>
               </nav>
-              <AuthStatus />
+              <div className="flex items-center gap-2">
+                <Suspense fallback={<div className="h-11 w-[5.5rem]" aria-hidden />}>
+                  <LocaleSwitcher />
+                </Suspense>
+                <AuthStatus />
+              </div>
             </header>
             {children}
           </CollectionProvider>
