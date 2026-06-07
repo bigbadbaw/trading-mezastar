@@ -200,6 +200,10 @@
     "marketGapMine": "我方約多值 NT${amount}。",
     "marketGapTheirs": "對方約多值 NT${amount}。",
     "marketGapEven": "市場價值大致相當。",
-    "marketUnverifiedNote": "≈ 此金額部分依據未驗證價格，僅供參考。"
+    "marketUnverifiedNote": "≈ 此金額部分依據未驗證價格，僅供參考。",
+    "arrowEven": "雙方分數相當",
+    "arrowAdvantageMine": "我方收藏價值較高",
+    "arrowAdvantageTheirs": "對方收藏價值較高",
+    "arrowDiverge": "收藏價值與市場價值不一致"
   }
 }

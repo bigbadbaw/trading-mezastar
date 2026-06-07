@@ -200,6 +200,10 @@
     "marketGapMine": "Your side is worth about NT${amount} more.",
     "marketGapTheirs": "Their side is worth about NT${amount} more.",
     "marketGapEven": "Market values are about even.",
-    "marketUnverifiedNote": "≈ This cash figure leans on unverified prices — treat it as a rough guide."
+    "marketUnverifiedNote": "≈ This cash figure leans on unverified prices — treat it as a rough guide.",
+    "arrowEven": "Scores are even",
+    "arrowAdvantageMine": "Your side has the collector-value advantage",
+    "arrowAdvantageTheirs": "Their side has the collector-value advantage",
+    "arrowDiverge": "Collector value and market value diverge"
   }
 }

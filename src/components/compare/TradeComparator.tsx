@@ -93,9 +93,11 @@ export function TradeComparator({
   return (
     <div className="flex flex-col gap-6">
       {bothSides ? (
-        <VerdictPanel result={result} />
+        <div className="sticky top-0 z-20 -mx-2 rounded-xl border-2 border-vault-gold bg-vault-panel/85 px-4 py-4 backdrop-blur-sm sm:-mx-0">
+          <VerdictPanel result={result} />
+        </div>
       ) : (
-        <p className="rounded-xl border border-dashed border-slate-300 p-5 text-center text-slate-500">
+        <p className="rounded-xl border border-dashed border-vault-hairline p-5 text-center text-vault-muted">
           {t('addBothSides')}
         </p>
       )}
@@ -105,7 +107,7 @@ export function TradeComparator({
           <button
             type="button"
             onClick={clearAll}
-            className="inline-flex min-h-11 items-center rounded-lg border border-slate-300 px-3 text-sm font-medium text-slate-700 hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="inline-flex min-h-11 items-center rounded-lg border border-vault-hairline px-3 text-sm font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             {t('clearAll')}
           </button>
@@ -131,15 +133,18 @@ export function TradeComparator({
         />
       </div>
 
-      <section className="rounded-xl border border-slate-200 bg-white p-4">
-        <h2 className="text-lg font-bold text-slate-900">{t('addHeading')}</h2>
+      <section
+        className="rounded-xl border border-vault-hairline p-4"
+        style={{ backgroundColor: 'var(--panel-fill)' }}
+      >
+        <h2 className="font-display text-lg font-bold text-vault-text">{t('addHeading')}</h2>
         <div className="mt-4 grid gap-6 lg:grid-cols-2">
           <div>
-            <h3 className="mb-2 text-sm font-semibold text-slate-700">{t('fromCollection')}</h3>
+            <h3 className="mb-2 text-sm font-semibold text-vault-muted">{t('fromCollection')}</h3>
             <CollectionPicker byId={byId} onAdd={add} />
           </div>
           <div>
-            <h3 className="mb-2 text-sm font-semibold text-slate-700">{t('fromCatalog')}</h3>
+            <h3 className="mb-2 text-sm font-semibold text-vault-muted">{t('fromCatalog')}</h3>
             <TagPicker entries={entries} locale={locale} onAdd={add} />
           </div>
         </div>

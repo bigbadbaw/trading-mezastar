@@ -15,8 +15,8 @@ function Compare({ locale }: { locale: string }) {
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-10">
-      <h1 className="text-3xl font-bold text-slate-900">{t('title')}</h1>
-      <p className="mb-8 mt-1 text-base text-slate-600">{t('subtitle')}</p>
+      <h1 className="font-display text-3xl font-bold text-vault-text">{t('title')}</h1>
+      <p className="mb-8 mt-1 text-base text-vault-muted">{t('subtitle')}</p>
       <TradeComparator entries={entries} locale={locale} />
     </main>
   );

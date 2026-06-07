@@ -9,17 +9,42 @@ const VERDICT_META: Record<
   ComparisonResult['verdict']['verdict'],
   { labelKey: 'verdictFair' | 'verdictSlight' | 'verdictUnfair'; box: string }
 > = {
-  fair: { labelKey: 'verdictFair', box: 'border-emerald-300 bg-emerald-50 text-emerald-900' },
-  slight: { labelKey: 'verdictSlight', box: 'border-amber-300 bg-amber-50 text-amber-900' },
-  unfair: { labelKey: 'verdictUnfair', box: 'border-red-300 bg-red-50 text-red-900' },
+  fair: {
+    labelKey: 'verdictFair',
+    box: 'border-status-fair/60 bg-status-fair/10 text-vault-text',
+  },
+  slight: {
+    labelKey: 'verdictSlight',
+    box: 'border-status-slight/60 bg-status-slight/10 text-vault-text',
+  },
+  unfair: {
+    labelKey: 'verdictUnfair',
+    box: 'border-status-unfair/60 bg-status-unfair/10 text-vault-text',
+  },
 };
 
 /** Synthesis-banner styling per agreement state — DIVERGE is informative, never an error. */
 const STATE_BOX: Record<VerdictAxes['agreement'], string> = {
-  agree: 'border-emerald-300 bg-emerald-50 text-emerald-900',
-  diverge: 'border-blue-300 bg-blue-50 text-blue-900',
-  reinforce: 'border-amber-300 bg-amber-50 text-amber-900',
+  agree: 'border-status-fair/60 bg-status-fair/10 text-vault-text',
+  diverge: 'border-status-diverge/60 bg-status-diverge/10 text-vault-text',
+  reinforce: 'border-status-slight/60 bg-status-slight/10 text-vault-text',
 };
+
+/** Centered verdict arrow color + glyph per axis state. */
+function verdictArrow(axes: VerdictAxes): { glyph: string; colorClass: string; ariaKey: string } {
+  if (axes.agreement === 'diverge') {
+    return { glyph: '⟷', colorClass: 'text-status-diverge', ariaKey: 'arrowDiverge' };
+  }
+  if (axes.scoreDirection === 'even') {
+    return { glyph: '↔', colorClass: 'text-status-fair', ariaKey: 'arrowEven' };
+  }
+  const towardMine = axes.scoreDirection === 'mine';
+  return {
+    glyph: towardMine ? '←' : '→',
+    colorClass: 'text-status-slight',
+    ariaKey: towardMine ? 'arrowAdvantageMine' : 'arrowAdvantageTheirs',
+  };
+}
 
 /** Pick the synthesis message key for the two-axis state (total over all cases). */
 function synthesisKey(axes: VerdictAxes): string {
@@ -50,9 +75,10 @@ function synthesisKey(axes: VerdictAxes): string {
  */
 export function VerdictPanel({ result }: { result: ComparisonResult }) {
   const t = useTranslations('compare');
-  const { verdict } = result;
+  const { verdict, left, right } = result;
   const axes = deriveVerdictAxes(result);
   const meta = VERDICT_META[verdict.verdict];
+  const arrow = verdictArrow(axes);
 
   const richerKey =
     verdict.verdict === 'fair'
@@ -77,6 +103,9 @@ export function VerdictPanel({ result }: { result: ComparisonResult }) {
         ? 'topUpTheirs'
         : 'topUpNone';
 
+  const mineHigher = left.basket.total > right.basket.total;
+  const theirsHigher = right.basket.total > left.basket.total;
+
   return (
     <section aria-label={t('verdictHeading')} className="flex flex-col gap-4">
       <p
@@ -86,15 +115,36 @@ export function VerdictPanel({ result }: { result: ComparisonResult }) {
         {t(synthesisKey(axes), { amount: axes.marketGap })}
       </p>
 
+      <p
+        className={`flex justify-center text-4xl motion-safe:animate-verdictPulse ${arrow.colorClass}`}
+        aria-label={t(arrow.ariaKey)}
+        role="img"
+      >
+        {arrow.glyph}
+      </p>
+
+      <div className="flex items-center justify-center gap-6 text-sm">
+        <span
+          className={`rounded-lg px-3 py-1 font-mono tabular-nums text-vault-text ${mineHigher ? 'shadow-score-higher' : ''}`}
+        >
+          {t('mySide')}: {left.basket.total} {t('sideScoreUnit')}
+        </span>
+        <span
+          className={`rounded-lg px-3 py-1 font-mono tabular-nums text-vault-text ${theirsHigher ? 'shadow-score-higher' : ''}`}
+        >
+          {t('theirSide')}: {right.basket.total} {t('sideScoreUnit')}
+        </span>
+      </div>
+
       <div className="grid gap-4 md:grid-cols-2">
         {/* Collector value — the headline a kid reads. */}
         <div className={`rounded-xl border-2 p-5 ${meta.box}`}>
-          <p className="text-sm font-medium uppercase tracking-wide opacity-70">
+          <p className="text-sm font-medium uppercase tracking-wide text-vault-muted">
             {t('axisCollector')}
           </p>
-          <p className="mt-1 text-3xl font-extrabold">{t(meta.labelKey)}</p>
+          <p className="mt-1 font-display text-3xl font-extrabold">{t(meta.labelKey)}</p>
           <div className="mt-3 space-y-1 text-base">
-            <p className="tabular-nums">
+            <p className="font-mono tabular-nums">
               {t('whyDiff', { diff: verdict.diff, pct: Math.round(verdict.pctDiff) })}
             </p>
             <p className="font-medium">{t(richerKey)}</p>
@@ -102,18 +152,21 @@ export function VerdictPanel({ result }: { result: ComparisonResult }) {
         </div>
 
         {/* Market value — a clearly-labeled cash figure an adult reads. */}
-        <div className="rounded-xl border-2 border-slate-300 bg-white p-5 text-slate-900">
-          <p className="text-sm font-medium uppercase tracking-wide opacity-70">
+        <div
+          className="rounded-xl border-2 border-vault-hairline p-5 text-vault-text"
+          style={{ backgroundColor: 'var(--panel-fill)' }}
+        >
+          <p className="text-sm font-medium uppercase tracking-wide text-vault-muted">
             {t('axisMarket')}
           </p>
-          <p className="mt-1 text-3xl font-extrabold tabular-nums">
+          <p className="mt-1 font-mono text-3xl font-extrabold tabular-nums">
             {t(gapKey, { amount: axes.marketGap })}
           </p>
           <div className="mt-3 space-y-1 text-base">
-            <p className="tabular-nums">{t(topUpKey, { amount: axes.marketGap })}</p>
-            <p className="text-xs opacity-70">{t('topUpNote')}</p>
+            <p className="font-mono tabular-nums">{t(topUpKey, { amount: axes.marketGap })}</p>
+            <p className="text-xs text-vault-muted">{t('topUpNote')}</p>
             {axes.marketUnverified && (
-              <p className="mt-1 rounded-md bg-amber-100 px-2 py-1 text-sm font-medium text-amber-800">
+              <p className="mt-1 rounded-md bg-status-slight/20 px-2 py-1 text-sm font-medium text-status-slight">
                 {t('marketUnverifiedNote')}
               </p>
             )}
