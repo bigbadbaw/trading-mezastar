@@ -1,8 +1,15 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 
 import { CollectionControls } from '@/components/collection/CollectionControls';
+import { useCollection } from '@/components/collection/CollectionProvider';
 import type { ScoredTag } from '@/data/catalog';
 import { Link } from '@/i18n/navigation';
+import {
+  gradeTierStyle,
+  UNOWNED_DESATURATE_CLASS,
+} from '@/lib/grade-tier-styles';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
 import { isUnconfirmed, tagLabelParts, zhEnrichment } from '@/lib/tag-display';
 
@@ -15,19 +22,30 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
   const t = useTranslations('catalog');
   const tTier = useTranslations('gradeTier');
   const tScoring = useTranslations('scoring');
+  const { user, items } = useCollection();
   const parts = tagLabelParts(tag);
   const zh = zhEnrichment(tag, locale);
   const unconfirmed = isUnconfirmed(tag);
   const [low, high] = tag.price;
 
+  const isOwned = user !== null && items.get(tag.tagId)?.status === 'owned';
+  const withGlow = isOwned;
+  const tierStyle = gradeTierStyle(tag.gradeTier, withGlow);
+  const desaturate = user !== null && !isOwned;
+
   return (
-    <div className="flex flex-col rounded-xl border border-slate-200 bg-white transition focus-within:border-slate-400 hover:border-slate-400">
+    <div
+      className={`flex flex-col rounded-xl border-2 bg-vault-panel transition focus-within:border-vault-gold hover:border-vault-gold ${tierStyle.borderClass} ${tierStyle.glow} ${desaturate ? UNOWNED_DESATURATE_CLASS : ''}`}
+    >
       <Link
         href={`/tag/${encodeURIComponent(tag.tagId)}`}
-        className="flex flex-1 flex-col rounded-t-xl focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-600"
+        className="flex flex-1 flex-col rounded-t-xl focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-vault-gold"
       >
         {/* Art header — prominent, iPad-first */}
-        <div className="relative flex items-center justify-center rounded-t-xl bg-slate-50 py-5">
+        <div
+          className={`relative flex items-center justify-center rounded-t-xl py-5 ${tierStyle.fillClass}`}
+          style={{ backgroundColor: 'var(--panel-fill)' }}
+        >
           <TagImage
             tagId={tag.tagId}
             emoji={tag.emoji}
@@ -36,22 +54,25 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
             emojiClassName="text-7xl leading-none"
           />
           <span
-            className={`absolute right-2 top-2 inline-flex min-w-9 items-center justify-center rounded-md px-2 py-1 text-sm font-bold ${gradeBadgeClass(score.grade.grade)}`}
+            className={`absolute right-2 top-2 inline-flex min-w-9 items-center justify-center rounded-md px-2 py-1 font-mono text-sm font-bold ${gradeBadgeClass(score.grade.grade)}`}
             title={tScoring('total')}
           >
             {score.grade.grade} · {score.total}
+          </span>
+          <span className="absolute left-2 top-2 font-mono text-xs text-vault-mono-green">
+            {tag.num}
           </span>
         </div>
 
         {/* Card body */}
         <div className="flex flex-1 flex-col gap-2 p-4">
           <div>
-            <p className="text-base font-semibold text-slate-900">{tag.nameEn}</p>
-            <p className="text-sm text-slate-500">{tag.nameZh}</p>
+            <p className="font-display text-base font-semibold text-vault-text">{tag.nameEn}</p>
+            <p className="text-sm text-vault-muted">{tag.nameZh}</p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-1.5 text-sm text-slate-600">
-            <span className="font-medium text-amber-600">{parts.gradeStars}</span>
+          <div className="flex flex-wrap items-center gap-1.5 text-sm text-vault-muted">
+            <span className="font-medium text-vault-gold">{parts.gradeStars}</span>
             <span>·</span>
             <span>{tTier(tag.gradeTier)}</span>
           </div>
@@ -62,15 +83,15 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
             ))}
           </div>
 
-          <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-1 text-sm text-slate-600">
+          <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-1 text-sm text-vault-muted">
             <span>
-              {t('energy')}: <span className="font-medium tabular-nums">{tag.energy}</span>
+              {t('energy')}: <span className="font-mono font-medium tabular-nums">{tag.energy}</span>
             </span>
-            <span className="tabular-nums">
+            <span className="font-mono tabular-nums">
               NT${low}–{high}
               {unconfirmed && (
                 <span
-                  className="ml-1 rounded bg-amber-100 px-1 text-xs font-medium text-amber-800"
+                  className="ml-1 rounded bg-status-slight/20 px-1 font-sans text-xs font-medium text-status-slight"
                   title={t('unverifiedTitle', { confidence: tag.priceConfidence })}
                 >
                   {t('unverified')}
@@ -79,11 +100,11 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
             </span>
           </div>
 
-          {zh && <p className="text-xs text-slate-400">{zh}</p>}
+          {zh && <p className="text-xs text-vault-dim">{zh}</p>}
         </div>
       </Link>
 
-      <div className="border-t border-slate-100 p-3">
+      <div className="border-t border-vault-hairline p-3">
         <CollectionControls tagId={tag.tagId} />
       </div>
     </div>

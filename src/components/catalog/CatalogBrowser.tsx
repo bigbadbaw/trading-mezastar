@@ -72,11 +72,12 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
   return (
     <div>
       <form
-        className="mb-8 grid gap-4 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-2 lg:grid-cols-4"
+        className="mb-8 grid gap-4 rounded-xl border border-vault-hairline p-4 sm:grid-cols-2 lg:grid-cols-4"
+        style={{ backgroundColor: 'var(--panel-fill)' }}
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="flex flex-col gap-1 sm:col-span-2 lg:col-span-4">
-          <label htmlFor="catalog-search" className="text-sm font-medium text-slate-700">
+          <label htmlFor="catalog-search" className="text-sm font-medium text-vault-text">
             {t('searchLabel')}
           </label>
           <input
@@ -85,19 +86,19 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={t('searchPlaceholder')}
-            className="min-h-11 rounded-lg border border-slate-300 px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           />
         </div>
 
         <div className="flex flex-col gap-1">
-          <label htmlFor="filter-pack" className="text-sm font-medium text-slate-700">
+          <label htmlFor="filter-pack" className="text-sm font-medium text-vault-text">
             {t('filterPack')}
           </label>
           <select
             id="filter-pack"
             value={pack}
             onChange={(e) => setPack(e.target.value)}
-            className="min-h-11 rounded-lg border border-slate-300 px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allPacks')}</option>
             {packs.map((p) => (
@@ -109,14 +110,14 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
         </div>
 
         <div className="flex flex-col gap-1">
-          <label htmlFor="filter-grade" className="text-sm font-medium text-slate-700">
+          <label htmlFor="filter-grade" className="text-sm font-medium text-vault-text">
             {t('filterGrade')}
           </label>
           <select
             id="filter-grade"
             value={grade}
             onChange={(e) => setGrade(e.target.value)}
-            className="min-h-11 rounded-lg border border-slate-300 px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allGrades')}</option>
             {grades.map((g) => (
@@ -128,14 +129,14 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
         </div>
 
         <div className="flex flex-col gap-1">
-          <label htmlFor="filter-type" className="text-sm font-medium text-slate-700">
+          <label htmlFor="filter-type" className="text-sm font-medium text-vault-text">
             {t('filterType')}
           </label>
           <select
             id="filter-type"
             value={type}
             onChange={(e) => setType(e.target.value)}
-            className="min-h-11 rounded-lg border border-slate-300 px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             <option value="">{t('allTypes')}</option>
             {ALL_TYPES.map((ty) => (
@@ -148,14 +149,14 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
       </form>
 
       <div className="mb-6 flex items-center justify-between gap-4">
-        <p className="text-sm text-slate-600" aria-live="polite">
+        <p className="text-sm text-vault-muted" aria-live="polite">
           {t('results', { count: filtered.length })}
         </p>
         {hasFilters && (
           <button
             type="button"
             onClick={clear}
-            className="min-h-11 rounded-lg border border-slate-300 px-3 text-sm font-medium text-slate-700 hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="min-h-11 rounded-lg border border-vault-hairline px-3 text-sm font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             {t('clearFilters')}
           </button>
@@ -163,20 +164,20 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
       </div>
 
       {grouped.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-slate-300 p-8 text-center text-slate-500">
+        <p className="rounded-xl border border-dashed border-vault-hairline p-8 text-center text-vault-muted">
           {t('noResults')}
         </p>
       ) : (
         <div className="space-y-10">
           {grouped.map(({ meta, tags }) => (
             <section key={meta.pack} aria-labelledby={`pack-${meta.pack}`}>
-              <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-200 pb-2">
-                <h2 id={`pack-${meta.pack}`} className="text-lg font-bold text-slate-900">
+              <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2 border-b border-vault-hairline pb-2">
+                <h2 id={`pack-${meta.pack}`} className="font-display text-lg font-bold text-vault-text">
                   {locale === 'zh-TW' ? meta.name.zh : meta.name.en}
                 </h2>
-                <span className="text-sm text-slate-500">
+                <span className="font-mono text-sm text-vault-muted">
                   {t('migratedOf', { migrated: meta.migratedCount, official: meta.officialTotal })}
-                  {meta.current && <span className="ml-2 text-emerald-600">· {t('current')}</span>}
+                  {meta.current && <span className="ml-2 text-status-owned">· {t('current')}</span>}
                 </span>
               </div>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

@@ -9,6 +9,7 @@ import { CollectionControls } from '@/components/collection/CollectionControls';
 import { getScoredCatalog, getScoredTag, type ScoredTag } from '@/data/catalog';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
+import { gradeTierStyle } from '@/lib/grade-tier-styles';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
 import { isUnconfirmed, tagLabelParts, zhEnrichment } from '@/lib/tag-display';
 
@@ -38,19 +39,23 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
   const zh = zhEnrichment(tag, locale);
   const unconfirmed = isUnconfirmed(tag);
   const [low, high] = tag.price;
+  const tierStyle = gradeTierStyle(tag.gradeTier);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-10">
       <Link
         href="/catalog"
-        className="inline-flex min-h-11 items-center text-sm font-medium text-blue-700 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        className="inline-flex min-h-11 items-center text-sm font-medium text-vault-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
       >
         ← {t('backToCatalog')}
       </Link>
 
       <header className="mt-4">
         {/* Hero art — focal point of the detail page */}
-        <div className="flex justify-center rounded-xl bg-slate-50 p-8">
+        <div
+          className={`flex justify-center rounded-xl border-2 p-8 ${tierStyle.borderClass} ${tierStyle.glow}`}
+          style={{ backgroundColor: 'var(--panel-fill)' }}
+        >
           <TagImage
             tagId={tag.tagId}
             emoji={tag.emoji}
@@ -63,14 +68,16 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
         {/* Title + grade below art */}
         <div className="mt-4 flex items-start gap-4">
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-slate-900">{tag.nameEn}</h1>
-            <p className="text-lg text-slate-500">{tag.nameZh}</p>
-            <p className="mt-1 font-mono text-xs text-slate-400">
-              {tag.tagId} · {locale === 'zh-TW' ? pack.name.zh : pack.name.en}
+            <h1 className="font-display text-3xl font-bold text-vault-text">{tag.nameEn}</h1>
+            <p className="text-lg text-vault-muted">{tag.nameZh}</p>
+            <p className="mt-1 text-sm text-vault-muted">
+              <span className="font-mono text-vault-mono-green">{tag.num}</span>
+              <span className="mx-1.5 text-vault-dim">·</span>
+              <span>{locale === 'zh-TW' ? pack.name.zh : pack.name.en}</span>
             </p>
           </div>
           <span
-            className={`inline-flex flex-col items-center rounded-lg px-3 py-2 text-center font-bold ${gradeBadgeClass(score.grade.grade)}`}
+            className={`inline-flex flex-col items-center rounded-lg px-3 py-2 text-center font-mono font-bold ${gradeBadgeClass(score.grade.grade)}`}
           >
             <span className="text-2xl leading-none">{score.grade.grade}</span>
             <span className="text-sm tabular-nums">{score.total}</span>
@@ -78,13 +85,13 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
         </div>
       </header>
 
-      <section className="mt-6 flex flex-wrap items-center gap-2 text-base text-slate-700">
-        <span className="font-semibold text-amber-600">{parts.gradeStars}</span>
+      <section className="mt-6 flex flex-wrap items-center gap-2 text-base text-vault-muted">
+        <span className="font-semibold text-vault-gold">{parts.gradeStars}</span>
         <span>·</span>
         <span>{tTier(tag.gradeTier)}</span>
         <span>·</span>
         <span>
-          {t('energy')}: <span className="font-medium tabular-nums">{tag.energy}</span>
+          {t('energy')}: <span className="font-mono font-medium tabular-nums">{tag.energy}</span>
         </span>
       </section>
 
@@ -94,12 +101,12 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
         ))}
       </section>
 
-      <section className="mt-4 text-base text-slate-700">
+      <section className="mt-4 text-base text-vault-muted">
         <span className="font-medium">{t('price')}:</span>{' '}
-        <span className="tabular-nums">NT${low}–{high}</span>
+        <span className="font-mono tabular-nums">NT${low}–{high}</span>
         {unconfirmed && (
           <span
-            className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-sm font-medium text-amber-800"
+            className="ml-2 rounded bg-status-slight/20 px-1.5 py-0.5 text-sm font-medium text-status-slight"
             title={t('unverifiedTitle', { confidence: tag.priceConfidence })}
           >
             {t('unverified')}
@@ -107,13 +114,16 @@ function TagDetail({ entry, locale }: { entry: ScoredTag; locale: string }) {
         )}
       </section>
 
-      <section className="mt-2 text-base text-slate-700">
+      <section className="mt-2 text-base text-vault-muted">
         <span className="font-medium">{tScoring('species')}:</span> {tag.species.join(' / ')}
       </section>
 
-      {zh && <p className="mt-2 text-sm text-slate-400">{zh}</p>}
+      {zh && <p className="mt-2 text-sm text-vault-dim">{zh}</p>}
 
-      <section className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <section
+        className="mt-6 rounded-xl border border-vault-hairline p-4"
+        style={{ backgroundColor: 'var(--panel-fill)' }}
+      >
         <CollectionControls tagId={tag.tagId} />
       </section>
 
