@@ -153,6 +153,8 @@
     "remove": "移除標籤",
     "showBreakdown": "顯示評分明細",
     "hideBreakdown": "隱藏評分明細",
+    "breakdownTitle": "分數明細",
+    "closeBreakdown": "關閉明細",
     "dualTag": "雙人標籤",
     "addHeading": "加入標籤",
     "fromCollection": "從我的收藏",

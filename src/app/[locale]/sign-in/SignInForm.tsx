@@ -35,21 +35,21 @@ export function SignInForm() {
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col justify-center gap-6 px-6">
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">{t('signInTitle')}</h1>
-        <p className="mt-2 text-base text-slate-600">{t('signInIntro')}</p>
+        <h1 className="font-display text-2xl font-bold text-vault-text">{t('signInTitle')}</h1>
+        <p className="mt-2 text-base text-vault-muted">{t('signInIntro')}</p>
       </div>
 
       {phase === 'sent' ? (
         <div
           role="status"
-          className="rounded-lg border border-green-200 bg-green-50 p-4 text-base text-green-800"
+          className="rounded-lg border border-status-fair/50 bg-status-fair/10 p-4 text-base text-vault-text"
         >
           {t('linkSent', { email: email.trim() })}
         </div>
       ) : (
         <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="email" className="text-sm font-medium text-slate-700">
+            <label htmlFor="email" className="text-sm font-medium text-vault-text">
               {t('emailLabel')}
             </label>
             <input
@@ -61,12 +61,12 @@ export function SignInForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('emailPlaceholder')}
-              className="min-h-11 rounded-lg border border-slate-300 px-3 text-base text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="min-h-11 rounded-lg border border-vault-hairline bg-vault-bg px-3 text-base text-vault-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
             />
           </div>
 
           {phase === 'error' && (
-            <p role="alert" className="text-sm font-medium text-red-700">
+            <p role="alert" className="text-sm font-medium text-status-unfair">
               {t('sendError')}
             </p>
           )}
@@ -74,7 +74,7 @@ export function SignInForm() {
           <button
             type="submit"
             disabled={phase === 'sending'}
-            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-4 text-base font-medium text-white hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-60"
+            className="inline-flex min-h-11 items-center justify-center rounded-lg border border-vault-gold bg-vault-gold px-4 text-base font-medium text-vault-bg hover:bg-vault-gold-bright focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold disabled:cursor-not-allowed disabled:opacity-60"
           >
             {phase === 'sending' ? t('sending') : t('sendLink')}
           </button>
@@ -83,7 +83,7 @@ export function SignInForm() {
 
       <Link
         href="/catalog"
-        className="inline-flex min-h-11 w-fit items-center text-sm font-medium text-blue-700 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        className="inline-flex min-h-11 w-fit items-center text-sm font-medium text-vault-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
       >
         ← {t('backToCatalog')}
       </Link>

@@ -32,7 +32,7 @@ export function CollectionControls({ tagId }: { tagId: string }) {
     return (
       <Link
         href="/sign-in"
-        className="inline-flex min-h-11 items-center text-sm font-medium text-blue-700 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        className="inline-flex min-h-11 items-center text-sm font-medium text-vault-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
       >
         {t('signInToTrack')}
       </Link>
@@ -61,10 +61,10 @@ export function CollectionControls({ tagId }: { tagId: string }) {
                 if (active) void remove(tagId);
                 else void setStatus(tagId, option);
               }}
-              className={`inline-flex min-h-11 items-center rounded-lg border px-3 text-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 ${
+              className={`inline-flex min-h-11 items-center rounded-lg border px-3 text-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold ${
                 active
-                  ? 'border-blue-600 bg-blue-600 text-white'
-                  : 'border-slate-300 bg-white text-slate-700 hover:border-slate-400'
+                  ? 'border-vault-gold bg-vault-gold text-vault-bg'
+                  : 'border-vault-hairline bg-vault-bg text-vault-text hover:border-vault-gold'
               }`}
             >
               {t(STATUS_LABEL_KEY[option])}
@@ -75,18 +75,18 @@ export function CollectionControls({ tagId }: { tagId: string }) {
 
       {status === 'owned' && (
         <div className="flex items-center gap-2">
-          <span className="text-sm text-slate-600">{t('quantity')}</span>
+          <span className="text-sm text-vault-muted">{t('quantity')}</span>
           <div className="inline-flex items-center gap-1">
             <button
               type="button"
               aria-label={t('decrement')}
               onClick={() => void setQuantity(tagId, Math.max(0, quantity - 1))}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-300 text-lg font-medium text-slate-700 hover:border-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-vault-hairline text-lg font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
             >
               −
             </button>
             <span
-              className="min-w-9 text-center text-base font-medium tabular-nums"
+              className="min-w-9 text-center font-mono text-base font-medium tabular-nums text-vault-text"
               aria-live="polite"
             >
               {quantity}
@@ -95,7 +95,7 @@ export function CollectionControls({ tagId }: { tagId: string }) {
               type="button"
               aria-label={t('increment')}
               onClick={() => void setQuantity(tagId, quantity + 1)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-300 text-lg font-medium text-slate-700 hover:border-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-vault-hairline text-lg font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
             >
               +
             </button>

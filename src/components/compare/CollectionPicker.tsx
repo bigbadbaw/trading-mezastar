@@ -36,11 +36,11 @@ const STATUS_HEADING_KEY: Record<CollectionStatus, string> = {
 function statusPillClass(status: CollectionStatus): string {
   switch (status) {
     case 'owned':
-      return 'bg-emerald-100 text-emerald-800';
+      return 'bg-status-owned/20 text-status-owned';
     case 'most_wanted':
-      return 'bg-amber-100 text-amber-800';
+      return 'bg-status-most-wanted/20 text-status-most-wanted';
     case 'wanted':
-      return 'bg-blue-100 text-blue-700';
+      return 'bg-status-wanted/20 text-status-wanted';
   }
 }
 
@@ -87,7 +87,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
     return (
       <Link
         href="/sign-in"
-        className="inline-flex min-h-11 items-center text-sm font-medium text-blue-700 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        className="inline-flex min-h-11 items-center text-sm font-medium text-vault-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
       >
         {t('signInToPull')}
       </Link>
@@ -95,7 +95,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
   }
 
   if (!hasAny) {
-    return <p className="text-sm text-slate-500">{t('noCollection')}</p>;
+    return <p className="text-sm text-vault-muted">{t('noCollection')}</p>;
   }
 
   return (
@@ -105,7 +105,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
         if (rows.length === 0) return null;
         return (
           <li key={key} className="flex flex-col gap-1.5">
-            <p className="px-1 text-xs font-semibold uppercase tracking-wide text-slate-400">
+            <p className="px-1 text-xs font-semibold uppercase tracking-wide text-vault-muted">
               {tColl(STATUS_HEADING_KEY[key])}
             </p>
             <ul className="flex flex-col gap-1.5">
@@ -114,9 +114,13 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                 return (
                   <li
                     key={entry.tag.tagId}
-                    className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-3"
+                    className="flex items-center gap-3 rounded-lg border border-vault-hairline p-3"
+                    style={{ backgroundColor: 'var(--panel-fill)' }}
                   >
-                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-slate-50">
+                    <div
+                      className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md"
+                      style={{ backgroundColor: 'var(--vault-bg)' }}
+                    >
                       <TagImage
                         tagId={entry.tag.tagId}
                         emoji={entry.tag.emoji}
@@ -126,8 +130,8 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                       />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm font-semibold text-slate-900">{entry.tag.nameEn}</p>
-                      <p className="truncate text-xs text-slate-500">{entry.tag.nameZh}</p>
+                      <p className="truncate font-display text-sm font-semibold text-vault-text">{entry.tag.nameEn}</p>
+                      <p className="truncate text-xs text-vault-muted">{entry.tag.nameZh}</p>
                     </div>
                     {/* Status pill */}
                     <span
@@ -152,7 +156,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('mine', entry.tag.tagId, quantity)}
                           aria-label={t('addToMine')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-emerald-300 bg-emerald-50 px-2 text-sm font-medium text-emerald-800 hover:bg-emerald-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-status-mine/50 bg-status-mine/15 px-2 text-sm font-medium text-status-mine hover:bg-status-mine/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
                         >
                           {t('addToMineShort')}
                         </button>
@@ -160,7 +164,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('theirs', entry.tag.tagId, quantity)}
                           aria-label={t('addToTheirs')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-600 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-vault-hairline bg-vault-bg px-2 text-sm font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
                         >
                           {t('addToTheirsShort')}
                         </button>
@@ -171,7 +175,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('theirs', entry.tag.tagId, quantity)}
                           aria-label={t('addToTheirs')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-red-300 bg-red-50 px-2 text-sm font-medium text-red-800 hover:bg-red-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-status-theirs/50 bg-status-theirs/15 px-2 text-sm font-medium text-status-theirs hover:bg-status-theirs/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
                         >
                           {t('addToTheirsShort')}
                         </button>
@@ -179,7 +183,7 @@ export function CollectionPicker({ byId, onAdd }: Props) {
                           type="button"
                           onClick={() => onAdd('mine', entry.tag.tagId, quantity)}
                           aria-label={t('addToMine')}
-                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-slate-200 bg-white px-2 text-sm font-medium text-slate-600 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                          className="inline-flex min-h-9 shrink-0 items-center rounded-lg border border-vault-hairline bg-vault-bg px-2 text-sm font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
                         >
                           {t('addToMineShort')}
                         </button>

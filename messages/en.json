@@ -153,6 +153,8 @@
     "remove": "Remove tag",
     "showBreakdown": "Show score breakdown",
     "hideBreakdown": "Hide score breakdown",
+    "breakdownTitle": "Score breakdown",
+    "closeBreakdown": "Close breakdown",
     "dualTag": "Dual tag",
     "addHeading": "Add tags",
     "fromCollection": "From my collection",

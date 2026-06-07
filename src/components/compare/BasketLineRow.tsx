@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-import { ScoreBreakdownTable } from '@/components/catalog/ScoreBreakdownTable';
+import { ScoreBreakdownSheet } from '@/components/catalog/ScoreBreakdownSheet';
 import { TagImage } from '@/components/catalog/TagImage';
 import type { ScoredLine } from '@/lib/compare/basket';
 import { gradeBadgeClass } from '@/lib/pokemon-types';
@@ -19,7 +19,7 @@ interface Props {
 /**
  * One tag in a basket: identity by `tag.tagId`. Shows the dual-tag and
  * unverified-price badges exactly as the catalog does, a quantity stepper, and
- * an expandable reuse of the M3 `ScoreBreakdownTable` (never recomputed).
+ * a sheet modal reuse of the M3 `ScoreBreakdownTable` (never recomputed).
  */
 export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) {
   const t = useTranslations('compare');
@@ -32,9 +32,15 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
   const unconfirmed = isUnconfirmed(tag);
 
   return (
-    <li className="rounded-lg border border-slate-200 bg-white p-3">
+    <li
+      className="rounded-lg border border-vault-hairline p-3"
+      style={{ backgroundColor: 'var(--panel-fill)' }}
+    >
       <div className="flex items-start gap-3">
-        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-slate-50">
+        <div
+          className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg"
+          style={{ backgroundColor: 'var(--vault-bg)' }}
+        >
           <TagImage
             tagId={tag.tagId}
             emoji={tag.emoji}
@@ -46,32 +52,34 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
 
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
-            <p className="truncate text-base font-semibold text-slate-900">{tag.nameEn}</p>
+            <p className="truncate font-display text-base font-semibold text-vault-text">
+              {tag.nameEn}
+            </p>
             <span
-              className={`inline-flex shrink-0 items-center rounded-md px-1.5 py-0.5 text-xs font-bold ${gradeBadgeClass(score.grade.grade)}`}
+              className={`inline-flex shrink-0 items-center rounded-md px-1.5 py-0.5 font-mono text-xs font-bold ${gradeBadgeClass(score.grade.grade)}`}
             >
               {score.grade.grade} · {score.total}
             </span>
           </div>
-          <p className="truncate text-sm text-slate-500">{tag.nameZh}</p>
+          <p className="truncate text-sm text-vault-muted">{tag.nameZh}</p>
 
           <div className="mt-1 flex flex-wrap items-center gap-1.5">
             {dual && (
-              <span className="rounded bg-indigo-100 px-1.5 py-0.5 text-xs font-medium text-indigo-800">
+              <span className="rounded bg-status-diverge/20 px-1.5 py-0.5 text-xs font-medium text-status-diverge">
                 {t('dualTag')}
               </span>
             )}
             {unconfirmed && (
               <span
-                className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-800"
+                className="rounded bg-status-slight/20 px-1.5 py-0.5 text-xs font-medium text-status-slight"
                 title={tCatalog('unverifiedTitle', { confidence: tag.priceConfidence })}
               >
                 {tCatalog('unverified')}
               </span>
             )}
-            <span className="text-sm tabular-nums text-slate-600">
+            <span className="font-mono text-sm tabular-nums text-vault-muted">
               {t('lineTotal', { score: score.total, quantity })} ={' '}
-              <span className="font-semibold text-slate-900">{lineTotal}</span>
+              <span className="font-semibold text-vault-text">{lineTotal}</span>
             </span>
           </div>
         </div>
@@ -80,7 +88,7 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
           type="button"
           onClick={onRemove}
           aria-label={t('remove')}
-          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-slate-300 text-lg text-slate-500 hover:border-red-400 hover:text-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-vault-hairline text-lg text-vault-muted hover:border-status-unfair hover:text-status-unfair focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
         >
           ×
         </button>
@@ -92,18 +100,18 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
             type="button"
             aria-label={tCollection('decrement')}
             onClick={() => onSetQuantity(Math.max(0, quantity - 1))}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 text-lg font-medium text-slate-700 hover:border-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-vault-hairline text-lg font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             −
           </button>
-          <span className="min-w-8 text-center text-base font-medium tabular-nums" aria-live="polite">
+          <span className="min-w-8 text-center font-mono text-base font-medium tabular-nums text-vault-text" aria-live="polite">
             {quantity}
           </span>
           <button
             type="button"
             aria-label={tCollection('increment')}
             onClick={() => onSetQuantity(quantity + 1)}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 text-lg font-medium text-slate-700 hover:border-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-vault-hairline text-lg font-medium text-vault-text hover:border-vault-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
           >
             +
           </button>
@@ -111,19 +119,16 @@ export function BasketLineRow({ line, locale, onSetQuantity, onRemove }: Props) 
 
         <button
           type="button"
+          aria-haspopup="dialog"
           aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex min-h-9 items-center rounded-lg px-2 text-sm font-medium text-blue-700 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          onClick={() => setOpen(true)}
+          className="inline-flex min-h-9 items-center rounded-lg px-2 text-sm font-medium text-vault-gold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
         >
-          {open ? t('hideBreakdown') : t('showBreakdown')}
+          {t('showBreakdown')}
         </button>
       </div>
 
-      {open && (
-        <div className="mt-3 border-t border-slate-100 pt-3">
-          <ScoreBreakdownTable score={score} />
-        </div>
-      )}
+      <ScoreBreakdownSheet score={score} open={open} onClose={() => setOpen(false)} />
     </li>
   );
 }

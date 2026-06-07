@@ -16,54 +16,54 @@ export function ScoreBreakdownTable({ score }: { score: ScoreBreakdown }) {
   return (
     <table className="w-full border-collapse text-base">
       <thead>
-        <tr className="border-b border-slate-300 text-left text-sm text-slate-500">
+        <tr className="border-b border-vault-hairline text-left text-sm text-vault-muted">
           <th className="py-2 pr-4 font-medium">{t('headComponent')}</th>
           <th className="py-2 pr-4 font-medium">{t('headDetail')}</th>
           <th className="py-2 text-right font-medium">{t('headPoints')}</th>
         </tr>
       </thead>
-      <tbody className="divide-y divide-slate-200">
+      <tbody className="divide-y divide-vault-hairline">
         <tr>
-          <td className="py-2 pr-4 font-medium">{t('component.scarcity')}</td>
-          <td className="py-2 pr-4 text-slate-600">{tTier(scarcity.tier)}</td>
-          <td className="py-2 text-right tabular-nums">{scarcity.points}</td>
+          <td className="py-2 pr-4 font-medium text-vault-text">{t('component.scarcity')}</td>
+          <td className="py-2 pr-4 text-vault-muted">{tTier(scarcity.tier)}</td>
+          <td className="py-2 text-right font-mono tabular-nums text-vault-text">{scarcity.points}</td>
         </tr>
         <tr>
-          <td className="py-2 pr-4 font-medium">{t('component.popularity')}</td>
-          <td className="py-2 pr-4 text-slate-600">
+          <td className="py-2 pr-4 font-medium text-vault-text">{t('component.popularity')}</td>
+          <td className="py-2 pr-4 text-vault-muted">
             {t('popScore', { score: popularity.popScore })} ·{' '}
             {t('sourceLabel.' + popularity.source)}
           </td>
-          <td className="py-2 text-right tabular-nums">{popularity.points}</td>
+          <td className="py-2 text-right font-mono tabular-nums text-vault-text">{popularity.points}</td>
         </tr>
         <tr>
-          <td className="py-2 pr-4 font-medium">{t('component.market')}</td>
-          <td className="py-2 pr-4 text-slate-600">
+          <td className="py-2 pr-4 font-medium text-vault-text">{t('component.market')}</td>
+          <td className="py-2 pr-4 text-vault-muted">
             NT${Math.round(market.medianPrice)}
             {market.confidence < 1 && (
-              <span className="ml-1 text-amber-700">
+              <span className="ml-1 text-status-slight">
                 {t('confidence', { confidence: market.confidence })}
               </span>
             )}
           </td>
-          <td className="py-2 text-right tabular-nums">{market.points}</td>
+          <td className="py-2 text-right font-mono tabular-nums text-vault-text">{market.points}</td>
         </tr>
         <tr>
-          <td className="py-2 pr-4 font-medium">{t('component.mechanic')}</td>
-          <td className="py-2 pr-4 text-slate-600">
+          <td className="py-2 pr-4 font-medium text-vault-text">{t('component.mechanic')}</td>
+          <td className="py-2 pr-4 text-vault-muted">
             {mechanic.flags.length > 0
               ? mechanic.flags.map((f) => tMech(f)).join(', ')
               : t('none')}
           </td>
-          <td className="py-2 text-right tabular-nums">{mechanic.points}</td>
+          <td className="py-2 text-right font-mono tabular-nums text-vault-text">{mechanic.points}</td>
         </tr>
       </tbody>
       <tfoot>
-        <tr className="border-t-2 border-slate-300 font-bold">
+        <tr className="border-t-2 border-vault-hairline font-bold text-vault-text">
           <td className="py-2 pr-4" colSpan={2}>
             {t('total')}
           </td>
-          <td className="py-2 text-right tabular-nums">{score.total}</td>
+          <td className="py-2 text-right font-mono tabular-nums">{score.total}</td>
         </tr>
       </tfoot>
     </table>
