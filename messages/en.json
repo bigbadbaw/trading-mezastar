@@ -36,7 +36,8 @@
     "price": "Price",
     "unverified": "≈ unverified",
     "unverifiedTitle": "Price is unverified (confidence {confidence})",
-    "backToCatalog": "Back to catalog"
+    "backToCatalog": "Back to catalog",
+    "closeDetail": "Close"
   },
   "scoring": {
     "total": "Total",
@@ -132,6 +133,7 @@
   },
   "collection": {
     "statusLabel": "Collection status",
+    "notOwned": "Not owned",
     "owned": "Owned",
     "wanted": "Wanted",
     "mostWanted": "Most wanted",

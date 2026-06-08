@@ -36,7 +36,8 @@
     "price": "價格",
     "unverified": "≈ 未驗證",
     "unverifiedTitle": "價格尚未驗證（信心值 {confidence}）",
-    "backToCatalog": "返回圖鑑"
+    "backToCatalog": "返回圖鑑",
+    "closeDetail": "關閉"
   },
   "scoring": {
     "total": "總分",
@@ -132,6 +133,7 @@
   },
   "collection": {
     "statusLabel": "收藏狀態",
+    "notOwned": "未擁有",
     "owned": "已擁有",
     "wanted": "想要",
     "mostWanted": "最想要",

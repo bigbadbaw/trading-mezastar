@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
-import { COLLECTION_STATUSES, type CollectionStatus } from '@/data/collection';
+import type { CollectionStatus } from '@/data/collection';
 
 import { useCollection } from './CollectionProvider';
 
@@ -13,11 +13,30 @@ const STATUS_LABEL_KEY: Record<CollectionStatus, string> = {
   most_wanted: 'mostWanted',
 };
 
+/** Compact glyphs for the icon toggles (kid-friendly, paired with aria-labels). */
+const STATUS_ICON: Record<CollectionStatus, string> = {
+  wanted: '♡',
+  most_wanted: '♥',
+  owned: '✓',
+};
+
+/** Toggle order shown to the user: unowned first, then the three tracked states. */
+const STATUS_ORDER: readonly CollectionStatus[] = ['wanted', 'most_wanted', 'owned'];
+
+function toggleClass(active: boolean): string {
+  return `inline-flex h-11 w-11 items-center justify-center rounded-lg border text-lg leading-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold ${
+    active
+      ? 'border-vault-gold bg-vault-gold text-vault-bg'
+      : 'border-vault-hairline bg-vault-bg text-vault-text hover:border-vault-gold'
+  }`;
+}
+
 /**
- * Per-tag collection controls. Renders a status segmented control plus a
- * quantity stepper for owned duplicates. When signed out, shows a sign-in
- * affordance rather than an error. Stops link/card click propagation so it can
- * live next to (or within a card that links to) the detail view.
+ * Per-tag collection controls: a 4-state ownership row (unowned / want /
+ * most-want / owned) as compact icon toggles — one tap to set — plus a quantity
+ * stepper that appears in place only when the tag is owned. When signed out, the
+ * whole zone collapses to a single "sign in to track" line. Persistence is
+ * unchanged (Supabase collection_items via CollectionProvider).
  */
 export function CollectionControls({ tagId }: { tagId: string }) {
   const t = useTranslations('collection');
@@ -50,33 +69,43 @@ export function CollectionControls({ tagId }: { tagId: string }) {
         aria-label={t('statusLabel')}
         className="flex flex-wrap gap-1.5"
       >
-        {COLLECTION_STATUSES.map((option) => {
+        {/* Unowned: active when no row exists; one tap clears the tag. */}
+        <button
+          type="button"
+          aria-label={t('notOwned')}
+          title={t('notOwned')}
+          aria-pressed={status === undefined}
+          onClick={() => {
+            if (status !== undefined) void remove(tagId);
+          }}
+          className={toggleClass(status === undefined)}
+        >
+          ✕
+        </button>
+        {STATUS_ORDER.map((option) => {
           const active = status === option;
+          const label = t(STATUS_LABEL_KEY[option]);
           return (
             <button
               key={option}
               type="button"
+              aria-label={label}
+              title={label}
               aria-pressed={active}
               onClick={() => {
                 if (active) void remove(tagId);
                 else void setStatus(tagId, option);
               }}
-              className={`inline-flex min-h-11 items-center rounded-lg border px-3 text-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold ${
-                active
-                  ? 'border-vault-gold bg-vault-gold text-vault-bg'
-                  : 'border-vault-hairline bg-vault-bg text-vault-text hover:border-vault-gold'
-              }`}
+              className={toggleClass(active)}
             >
-              {t(STATUS_LABEL_KEY[option])}
+              {STATUS_ICON[option]}
             </button>
           );
         })}
-      </div>
 
-      {status === 'owned' && (
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-vault-muted">{t('quantity')}</span>
-          <div className="inline-flex items-center gap-1">
+        {/* Quantity stepper appears in place, only for owned duplicates. */}
+        {status === 'owned' && (
+          <div className="ml-1 inline-flex items-center gap-1">
             <button
               type="button"
               aria-label={t('decrement')}
@@ -88,6 +117,7 @@ export function CollectionControls({ tagId }: { tagId: string }) {
             <span
               className="min-w-9 text-center font-mono text-base font-medium tabular-nums text-vault-text"
               aria-live="polite"
+              aria-label={t('quantity')}
             >
               {quantity}
             </span>
@@ -100,8 +130,8 @@ export function CollectionControls({ tagId }: { tagId: string }) {
               +
             </button>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
