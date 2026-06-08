@@ -12,6 +12,7 @@ import {
   catalogScrollStorageKey,
   hasActiveCatalogFilters,
   parseCatalogFilters,
+  SPECIAL_GRADE_FILTER,
   type CatalogFilters,
 } from '@/lib/catalog-filters';
 import { ALL_TYPES } from '@/lib/pokemon-types';
@@ -54,6 +55,7 @@ function readAndClearScroll(scrollKey: string): number | null {
 export function CatalogBrowser({ entries, packs, locale }: Props) {
   const t = useTranslations('catalog');
   const tTypes = useTranslations('types');
+  const tTier = useTranslations('gradeTier');
   const router = useRouter();
   const searchParams = useSearchParams();
   const queryString = searchParams.toString();
@@ -108,10 +110,15 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
 
   const filtered = useMemo(() => {
     const q = normalize(filters.q);
-    const gradeNum = filters.grade === '' ? null : Number(filters.grade);
     return entries.filter(({ tag }) => {
       if (filters.pack && tag.pack !== filters.pack) return false;
-      if (gradeNum !== null && tag.grade !== gradeNum) return false;
+      if (filters.grade === SPECIAL_GRADE_FILTER) {
+        // The Special bucket: event tags only (synthetic grade 5, gradeTier 'special').
+        if (tag.gradeTier !== 'special') return false;
+      } else if (filters.grade !== '') {
+        // A numeric grade bucket excludes Special tags so ★5 stays clean.
+        if (tag.grade !== Number(filters.grade) || tag.gradeTier === 'special') return false;
+      }
       if (filters.type && !tag.types.includes(filters.type as PokemonType)) return false;
       if (q) {
         const hay = `${normalize(tag.nameEn)} ${normalize(tag.nameZh)} ${normalize(tag.num)}`;
@@ -225,6 +232,7 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
                 {t('gradeOption', { grade: g })}
               </option>
             ))}
+            <option value={SPECIAL_GRADE_FILTER}>{tTier('special')}</option>
           </select>
         </div>
 
@@ -280,7 +288,8 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
                   {meta.current && <span className="ml-2 text-status-owned">· {t('current')}</span>}
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              {/* Horizontal cards: 1 across on portrait/mobile, 2 on iPad landscape+. */}
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 {tags.map((entry) => (
                   <TagCard key={entry.tag.tagId} entry={entry} locale={locale} />
                 ))}

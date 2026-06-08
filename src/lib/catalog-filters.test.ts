@@ -33,6 +33,11 @@ describe('parseCatalogFilters', () => {
       q: 'foo',
     });
   });
+
+  it('keeps the "special" grade sentinel (Special/event tags)', () => {
+    const params = new URLSearchParams('grade=special');
+    expect(parseCatalogFilters(params).grade).toBe('special');
+  });
 });
 
 describe('serializeCatalogFilters', () => {
@@ -45,6 +50,11 @@ describe('serializeCatalogFilters', () => {
     const original = new URLSearchParams('pack=s2&grade=5&type=fire&q=mew');
     const filters = parseCatalogFilters(original);
     expect(serializeCatalogFilters(filters).toString()).toBe(original.toString());
+  });
+
+  it('round-trips the "special" grade sentinel', () => {
+    const filters = parseCatalogFilters(new URLSearchParams('grade=special'));
+    expect(serializeCatalogFilters(filters).toString()).toBe('grade=special');
   });
 });
 

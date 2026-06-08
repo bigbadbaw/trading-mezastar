@@ -26,7 +26,12 @@ function isPackCode(value: string): boolean {
   return PACK_SET.has(value);
 }
 
+/** The non-numeric grade sentinel: Special/event tags (gradeTier === 'special'),
+ *  which carry a synthetic grade 5 but must not fold into the ★5 bucket. */
+export const SPECIAL_GRADE_FILTER = 'special';
+
 function isGradeFilter(value: string): boolean {
+  if (value === SPECIAL_GRADE_FILTER) return true;
   const n = Number(value);
   return Number.isInteger(n) && n >= 1 && n <= 6;
 }
