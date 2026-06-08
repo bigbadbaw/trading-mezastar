@@ -37,7 +37,11 @@
     "unverified": "≈ unverified",
     "unverifiedTitle": "Price is unverified (confidence {confidence})",
     "backToCatalog": "Back to catalog",
-    "closeDetail": "Close"
+    "closeDetail": "Close",
+    "collectorScore": "Collector",
+    "parityEven": "In parity with market",
+    "parityMarketRich": "Market premium",
+    "parityMarketPoor": "Collector premium"
   },
   "scoring": {
     "total": "Total",

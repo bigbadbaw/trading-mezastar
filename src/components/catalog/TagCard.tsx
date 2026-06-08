@@ -1,11 +1,16 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 
 import { CollectionControls } from '@/components/collection/CollectionControls';
 import { useCollection } from '@/components/collection/CollectionProvider';
 import type { ScoredTag } from '@/data/catalog';
 import { Link } from '@/i18n/navigation';
+import {
+  deriveCardScore,
+  type CardMarketParity,
+} from '@/lib/catalog-card-score';
 import { buildCatalogTagHref } from '@/lib/catalog-filters';
 import {
   gradeTierStyle,
@@ -16,22 +21,38 @@ import { GradeBadge } from './GradeBadge';
 import { TagImage } from './TagImage';
 import { TypeBadge } from './TypeBadge';
 
+/** Compact market-parity glyph + color, reusing the two-axis verdict semantics:
+ *  parity reads as the green "agree" signal, divergence as the blue signal. */
+const PARITY_PRESENTATION: Record<
+  CardMarketParity,
+  { glyph: string; colorClass: string; labelKey: string }
+> = {
+  even: { glyph: '≈', colorClass: 'text-status-fair', labelKey: 'parityEven' },
+  'market-rich': { glyph: '↑', colorClass: 'text-status-diverge', labelKey: 'parityMarketRich' },
+  'market-poor': { glyph: '↓', colorClass: 'text-status-diverge', labelKey: 'parityMarketPoor' },
+};
+
 /**
  * A single catalog card — horizontal, art-forward (Option B): a prominent art
  * panel on the left and a sparse info column on the right. The card face shows
- * only name + grade badge + types; Energy and the full breakdown live in detail.
+ * name + grade badge + types and a compact two-axis score (collector value +
+ * market parity); Energy and the full breakdown live in the detail view.
  *
  * Tapping the art or the info opens the detail as an overlay by layering a
  * `?tag=<id>` param onto the live catalog URL (filters preserved, shareable,
  * back-button closeable) — NOT a full-page navigation.
  */
 export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string }) {
-  const { tag } = entry;
+  const { tag, score } = entry;
+  const t = useTranslations('catalog');
   const { user, items } = useCollection();
   const searchParams = useSearchParams();
 
   const name = locale === 'zh-TW' ? tag.nameZh : tag.nameEn;
   const detailHref = buildCatalogTagHref(searchParams, tag.tagId);
+
+  const cardScore = deriveCardScore(score);
+  const parity = PARITY_PRESENTATION[cardScore.marketParity];
 
   const isOwned = user !== null && items.get(tag.tagId)?.status === 'owned';
   const tierStyle = gradeTierStyle(tag.gradeTier, isOwned);
@@ -77,6 +98,32 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
             {tag.types.map((type) => (
               <TypeBadge key={type} type={type} />
             ))}
+          </div>
+
+          {/* Two-axis score, compact: collector value + market parity readout. */}
+          <div className="flex items-center justify-between gap-2 pt-0.5 text-sm">
+            <span className="flex items-baseline gap-1">
+              <span className="text-xs uppercase tracking-wide text-vault-muted">
+                {t('collectorScore')}
+              </span>
+              <span className="font-mono font-semibold tabular-nums text-vault-text">
+                {cardScore.collector}
+              </span>
+            </span>
+            <span
+              className="flex items-center gap-1 font-mono tabular-nums"
+              title={t(parity.labelKey)}
+            >
+              <span className={parity.colorClass} aria-hidden>
+                {parity.glyph}
+              </span>
+              <span
+                className={cardScore.marketUnverified ? 'text-status-slight' : 'text-vault-muted'}
+              >
+                NT${cardScore.marketPrice}
+              </span>
+              <span className="sr-only">{t(parity.labelKey)}</span>
+            </span>
           </div>
         </Link>
 

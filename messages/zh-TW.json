@@ -37,7 +37,11 @@
     "unverified": "≈ 未驗證",
     "unverifiedTitle": "價格尚未驗證（信心值 {confidence}）",
     "backToCatalog": "返回圖鑑",
-    "closeDetail": "關閉"
+    "closeDetail": "關閉",
+    "collectorScore": "收藏",
+    "parityEven": "與市場相當",
+    "parityMarketRich": "市場偏高",
+    "parityMarketPoor": "市場偏低"
   },
   "scoring": {
     "total": "總分",
