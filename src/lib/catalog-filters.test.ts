@@ -1,12 +1,15 @@
 import { describe, expect, it } from 'vitest';
 
 import {
+  buildCatalogCloseHref,
   buildCatalogHref,
+  buildCatalogTagHref,
   catalogScrollStorageKey,
   EMPTY_CATALOG_FILTERS,
   hasActiveCatalogFilters,
   parseCatalogFilters,
   serializeCatalogFilters,
+  TAG_PARAM,
 } from './catalog-filters';
 
 describe('parseCatalogFilters', () => {
@@ -62,6 +65,39 @@ describe('hasActiveCatalogFilters', () => {
   it('is false for defaults and true when any field is set', () => {
     expect(hasActiveCatalogFilters(EMPTY_CATALOG_FILTERS)).toBe(false);
     expect(hasActiveCatalogFilters({ ...EMPTY_CATALOG_FILTERS, q: 'a' })).toBe(true);
+  });
+});
+
+describe('detail-overlay tag param', () => {
+  it('layers ?tag onto the current params, preserving existing filters', () => {
+    const current = new URLSearchParams('pack=g1&grade=5');
+    const href = buildCatalogTagHref(current, 's2-R-1-1');
+    const params = new URLSearchParams(href.split('?')[1]);
+    expect(params.get('pack')).toBe('g1');
+    expect(params.get('grade')).toBe('5');
+    expect(params.get(TAG_PARAM)).toBe('s2-R-1-1');
+  });
+
+  it('removes ?tag on close, preserving existing filters', () => {
+    const current = new URLSearchParams('pack=g1&grade=5&tag=s2-R-1-1');
+    expect(buildCatalogCloseHref(current)).toBe('/catalog?pack=g1&grade=5');
+  });
+
+  it('returns the bare catalog path when only ?tag was set', () => {
+    const current = new URLSearchParams('tag=s2-R-1-1');
+    expect(buildCatalogCloseHref(current)).toBe('/catalog');
+  });
+
+  it('round-trips: open then close returns to the original filter URL', () => {
+    const original = new URLSearchParams('type=fire&q=mew');
+    const opened = buildCatalogTagHref(original, 'g1-2-1-001');
+    const closed = buildCatalogCloseHref(new URLSearchParams(opened.split('?')[1]));
+    expect(closed).toBe(`/catalog?${original.toString()}`);
+  });
+
+  it('is ignored by parseCatalogFilters (never perturbs filtering)', () => {
+    const filters = parseCatalogFilters(new URLSearchParams('grade=5&tag=g1-2-1-001'));
+    expect(filters).toEqual({ ...EMPTY_CATALOG_FILTERS, grade: '5' });
   });
 });
 

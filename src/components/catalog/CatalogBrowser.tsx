@@ -8,16 +8,20 @@ import type { PackMeta, ScoredTag } from '@/data/catalog';
 import type { PokemonType } from '@/data/schema';
 import { useRouter } from '@/i18n/navigation';
 import {
+  buildCatalogCloseHref,
   buildCatalogHref,
   catalogScrollStorageKey,
   hasActiveCatalogFilters,
   parseCatalogFilters,
   SPECIAL_GRADE_FILTER,
+  TAG_PARAM,
   type CatalogFilters,
 } from '@/lib/catalog-filters';
 import { ALL_TYPES } from '@/lib/pokemon-types';
 
 import { TagCard } from './TagCard';
+import { TagDetailContent } from './TagDetailContent';
+import { TagDetailModal } from './TagDetailModal';
 
 const CATALOG_PATH = '/catalog';
 const SEARCH_DEBOUNCE_MS = 300;
@@ -58,11 +62,32 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
   const tTier = useTranslations('gradeTier');
   const router = useRouter();
   const searchParams = useSearchParams();
-  const queryString = searchParams.toString();
   const filters = useMemo(
     () => parseCatalogFilters(searchParams),
     [searchParams],
   );
+
+  // Detail overlay state lives in the URL (`?tag=<id>`): the catalog stays
+  // mounted, so opening/closing the overlay preserves filters + scroll, the URL
+  // stays shareable, and the back button closes it.
+  const entriesById = useMemo(
+    () => new Map(entries.map((e) => [e.tag.tagId, e])),
+    [entries],
+  );
+  const activeTagId = searchParams.get(TAG_PARAM);
+  const activeEntry = activeTagId ? entriesById.get(activeTagId) : undefined;
+  const closeTag = useCallback(() => {
+    // scroll:false so closing the overlay doesn't jump the catalog to the top.
+    router.replace(buildCatalogCloseHref(searchParams), { scroll: false });
+  }, [router, searchParams]);
+
+  // Scroll restore is keyed on the FILTER query only — toggling the detail
+  // overlay (`?tag`) must not perturb the catalog's saved scroll position.
+  const scrollQuery = useMemo(() => {
+    const params = new URLSearchParams(searchParams);
+    params.delete(TAG_PARAM);
+    return params.toString();
+  }, [searchParams]);
 
   const [queryDraft, setQueryDraft] = useState(filters.q);
   const scrollRestoredRef = useRef(false);
@@ -94,7 +119,7 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
     return () => window.clearTimeout(handle);
   }, [queryDraft, filters.q, replaceFilters]);
 
-  const scrollKey = catalogScrollStorageKey(CATALOG_PATH, queryString);
+  const scrollKey = catalogScrollStorageKey(CATALOG_PATH, scrollQuery);
 
   // Save scroll when leaving the catalog (e.g. into a tag detail route).
   useEffect(() => {
@@ -297,6 +322,12 @@ export function CatalogBrowser({ entries, packs, locale }: Props) {
             </section>
           ))}
         </div>
+      )}
+
+      {activeEntry && (
+        <TagDetailModal onClose={closeTag}>
+          <TagDetailContent entry={activeEntry} locale={locale} />
+        </TagDetailModal>
       )}
     </div>
   );

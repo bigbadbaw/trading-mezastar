@@ -1,39 +1,44 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
- * The overlay shell for the route-backed tag detail (Next.js intercepting +
- * parallel routes). Rendered ONLY when the detail route is reached via in-app
- * navigation, layered over the still-mounted catalog (so its filters + scroll
- * survive). Closing pops the history entry (`router.back()`), which returns to
- * the catalog URL and unmounts the overlay. A direct load / refresh of the same
- * URL bypasses this and renders the full-page route instead.
+ * Overlay shell for the tag detail. Driven entirely by `onClose` — the catalog
+ * owns the URL (`?tag=<id>`), so this component is a presentation-only dialog:
+ * it layers over the still-mounted catalog and asks to close via Escape, an
+ * overlay-click, or the close button. Background scroll is locked while open.
  *
- * Uses the plain next/navigation router: `back()` is locale-agnostic history
- * navigation, so no locale prefix handling is needed here.
+ * It does NO routing itself; the catalog turns the open/closed state into a URL
+ * change so the back button and shareable state keep working.
  */
-export function TagDetailModal({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
+export function TagDetailModal({
+  onClose,
+  children,
+}: {
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
   const t = useTranslations('catalog');
   const panelRef = useRef<HTMLDivElement>(null);
 
-  const onClose = useCallback(() => router.back(), [router]);
-
   // Close on Escape, and lock background scroll while the overlay is open.
+  // `overflow: hidden` on <body> resets the document scroll to the top, so we
+  // capture the catalog's scroll position on open and restore it on close —
+  // the catalog stays mounted, so this is all the scroll preservation needed.
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent): void {
       if (e.key === 'Escape') onClose();
     }
     document.addEventListener('keydown', onKeyDown);
+    const scrollY = window.scrollY;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     panelRef.current?.focus();
     return () => {
       document.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = previousOverflow;
+      window.scrollTo(0, scrollY);
     };
   }, [onClose]);
 

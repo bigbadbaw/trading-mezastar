@@ -1,9 +1,12 @@
 'use client';
 
+import { useSearchParams } from 'next/navigation';
+
 import { CollectionControls } from '@/components/collection/CollectionControls';
 import { useCollection } from '@/components/collection/CollectionProvider';
 import type { ScoredTag } from '@/data/catalog';
 import { Link } from '@/i18n/navigation';
+import { buildCatalogTagHref } from '@/lib/catalog-filters';
 import {
   gradeTierStyle,
   UNOWNED_DESATURATE_CLASS,
@@ -16,16 +19,19 @@ import { TypeBadge } from './TypeBadge';
 /**
  * A single catalog card — horizontal, art-forward (Option B): a prominent art
  * panel on the left and a sparse info column on the right. The card face shows
- * only name + grade badge + types up top and the status/qty action zone below;
- * Energy, price, and the score breakdown live in the detail view. Tapping the
- * art or the name opens the route-backed detail (keyed by the stable tagId).
+ * only name + grade badge + types; Energy and the full breakdown live in detail.
+ *
+ * Tapping the art or the info opens the detail as an overlay by layering a
+ * `?tag=<id>` param onto the live catalog URL (filters preserved, shareable,
+ * back-button closeable) — NOT a full-page navigation.
  */
 export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string }) {
   const { tag } = entry;
   const { user, items } = useCollection();
+  const searchParams = useSearchParams();
 
   const name = locale === 'zh-TW' ? tag.nameZh : tag.nameEn;
-  const detailHref = `/tag/${encodeURIComponent(tag.tagId)}`;
+  const detailHref = buildCatalogTagHref(searchParams, tag.tagId);
 
   const isOwned = user !== null && items.get(tag.tagId)?.status === 'owned';
   const tierStyle = gradeTierStyle(tag.gradeTier, isOwned);
@@ -38,6 +44,7 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
       {/* Art panel — left ~40%, full card height, prominent. */}
       <Link
         href={detailHref}
+        scroll={false}
         className={`relative flex w-2/5 shrink-0 items-center justify-center self-stretch p-4 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-vault-gold ${tierStyle.fillClass} ${desaturate ? UNOWNED_DESATURATE_CLASS : ''}`}
         style={{ backgroundColor: 'var(--panel-fill)' }}
       >
@@ -57,6 +64,7 @@ export function TagCard({ entry, locale }: { entry: ScoredTag; locale: string })
       <div className="flex w-3/5 flex-col gap-3 p-4">
         <Link
           href={detailHref}
+          scroll={false}
           className="flex flex-col gap-2 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vault-gold"
         >
           <div className="flex items-start justify-between gap-2">

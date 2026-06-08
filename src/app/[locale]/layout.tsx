@@ -22,11 +22,9 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  modal,
   params,
 }: {
   children: React.ReactNode;
-  modal: React.ReactNode;
   params: { locale: string };
 }) {
   const { locale } = params;
@@ -68,7 +66,6 @@ export default async function LocaleLayout({
               </div>
             </header>
             {children}
-            {modal}
           </CollectionProvider>
         </NextIntlClientProvider>
       </body>

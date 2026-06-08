@@ -80,3 +80,29 @@ export function buildCatalogHref(filters: CatalogFilters): string {
 export function catalogScrollStorageKey(pathname: string, queryString: string): string {
   return `catalog-scroll:${pathname}${queryString ? `?${queryString}` : ''}`;
 }
+
+/**
+ * The detail-overlay param. Not part of `CatalogFilters` (it never affects the
+ * grid); it is layered onto the live catalog URL so the detail opens as an
+ * overlay over the still-mounted catalog, stays shareable, and the back button
+ * closes it. `parseCatalogFilters` ignores it, so it never perturbs filtering.
+ */
+export const TAG_PARAM = 'tag';
+
+/** Current catalog params with the detail-overlay tag id set (filters preserved). */
+export function buildCatalogTagHref(
+  current: URLSearchParams,
+  tagId: string,
+): string {
+  const params = new URLSearchParams(current);
+  params.set(TAG_PARAM, tagId);
+  return `/catalog?${params.toString()}`;
+}
+
+/** Current catalog params with the detail-overlay tag id removed (filters preserved). */
+export function buildCatalogCloseHref(current: URLSearchParams): string {
+  const params = new URLSearchParams(current);
+  params.delete(TAG_PARAM);
+  const qs = params.toString();
+  return qs ? `/catalog?${qs}` : '/catalog';
+}
