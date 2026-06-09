@@ -7,8 +7,8 @@ import {
 } from './catalog';
 
 describe('catalog accessor', () => {
-  it('returns all 374 scored tags', () => {
-    expect(getScoredCatalog()).toHaveLength(374);
+  it('returns all 378 scored tags', () => {
+    expect(getScoredCatalog()).toHaveLength(378);
   });
 
   it('assigns a unique tagId to every tag', () => {
@@ -22,8 +22,27 @@ describe('catalog accessor', () => {
     expect(packs).toHaveLength(6);
     const sp = packs.find((p) => p.pack === 'sp');
     expect(sp).toBeDefined();
-    expect(sp?.migratedCount).toBe(3);
+    expect(sp?.migratedCount).toBe(7);
     expect(sp?.officialTotal).toBe(50);
+  });
+
+  it('adds the 4 Taiwan Special event tags to the sp pack', () => {
+    const spTags = getScoredCatalog().filter((e) => e.tag.pack === 'sp');
+    expect(spTags).toHaveLength(7);
+
+    const ray = getScoredTag('sp-EV-RAY');
+    expect(ray).toBeDefined();
+    expect(ray!.tag.gradeTier).toBe('special');
+    expect(ray!.tag.energy).toBe(110);
+    expect(ray!.tag.types).toEqual(['dragon', 'flying']);
+  });
+
+  it('scores all 4 new special event tags without throwing (popularity joins)', () => {
+    for (const id of ['sp-EV-RAY', 'sp-EV-KYU', 'sp-EV-ZEK', 'sp-EV-RES']) {
+      const scored = getScoredTag(id);
+      expect(scored, id).toBeDefined();
+      expect(Number.isFinite(scored!.score.total), id).toBe(true);
+    }
   });
 
   it('round-trips a tag through getScoredTag by tagId', () => {

@@ -112,6 +112,146 @@
       },
       "note": "銀河彈上市紀念贈卡活動｜⚠️ ATK 待校對",
       "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-RAY",
+      "num": "EV-RAY",
+      "pack": "sp",
+      "nameZh": "烈空坐",
+      "nameEn": "Rayquaza",
+      "emoji": "🐉",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "grade": 5,
+      "energy": 110,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Rayquaza"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "Event tag. Special banner + \"P TC\" marker on physical tag (vertical). Special tags carry no set number; keyed species-code by design. Dragon/Flying + E110 read from photo. ⚠️ price estimated, grade inferred.",
+      "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-KYU",
+      "num": "EV-KYU",
+      "pack": "sp",
+      "nameZh": "酋雷姆",
+      "nameEn": "Kyurem",
+      "emoji": "❄️",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "grade": 5,
+      "energy": 156,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Kyurem"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": true
+      },
+      "note": "Event tag. E156, ★5+special-star (horizontal). On TC cassette/6 list. No set number (event tag). Dragon/Ice from species. ⚠️ price estimated.",
+      "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-ZEK",
+      "num": "EV-ZEK",
+      "pack": "sp",
+      "nameZh": "捷克羅姆",
+      "nameEn": "Zekrom",
+      "emoji": "⚡",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "dragon",
+        "electric"
+      ],
+      "grade": 5,
+      "energy": 162,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Zekrom"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": true
+      },
+      "note": "Event tag. E162 (horizontal). Not on the scraped cassette/6 page → TC event set is larger than that page listed. No set number (event tag). Dragon/Electric from species. ⚠️ price estimated.",
+      "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-RES",
+      "num": "EV-RES",
+      "pack": "sp",
+      "nameZh": "萊希拉姆",
+      "nameEn": "Reshiram",
+      "emoji": "🔥",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "dragon",
+        "fire"
+      ],
+      "grade": 5,
+      "energy": 162,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Reshiram"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": true,
+        "classic": false,
+        "highAtk": true
+      },
+      "note": "Event tag. E162 (horizontal). Not on the scraped cassette/6 page → TC event set is larger than that page listed. No set number (event tag). Dragon/Fire from species. ⚠️ price estimated.",
+      "unconfirmed": true
     }
   ]
 }
