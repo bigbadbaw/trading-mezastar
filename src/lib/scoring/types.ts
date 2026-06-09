@@ -23,11 +23,18 @@ export const GRADE_TIERS = [
 ] as const;
 export type GradeTier = (typeof GRADE_TIERS)[number];
 
-/** Structured special-mechanic flags, derived ONCE by the M1 migration. */
+/**
+ * Structured special-mechanic flags, derived ONCE by the M1 migration.
+ *
+ * NOTE (M-scarcity, 2026-06-09): `rareSlot` was removed from this scored set —
+ * rare-slot is a scarcity signal, now handled by per-tag `scarcityRank`, not a
+ * battle mechanic. The tag data's `mechanics.rareSlot` boolean is intentionally
+ * left in place (the catalog schema is built from this list, so parsed tags simply
+ * stop carrying the key); it is no longer scored.
+ */
 export const MECHANIC_FLAGS = [
   'gigantamax',
   'mega',
-  'rareSlot',
   'zMove',
   'legendary',
   'classic',
@@ -45,6 +52,8 @@ export type PopularitySource = 'poll' | 'agg' | 'search' | 'default';
  * superset of this, so it can be passed directly.
  */
 export interface ScorableTag {
+  /** Stable globally-unique id (`${pack}-${num}`); the key for the scarcity-rank join. */
+  tagId: string;
   gradeTier: GradeTier;
   mechanics: Mechanics;
   /** NT$ [low, high] range; median drives the (demoted) market anchor. */
@@ -63,13 +72,29 @@ export type PopularityLookup = (
   species: string,
 ) => { score: number; source: PopularitySource } | undefined;
 
+/**
+ * Injected per-tag scarcity-rank lookup. Returns the points DELTA to ADD to the
+ * gradeTier scarcity base (0 if the tag carries no rank — long-tail ties on tier
+ * alone are correct). Like {@link PopularityLookup}, the engine never imports
+ * scarcity.json; the catalog layer builds this from it and passes it in (M2-spec §1).
+ */
+export type ScarcityLookup = (tagId: string) => number;
+
 /** A single scored component row, ready for the transparent UI breakdown. */
 export interface ScoreBreakdown {
   /** Rounded sum, 0..100. */
   total: number;
   grade: { grade: string; label: string; color: string };
   components: {
-    scarcity: { points: number; tier: GradeTier; label: string };
+    scarcity: {
+      points: number;
+      /** Tier base before the per-tag rank delta. */
+      base: number;
+      /** Per-tag scarcityRank delta added on top of `base` (0 for unranked tags). */
+      rankDelta: number;
+      tier: GradeTier;
+      label: string;
+    };
     popularity: {
       points: number;
       popScore: number;

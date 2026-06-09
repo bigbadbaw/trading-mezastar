@@ -54,12 +54,15 @@ const UNCONFIRMED_PRICE_CONFIDENCE = 0.6;
 
 // ---- Mechanics derivation (M2-spec §2d, run ONCE here) --------------------
 
+// rareSlot was removed from the scored MechanicFlag set (M-scarcity) but the
+// boolean is intentionally retained in the migrated data (now a scarcity signal,
+// no longer a battle mechanic). The return type widens Mechanics to keep emitting it.
 function deriveMechanics(
   note: string,
   enName: string,
   gradeTier: string,
   energy: number,
-): Mechanics {
+): Mechanics & { rareSlot: boolean } {
   const hay = `${note} ${enName}`;
   const has = (...subs: string[]) => subs.some((s) => hay.includes(s));
   return {

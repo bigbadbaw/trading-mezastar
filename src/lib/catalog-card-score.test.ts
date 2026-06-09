@@ -14,7 +14,7 @@ function breakdown(
     total,
     grade: { grade: 'B', label: 'scoring.grade.B', color: '#000' },
     components: {
-      scarcity: { points: 0, tier: 'normal-3', label: 'scoring.component.scarcity' },
+      scarcity: { points: 0, base: 0, rankDelta: 0, tier: 'normal-3', label: 'scoring.component.scarcity' },
       popularity: { points: 0, popScore: 5, source: 'default', label: 'scoring.component.popularity' },
       market: {
         points: marketPoints,

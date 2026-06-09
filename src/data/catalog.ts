@@ -23,11 +23,13 @@ import s3 from '@/data/packs/s3.json';
 import s4 from '@/data/packs/s4.json';
 import sp from '@/data/packs/sp.json';
 import popularity from '@/data/popularity.json';
-import { PackSchema, type Pack, type Tag } from '@/data/schema';
+import scarcity from '@/data/scarcity.json';
+import { PackSchema, ScarcityFileSchema, type Pack, type Tag } from '@/data/schema';
 import { scoreTag } from '@/lib/scoring/score';
 import type {
   PopularityLookup,
   PopularitySource,
+  ScarcityLookup,
   ScoreBreakdown,
 } from '@/lib/scoring/types';
 
@@ -66,6 +68,14 @@ const popLookup: PopularityLookup = (species) => {
   return row ? { score: row.score, source: row.source as PopularitySource } : undefined;
 };
 
+// ---- Scarcity-rank lookup (built once, injected into the pure engine) -------
+// Validated at this boundary (Zod-at-every-boundary), then collapsed to the bare
+// `tagId -> delta` the engine needs. Headliner tags only; everything else → 0.
+
+const SCARCITY_RANKS = ScarcityFileSchema.parse(scarcity).ranks;
+
+const scarcityLookup: ScarcityLookup = (tagId) => SCARCITY_RANKS[tagId]?.scarcityRank ?? 0;
+
 // ---- Validation + scoring (memoized) ---------------------------------------
 
 const RAW_PACKS: readonly unknown[] = [g1, s1, s2, s3, s4, sp];
@@ -100,7 +110,11 @@ function build(): Catalog {
     packs.push(meta);
 
     for (const tag of pack.tags) {
-      const entry: ScoredTag = { tag, pack: meta, score: scoreTag(tag, popLookup) };
+      const entry: ScoredTag = {
+        tag,
+        pack: meta,
+        score: scoreTag(tag, popLookup, scarcityLookup),
+      };
       scored.push(entry);
       byId.set(tag.tagId, entry);
     }

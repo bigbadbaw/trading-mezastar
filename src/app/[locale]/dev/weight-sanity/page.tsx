@@ -14,6 +14,8 @@ import g1Data from '@/data/packs/g1.json';
 import s1Data from '@/data/packs/s1.json';
 import spData from '@/data/packs/sp.json';
 import popularityData from '@/data/popularity.json';
+import scarcityData from '@/data/scarcity.json';
+import { ScarcityFileSchema } from '@/data/schema';
 import { judgeFairness } from '@/lib/scoring/fairness';
 import { scoreBasket, scoreTag } from '@/lib/scoring/score';
 import type {
@@ -21,6 +23,7 @@ import type {
   FairnessVerdict,
   PopularityLookup,
   PopularitySource,
+  ScarcityLookup,
   ScorableTag,
   ScoreBreakdown,
 } from '@/lib/scoring/types';
@@ -33,6 +36,7 @@ import {
   MECHANIC_POINTS,
   MECHANIC_CAP,
   SCARCITY_CAP,
+  SCARCITY_RANK_CAP,
   SCARCITY_FALLBACK,
   DEFAULT_POPULARITY,
 } from '@/lib/scoring/weights';
@@ -49,6 +53,9 @@ const popLookup: PopularityLookup = (species) => {
   const row = popMap[species];
   return row ? { score: row.score, source: row.source as PopularitySource } : undefined;
 };
+
+const scarcityRanks = ScarcityFileSchema.parse(scarcityData).ranks;
+const scarcityLookup: ScarcityLookup = (tagId) => scarcityRanks[tagId]?.scarcityRank ?? 0;
 
 type RawTag = ScorableTag & { num: string; nameEn: string; grade?: number };
 
@@ -81,7 +88,12 @@ function scoreTagProposed(tag: ScorableTag): ScoreBreakdown {
   // Exact copy of scoreTag logic but uses proposedScarcity() instead.
   const clamp = (n: number, cap: number) => Math.max(0, Math.min(cap, n));
 
-  const scarcityPoints = clamp(proposedScarcity(tag.gradeTier), SCARCITY_CAP);
+  const scarcityBase = proposedScarcity(tag.gradeTier);
+  const scarcityRankDelta = scarcityLookup(tag.tagId);
+  const scarcityPoints = clamp(
+    scarcityBase + scarcityRankDelta,
+    scarcityRankDelta > 0 ? SCARCITY_RANK_CAP : SCARCITY_CAP,
+  );
 
   const { popScore, source } = (() => {
     let score = DEFAULT_POPULARITY;
@@ -125,7 +137,13 @@ function scoreTagProposed(tag: ScorableTag): ScoreBreakdown {
     total,
     grade: { grade: '', label: '', color: '' }, // not needed in this tool
     components: {
-      scarcity: { points: scarcityPoints, tier: tag.gradeTier, label: '' },
+      scarcity: {
+        points: scarcityPoints,
+        base: scarcityBase,
+        rankDelta: scarcityRankDelta,
+        tier: tag.gradeTier,
+        label: '',
+      },
       popularity: { points: popularityPoints, popScore, source, label: '' },
       market: { points: marketPoints, medianPrice: median, confidence: tag.priceConfidence, label: '' },
       mechanic: { points: mechanicPoints, flags: flags as import('@/lib/scoring/types').MechanicFlag[], label: '' },
@@ -262,8 +280,8 @@ function runScenarios(): ScoredScenario[] {
     const leftTags = lNums.map(byNum);
     const rightTags = rNums.map(byNum);
 
-    const beforeLeft = scoreBasket(leftTags, popLookup);
-    const beforeRight = scoreBasket(rightTags, popLookup);
+    const beforeLeft = scoreBasket(leftTags, popLookup, scarcityLookup);
+    const beforeRight = scoreBasket(rightTags, popLookup, scarcityLookup);
     const afterLeft = scoreBasketProposed(leftTags);
     const afterRight = scoreBasketProposed(rightTags);
 

@@ -98,3 +98,24 @@ export const PackSchema = z.object({
 export type Tag = z.infer<typeof TagSchema>;
 export type Pack = z.infer<typeof PackSchema>;
 export type PokemonType = z.infer<typeof PokemonTypeEnum>;
+
+/**
+ * Per-tag scarcityRank entry (M-scarcity). `scarcityRank` is a points DELTA added
+ * to the gradeTier scarcity base; headliner tags only (non-headliner tags are
+ * absent from the map and score on tier alone). Authored offline using price band
+ * as the scarcity proxy — NOT read from `tag.price` at runtime (double-count guard).
+ */
+export const ScarcityRankSchema = z.object({
+  /** Points delta, 0..10, added to the tier scarcity base. */
+  scarcityRank: z.number().int().min(0).max(10),
+  source: z.enum(['resale-consensus', 'catalog-price-proxy']),
+  tcBasis: z.enum(['confirmed', 'jp-inferred']),
+  note: z.string(),
+});
+
+/** scarcity.json shape — only `ranks` is consumed; metadata keys are ignored. */
+export const ScarcityFileSchema = z.object({
+  ranks: z.record(z.string(), ScarcityRankSchema),
+});
+
+export type ScarcityRank = z.infer<typeof ScarcityRankSchema>;

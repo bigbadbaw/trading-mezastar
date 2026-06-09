@@ -7,10 +7,11 @@ import { deriveVerdictAxes } from './verdict-axes';
 
 // ---- Real catalog fixtures (values verified against the scoring engine) -----
 //   Entei     g1-2-1-006 -> total 59, median 900,  UNVERIFIED (conf 0.6)
-//   Mewtwo    g1-2-1-008 -> total 93, median 1400
-//   Arceus    g1-2-1-009 -> total 87, median 2250
-//   Tyranitar s1-1-1-005 -> total 63, median 1500
-//   Eternatus s3-1-3-007 -> total 64, median 1950
+//   Mewtwo    g1-2-1-008 -> total 91, median 1400  (M-scarcity: was 93)
+//   Arceus    g1-2-1-009 -> total 93, median 2250  (M-scarcity: was 87)
+//   Tyranitar s1-1-1-005 -> total 67, median 1500  (M-scarcity headliner: was 63, +4)
+//   Eternatus s3-1-3-007 -> total 70, median 1950  (M-scarcity headliner: was 64, +6)
+//   Stakataka s3-1-3-009 -> total 61, median 1350  (verified; score-even vs Entei)
 
 function entry(tagId: string): ScoredTag {
   const e = getScoredTag(tagId);
@@ -24,6 +25,7 @@ const MEWTWO = entry('g1-2-1-008');
 const ARCEUS = entry('g1-2-1-009');
 const TYRANITAR = entry('s1-1-1-005');
 const ETERNATUS = entry('s3-1-3-007');
+const STAKATAKA = entry('s3-1-3-009');
 
 /** mine vs theirs -> the derived two-axis state. */
 const axesOf = (mine: ScoredTag, theirs: ScoredTag) =>
@@ -39,7 +41,7 @@ describe('deriveVerdictAxes — agreement state machine', () => {
   });
 
   it('REINFORCE: both axes favor their side (Entei vs Mewtwo — the real spec pair)', () => {
-    // Entei 59 vs Mewtwo 93 is a 34-pt `unfair` gap AND Mewtwo is worth more cash,
+    // Entei 59 vs Mewtwo 91 is a 32-pt `unfair` gap AND Mewtwo is worth more cash,
     // so both axes point the same way — this is reinforcement, not divergence.
     const a = axesOf(ENTEI, MEWTWO);
     expect(a.agreement).toBe('reinforce');
@@ -49,12 +51,15 @@ describe('deriveVerdictAxes — agreement state machine', () => {
 });
 
 describe('deriveVerdictAxes — the six DIVERGE shapes', () => {
-  it('score even, market favors theirs (Entei vs Tyranitar) — and flags unverified', () => {
-    const a = axesOf(ENTEI, TYRANITAR);
+  it('score even, market favors theirs (Entei vs Stakataka) — and flags unverified', () => {
+    // Entei 59 vs Stakataka 61 is score-even, but Stakataka is worth more cash
+    // (1350 vs 900). Tyranitar no longer fits here: as an M-scarcity headliner it
+    // rose to 67, outside Entei's even band — Stakataka recreates the shape.
+    const a = axesOf(ENTEI, STAKATAKA);
     expect(a.agreement).toBe('diverge');
     expect(a.scoreDirection).toBe('even');
     expect(a.marketDirection).toBe('theirs');
-    expect(a.marketGap).toBe(600);
+    expect(a.marketGap).toBe(450);
     expect(a.marketUnverified).toBe(true); // Entei's price is unverified
   });
 

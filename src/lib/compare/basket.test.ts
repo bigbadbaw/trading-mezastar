@@ -5,8 +5,8 @@ import { getScoredTag, type ScoredTag } from '@/data/catalog';
 import { compareBaskets, scoreSide, type BasketLine } from './basket';
 
 // ---- Real catalog fixtures (totals verified against the scoring engine) -----
-//   Mewtwo  g1-2-1-008 -> total 93, median 1400
-//   Arceus  g1-2-1-009 -> total 87, median 2250
+//   Mewtwo  g1-2-1-008 -> total 91, median 1400  (M-scarcity: was 93; rareSlot -4, scarcityRank +2)
+//   Arceus  g1-2-1-009 -> total 93, median 2250  (M-scarcity: was 87; rareSlot -4, scarcityRank +10)
 //   Slowbro s1-1-1-054 -> total 19
 //   Pinsir  g1-2-1-011 -> total 43
 //   Dual    s2-1-2-065 -> total 18, species length 2 (Lunatone/Solrock)
@@ -28,18 +28,18 @@ const line = (e: ScoredTag, quantity: number): BasketLine => ({ entry: e, quanti
 describe('scoreSide — basket totalling with quantity', () => {
   it('multiplies a tag total and median by its quantity', () => {
     const side = scoreSide([line(MEWTWO, 3)]);
-    expect(side.basket.total).toBe(MEWTWO.score.total * 3); // 279
+    expect(side.basket.total).toBe(MEWTWO.score.total * 3); // 273
     expect(side.basket.medianPriceSum).toBe(
       MEWTWO.score.components.market.medianPrice * 3,
     ); // 4200
-    expect(side.lines[0]?.lineTotal).toBe(279);
+    expect(side.lines[0]?.lineTotal).toBe(273);
     // Expanded by quantity, matching scoreBasket's `tags` array.
     expect(side.basket.tags).toHaveLength(3);
   });
 
   it('sums distinct lines and respects per-line quantity', () => {
     const side = scoreSide([line(MEWTWO, 2), line(SLOWBRO, 1)]);
-    expect(side.basket.total).toBe(MEWTWO.score.total * 2 + SLOWBRO.score.total); // 205
+    expect(side.basket.total).toBe(MEWTWO.score.total * 2 + SLOWBRO.score.total); // 201
     expect(side.lines).toHaveLength(2);
   });
 
@@ -57,23 +57,24 @@ describe('compareBaskets — the three verdict bands (real tags)', () => {
     expect(r.verdict.verdict).toBe('fair');
   });
 
-  it('~+18 gap -> slight (Mewtwo 93 vs Mewtwo+Slowbro 112)', () => {
+  it('~+18 gap -> slight (Mewtwo 91 vs Mewtwo+Slowbro 110)', () => {
     const r = compareBaskets([line(MEWTWO, 1)], [line(MEWTWO, 1), line(SLOWBRO, 1)]);
     expect(r.verdict.diff).toBe(19);
     expect(r.verdict.verdict).toBe('slight');
   });
 
-  it('~+40 gap -> unfair (Mewtwo 93 vs Mewtwo+Pinsir 136)', () => {
+  it('~+40 gap -> unfair (Mewtwo 91 vs Mewtwo+Pinsir 134)', () => {
     const r = compareBaskets([line(MEWTWO, 1)], [line(MEWTWO, 1), line(PINSIR, 1)]);
     expect(r.verdict.diff).toBe(43);
     expect(r.verdict.verdict).toBe('unfair');
   });
 
   it('reports richer side from score and paying side from market separately', () => {
-    // Mewtwo scores higher (93 > 87) but Arceus is worth more cash (2250 > 1400),
-    // so "my" side is richer yet still tops up the market gap.
+    // Post-M-scarcity the two axes point to DIFFERENT sides: Arceus (right) now
+    // scores higher (93 > 91) AND is worth more cash (2250 > 1400), so the richer
+    // side is the right, while the cheaper left (Mewtwo) is the one that tops up.
     const r = compareBaskets([line(MEWTWO, 1)], [line(ARCEUS, 1)]);
-    expect(r.verdict.richerSide).toBe('left');
+    expect(r.verdict.richerSide).toBe('right');
     expect(r.verdict.payingSide).toBe('left');
     expect(r.verdict.priceGap).toBe(850);
   });

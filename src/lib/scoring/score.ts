@@ -20,6 +20,7 @@ import {
   SCARCITY_CAP,
   SCARCITY_FALLBACK,
   SCARCITY_POINTS,
+  SCARCITY_RANK_CAP,
 } from './weights';
 import { gradeOf } from './grade';
 import { MECHANIC_FLAGS } from './types';
@@ -28,6 +29,7 @@ import type {
   MechanicFlag,
   PopularityLookup,
   PopularitySource,
+  ScarcityLookup,
   ScorableTag,
   ScoreBreakdown,
 } from './types';
@@ -71,11 +73,20 @@ function activeMechanics(mech: ScorableTag['mechanics']): MechanicFlag[] {
 }
 
 /** Score a single tag into a transparent breakdown (M2-spec §5). */
-export function scoreTag(tag: ScorableTag, popLookup: PopularityLookup): ScoreBreakdown {
-  // Scarcity
+export function scoreTag(
+  tag: ScorableTag,
+  popLookup: PopularityLookup,
+  scarcityLookup: ScarcityLookup,
+): ScoreBreakdown {
+  // Scarcity = tier base + per-tag scarcityRank delta (injected; 0 if unranked).
+  // A ranked headliner may exceed the 40 tier ceiling up to SCARCITY_RANK_CAP (50);
+  // unranked tags still clamp to SCARCITY_CAP (40). Price is NEVER read here —
+  // scarcityRank is precomputed, keeping the scarcity and market axes independent.
+  const base = SCARCITY_POINTS[tag.gradeTier] ?? SCARCITY_FALLBACK;
+  const rankDelta = scarcityLookup(tag.tagId);
   const scarcityPoints = clamp(
-    SCARCITY_POINTS[tag.gradeTier] ?? SCARCITY_FALLBACK,
-    SCARCITY_CAP,
+    base + rankDelta,
+    rankDelta > 0 ? SCARCITY_RANK_CAP : SCARCITY_CAP,
   );
 
   // Popularity (injected lookup; neutral default when missing)
@@ -102,7 +113,13 @@ export function scoreTag(tag: ScorableTag, popLookup: PopularityLookup): ScoreBr
     total,
     grade: gradeOf(total),
     components: {
-      scarcity: { points: scarcityPoints, tier: tag.gradeTier, label: COMPONENT_LABELS.scarcity },
+      scarcity: {
+        points: scarcityPoints,
+        base,
+        rankDelta,
+        tier: tag.gradeTier,
+        label: COMPONENT_LABELS.scarcity,
+      },
       popularity: {
         points: popularityPoints,
         popScore,
@@ -121,8 +138,12 @@ export function scoreTag(tag: ScorableTag, popLookup: PopularityLookup): ScoreBr
 }
 
 /** Score one side of a trade: total score + the market-price anchor sum. */
-export function scoreBasket(tags: readonly ScorableTag[], popLookup: PopularityLookup): BasketScore {
-  const scored = tags.map((t) => scoreTag(t, popLookup));
+export function scoreBasket(
+  tags: readonly ScorableTag[],
+  popLookup: PopularityLookup,
+  scarcityLookup: ScarcityLookup,
+): BasketScore {
+  const scored = tags.map((t) => scoreTag(t, popLookup, scarcityLookup));
   return {
     total: scored.reduce((sum, s) => sum + s.total, 0),
     medianPriceSum: scored.reduce((sum, s) => sum + s.components.market.medianPrice, 0),

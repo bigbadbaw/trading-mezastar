@@ -17,6 +17,16 @@ export const POPULARITY_CAP = 25;
 export const MARKET_CAP = 18;
 export const MECHANIC_CAP = 17;
 
+// TUNED (M-scarcity, 2026-06-09): scarcity headroom for per-tag scarcityRank.
+// BEFORE: scarcity was capped at SCARCITY_CAP (40) for every tag, so the two
+// super-rare tags (Arceus, Mewtwo) tied at 40/40 — the tier bucket had no finer
+// signal. AFTER: a tag that carries a per-tag `scarcityRank` delta (headliners
+// only; see scarcity.json) may exceed the 40 tier ceiling by up to its delta,
+// clamped here at 50 (super-rare 40 + max delta 10 → 50). Unranked tags are
+// untouched and still clamp to SCARCITY_CAP (40). This is the ONLY place the
+// 100-point total ceiling gains headroom; every non-headliner tag is byte-identical.
+export const SCARCITY_RANK_CAP = 50;
+
 // ---- Scarcity (M2-spec §3a): single lookup replacing rarity + acquisition --
 
 export const SCARCITY_POINTS: Record<GradeTier, number> = {
@@ -65,10 +75,15 @@ export const UNCONFIRMED_PRICE_CONFIDENCE = 0.6;
 
 // ---- Special mechanic (M2-spec §3d): scores M1's structured flags ----------
 
+// CHANGED (M-scarcity, 2026-06-09): `rareSlot` removed from the mechanic axis.
+// BEFORE: rareSlot: 4 lived here, scoring a tag's rare-slot status as a battle
+// mechanic. AFTER: rare-slot is a SCARCITY signal (per Anthony, battle attributes
+// shouldn't drive collectability), now subsumed by per-tag scarcityRank — the
+// rare-slot headliners are exactly the high-resale tags that carry a delta. The
+// `mechanics.rareSlot` boolean stays in the tag data (harmless), just no longer scored.
 export const MECHANIC_POINTS: Record<MechanicFlag, number> = {
   gigantamax: 4,
   mega: 4,
-  rareSlot: 4,
   zMove: 3,
   legendary: 3,
   classic: 3,
