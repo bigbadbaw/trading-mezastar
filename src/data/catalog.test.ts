@@ -7,8 +7,8 @@ import {
 } from './catalog';
 
 describe('catalog accessor', () => {
-  it('returns all 378 scored tags', () => {
-    expect(getScoredCatalog()).toHaveLength(378);
+  it('returns all 381 scored tags', () => {
+    expect(getScoredCatalog()).toHaveLength(381);
   });
 
   it('assigns a unique tagId to every tag', () => {
@@ -22,13 +22,13 @@ describe('catalog accessor', () => {
     expect(packs).toHaveLength(6);
     const sp = packs.find((p) => p.pack === 'sp');
     expect(sp).toBeDefined();
-    expect(sp?.migratedCount).toBe(7);
+    expect(sp?.migratedCount).toBe(10);
     expect(sp?.officialTotal).toBe(50);
   });
 
   it('adds the 4 Taiwan Special event tags to the sp pack', () => {
     const spTags = getScoredCatalog().filter((e) => e.tag.pack === 'sp');
-    expect(spTags).toHaveLength(7);
+    expect(spTags).toHaveLength(10);
 
     const ray = getScoredTag('sp-EV-RAY');
     expect(ray).toBeDefined();
@@ -43,6 +43,32 @@ describe('catalog accessor', () => {
       expect(scored, id).toBeDefined();
       expect(Number.isFinite(scored!.score.total), id).toBe(true);
     }
+  });
+
+  it('adds the batch-2 Special event tags (Jirachi x2 variants + TC Gyarados)', () => {
+    const expected: Record<string, number> = {
+      'sp-EV-JIR-G': 124,
+      'sp-EV-JIR-S': 124,
+      'sp-EV-GYA': 134,
+    };
+    for (const [id, energy] of Object.entries(expected)) {
+      const scored = getScoredTag(id);
+      expect(scored, id).toBeDefined();
+      expect(scored!.tag.gradeTier, id).toBe('special');
+      expect(scored!.tag.energy, id).toBe(energy);
+      // popularity default path (Jirachi/Gyarados absent from popularity.json) must not throw
+      expect(Number.isFinite(scored!.score.total), id).toBe(true);
+    }
+  });
+
+  it('keeps the two Jirachi border variants as distinct tags on one species', () => {
+    const gold = getScoredTag('sp-EV-JIR-G');
+    const silver = getScoredTag('sp-EV-JIR-S');
+    expect(gold).toBeDefined();
+    expect(silver).toBeDefined();
+    expect(gold!.tag.tagId).not.toBe(silver!.tag.tagId);
+    expect(gold!.tag.species).toEqual(['Jirachi']);
+    expect(silver!.tag.species).toEqual(['Jirachi']);
   });
 
   it('round-trips a tag through getScoredTag by tagId', () => {

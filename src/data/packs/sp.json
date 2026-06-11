@@ -252,6 +252,111 @@
       },
       "note": "Event tag. E162 (horizontal). Not on the scraped cassette/6 page → TC event set is larger than that page listed. No set number (event tag). Dragon/Fire from species. ⚠️ price estimated.",
       "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-JIR-G",
+      "num": "EV-JIR-G",
+      "pack": "sp",
+      "nameZh": "基拉祈",
+      "nameEn": "Jirachi",
+      "emoji": "⭐",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "grade": 5,
+      "energy": 124,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Jirachi"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "Event tag (gold-border variant). E124, Special + P TC (horizontal). Two border variants exist (gold/silver) — keyed with -G suffix since species-code alone collides. Steel/Psychic from species. ⚠️ price estimated; grade inferred (border may signal a finish/grade difference).",
+      "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-JIR-S",
+      "num": "EV-JIR-S",
+      "pack": "sp",
+      "nameZh": "基拉祈",
+      "nameEn": "Jirachi",
+      "emoji": "✨",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "steel",
+        "psychic"
+      ],
+      "grade": 5,
+      "energy": 124,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Jirachi"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": false,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "Event tag (silver-border variant). E124, Special + P TC (horizontal). Two border variants exist (gold/silver) — keyed with -S suffix since species-code alone collides. Steel/Psychic from species. ⚠️ price estimated; grade inferred (border may signal a finish/grade difference).",
+      "unconfirmed": true
+    },
+    {
+      "tagId": "sp-EV-GYA",
+      "num": "EV-GYA",
+      "pack": "sp",
+      "nameZh": "暴鯉龍",
+      "nameEn": "Gyarados",
+      "emoji": "🐉",
+      "labelZh": "Special｜活動發放",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "grade": 5,
+      "energy": 134,
+      "gradeTier": "special",
+      "price": [
+        300,
+        600
+      ],
+      "priceConfidence": 0.6,
+      "species": [
+        "Gyarados"
+      ],
+      "mechanics": {
+        "gigantamax": false,
+        "mega": true,
+        "rareSlot": false,
+        "zMove": false,
+        "legendary": false,
+        "classic": false,
+        "highAtk": false
+      },
+      "note": "Event tag (TC). Special + \"P TC\" marker (vertical). E134, Water/Flying read from photo. Mega Gyarados art. Replaces the earlier P EN version (excluded — wrong region). ⚠️ price estimated; grade inferred.",
+      "unconfirmed": true
     }
   ]
 }
